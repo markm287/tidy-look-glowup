@@ -508,10 +508,11 @@ body {
   background: var(--dust);
   border: 1px solid var(--dust);
 }
-.booster-cell { background: var(--white); padding: 20px 18px; }
+.booster-cell { background: var(--white); padding: 20px 18px; display: flex; flex-direction: column; }
 .booster-name { font-size: 13px; font-weight: 400; color: var(--ink); margin-bottom: 4px; }
 .booster-desc { font-size: 11px; color: #888; margin-bottom: 10px; line-height: 1.5; }
-.booster-price { font-family: 'Cormorant Garamond', serif; font-size: 20px; color: var(--gold); }
+.booster-price { font-family: 'Cormorant Garamond', serif; font-size: 20px; color: var(--gold); margin-top: auto; padding-top: 12px; border-top: 1px solid var(--dust); }
+.booster-cell > div:last-child { min-height: 1em; }
 
 /* ── PROVIDERS PAGE ── */
 .providers-page { padding: 64px 40px; max-width: 1100px; margin: 0 auto; }
