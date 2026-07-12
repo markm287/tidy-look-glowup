@@ -504,10 +504,12 @@ body {
 .boosters-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 2px;
-  background: var(--dust);
-  border: 1px solid var(--dust);
+  gap: 1px;
+  background: #d9d4cc;
+  border: 1px solid #b8afa3;
+  margin-top: 8px;
 }
+
 .booster-cell { background: var(--white); padding: 20px 18px; display: flex; flex-direction: column; }
 .booster-name { font-size: 13px; font-weight: 400; color: var(--ink); margin-bottom: 4px; }
 .booster-desc { font-size: 11px; color: #888; margin-bottom: 10px; line-height: 1.5; }
@@ -806,10 +808,12 @@ site-footer {
 /* ── PRICING TABS MOBILE SCROLL ── */
 .pricing-tabs {
   overflow-x: auto;
+  overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
   flex-wrap: nowrap;
 }
+
 .pricing-tabs::-webkit-scrollbar { display: none; }
 .ptab-btn { white-space: nowrap; flex-shrink: 0; }
 
@@ -1401,13 +1405,14 @@ site-footer {
           <div class="price-amount">$1,400</div>
         </div>
         <div class="price-row">
-          <div class="price-service">Face + Neck</div>
-          <div class="price-amount">$1,600</div>
+          <div class="price-service">Neck<div class="price-detail">Add-on or standalone</div></div>
+          <div class="price-amount">$400</div>
         </div>
         <div class="price-row">
           <div class="price-service">Body Area<div class="price-detail">Abdomen, arms, etc.; size and complexity may vary</div></div>
           <div class="price-amount">$1,600–$2,000</div>
         </div>
+
       </div>
 
       <div class="category-block">
@@ -1941,7 +1946,7 @@ site-footer {
       @radiancepa
     </a>
   </div>
-  <div class="footer-copy">© 2025 Radiance Med Spa, PLLC · Chambersburg, Pennsylvania</div>
+  <div class="footer-copy">© 2026 Radiance Med Spa, PLLC · Chambersburg, Pennsylvania</div>
   <div class="footer-disc">All treatments are performed under physician supervision. Results may vary. Pricing subject to change. This website is for informational purposes only and does not constitute medical advice.</div>
 </site-footer>
 
