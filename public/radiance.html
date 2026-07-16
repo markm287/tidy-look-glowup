@@ -1016,31 +1016,47 @@ site-footer {
   grid-column: span 4;
   grid-row: span 4;
   background: var(--pearl);
-  justify-content: flex-end;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
 }
-#page-home .hl-badge {
-  width: 64px; height: 64px;
-  border: 1px solid rgba(45,53,54,0.2);
-  border-radius: 50%;
-  display: flex; align-items: center; justify-content: center;
+#page-home .tile-highlight-light::after {
+  content: "";
+  position: absolute;
+  left: 32px;
+  right: 32px;
+  bottom: 92px;
+  height: 1px;
+  background: rgba(45,53,54,0.15);
+}
+#page-home .hl-eyebrow {
   color: var(--ink);
-  font-size: 22px;
-  font-weight: 300;
-  align-self: flex-start;
+  opacity: 0.55;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  margin: 0;
 }
 #page-home .hl-title {
   color: var(--ink);
-  font-size: 38px;
+  font-size: 42px;
   font-weight: 800;
   letter-spacing: -0.02em;
-  line-height: 1;
-  margin: auto 0 12px;
+  line-height: 0.95;
+  margin: auto 0 14px;
+}
+#page-home .hl-title em {
+  font-style: italic;
+  font-weight: 400;
+  color: rgba(45,53,54,0.55);
 }
 #page-home .hl-desc {
   color: rgba(45,53,54,0.7);
   font-size: 13px;
   line-height: 1.55;
   margin: 0;
+  max-width: 260px;
 }
 
 #page-home .tile-highlight-dark {
@@ -1048,28 +1064,50 @@ site-footer {
   grid-row: span 4;
   background: var(--ink);
   border: 1px solid rgba(179,201,214,0.3);
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
 }
-#page-home .hl-icon {
-  color: var(--mist);
-  margin-bottom: 20px;
+#page-home .tile-highlight-dark::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 85% 15%, rgba(196,168,110,0.18), transparent 55%),
+    radial-gradient(circle at 15% 90%, rgba(179,201,214,0.10), transparent 60%);
+  pointer-events: none;
+}
+#page-home .tile-highlight-dark > * { position: relative; z-index: 1; }
+#page-home .hl-dark-eyebrow {
+  color: var(--gold-lt);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  margin: 0;
 }
 #page-home .hl-dark-title {
   color: var(--pearl);
-  font-size: 24px;
-  font-weight: 700;
+  font-size: 42px;
+  font-weight: 800;
+  font-style: normal;
+  letter-spacing: -0.02em;
+  line-height: 0.95;
+  margin: auto 0 14px;
+}
+#page-home .hl-dark-title em {
   font-style: italic;
-  margin: 0 0 12px;
+  font-weight: 400;
+  color: var(--gold-lt);
 }
 #page-home .hl-dark-desc {
-  color: var(--gold-lt);
+  color: var(--mist);
   font-size: 13px;
   line-height: 1.6;
-  max-width: 220px;
+  max-width: 260px;
   margin: 0;
 }
+
 
 #page-home .bento-intro {
   grid-column: span 12;
