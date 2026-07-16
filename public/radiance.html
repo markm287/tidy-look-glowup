@@ -1128,7 +1128,250 @@ site-footer {
   #page-home .bento-intro { grid-column: 1 / -1; grid-row: auto; }
   #page-home .services-list { grid-template-columns: 1fr; }
 }
+
+/* ══════════════ SOOT CINEMATIC — APPLIED TO ALL NON-HOME PAGES ══════════════ */
+.page:not(#page-home) {
+  background: var(--ink);
+  color: var(--pearl);
+  font-family: 'Nunito', 'Nunito Sans', 'Avenir Next', Avenir, sans-serif;
+}
+
+/* Logo inversion on dark hero */
+.page:not(#page-home) .about-hero > img { filter: brightness(0) invert(1); opacity: 0.95; }
+
+/* Hero band */
+.page:not(#page-home) .about-hero {
+  background: var(--ink);
+  border-bottom: 1px solid rgba(242,239,226,0.08);
+  padding: 88px 40px 72px;
+}
+.page:not(#page-home) .about-hero .hero-eyebrow { color: var(--gold-lt); letter-spacing: 0.4em; }
+.page:not(#page-home) .about-hero h1 {
+  font-family: 'Nunito', 'Avenir Next', sans-serif;
+  font-weight: 300;
+  color: var(--pearl);
+  letter-spacing: -0.02em;
+  font-size: clamp(40px, 5.6vw, 68px);
+  line-height: 1;
+}
+.page:not(#page-home) .about-hero h1 em { font-style: normal; font-weight: 800; color: var(--pearl); }
+.page:not(#page-home) .about-hero p { color: var(--mist); font-size: 15px; }
+
+/* About body */
+.page:not(#page-home) .about-body { color: var(--dust); }
+.page:not(#page-home) .about-section h2 {
+  font-family: 'Nunito', 'Avenir Next', sans-serif;
+  font-weight: 300;
+  color: var(--pearl);
+  letter-spacing: -0.01em;
+}
+.page:not(#page-home) .about-section h2 em { font-style: normal; font-weight: 800; color: var(--gold-lt); }
+.page:not(#page-home) .about-section p { color: var(--dust); }
+.page:not(#page-home) .about-section p strong { color: var(--pearl); }
+.page:not(#page-home) .about-divider { background: var(--gold-lt); }
+
+/* Values grid — bento-style dark tiles */
+.page:not(#page-home) .values-grid {
+  background: rgba(242,239,226,0.1);
+  border: 1px solid rgba(242,239,226,0.1);
+}
+.page:not(#page-home) .value-cell {
+  background: var(--ink);
+  border: 1px solid rgba(242,239,226,0.06);
+}
+.page:not(#page-home) .value-cell h4 { color: var(--gold-lt); }
+.page:not(#page-home) .value-cell p { color: var(--dust); }
+
+/* Location band */
+.page:not(#page-home) .location-band {
+  background: #232a2b;
+  border-top: 1px solid rgba(242,239,226,0.06);
+}
+.page:not(#page-home) .location-info h3 {
+  font-family: 'Nunito', 'Avenir Next', sans-serif;
+  font-weight: 300;
+  color: var(--pearl);
+}
+.page:not(#page-home) .location-info h3 em { font-style: normal; font-weight: 800; color: var(--gold-lt); }
+.page:not(#page-home) .location-detail-label { color: var(--gold-lt); }
+.page:not(#page-home) .location-detail-value,
+.page:not(#page-home) .location-detail-value a { color: var(--pearl); }
+.page:not(#page-home) .location-detail-value a:hover { color: var(--gold-lt); }
+.page:not(#page-home) .map-placeholder { border-color: rgba(242,239,226,0.1); background: var(--ink); }
+
+/* Providers */
+.page:not(#page-home) .providers-grid {
+  background: rgba(242,239,226,0.1);
+  border-color: rgba(242,239,226,0.1);
+}
+.page:not(#page-home) .provider-card { background: var(--ink); }
+.page:not(#page-home) .provider-photo {
+  background: rgba(242,239,226,0.06);
+  border-color: rgba(242,239,226,0.15);
+  color: var(--gold-lt);
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+}
+.page:not(#page-home) .provider-name {
+  font-family: 'Nunito', 'Avenir Next', sans-serif;
+  font-weight: 700;
+  color: var(--pearl);
+  letter-spacing: -0.01em;
+}
+.page:not(#page-home) .provider-cred { color: var(--gold-lt); }
+.page:not(#page-home) .provider-divider { background: rgba(242,239,226,0.12); }
+.page:not(#page-home) .provider-bio { color: var(--dust); }
+.page:not(#page-home) .specialty-tag {
+  color: var(--gold-lt);
+  background: transparent;
+  border-color: rgba(152,170,157,0.35);
+}
+
+/* Memberships */
+.page:not(#page-home) .tiers-grid {
+  background: rgba(242,239,226,0.1);
+  border-color: rgba(242,239,226,0.1);
+}
+.page:not(#page-home) .tier-card {
+  background: var(--ink);
+  color: var(--dust);
+}
+.page:not(#page-home) .tier-card.featured {
+  background: var(--pearl);
+  color: var(--ink);
+}
+.page:not(#page-home) .tier-badge { color: var(--gold-lt); }
+.page:not(#page-home) .tier-card.featured .tier-badge { color: var(--gold); }
+.page:not(#page-home) .tier-name {
+  font-family: 'Nunito', 'Avenir Next', sans-serif;
+  font-weight: 800;
+  color: var(--pearl);
+  letter-spacing: -0.01em;
+}
+.page:not(#page-home) .tier-card.featured .tier-name { color: var(--ink); }
+.page:not(#page-home) .tier-price { color: var(--gold-lt); }
+.page:not(#page-home) .tier-card.featured .tier-price { color: var(--gold); }
+.page:not(#page-home) .tier-divider { background: rgba(242,239,226,0.1); }
+.page:not(#page-home) .tier-card.featured .tier-divider { background: rgba(45,53,54,0.15); }
+.page:not(#page-home) .tier-perks li { color: var(--dust); border-bottom-color: rgba(242,239,226,0.08); }
+.page:not(#page-home) .tier-perks li strong { color: var(--pearl); }
+.page:not(#page-home) .tier-perks li::before { color: var(--gold-lt); }
+.page:not(#page-home) .tier-card.featured .tier-perks li { color: var(--ink); border-bottom-color: rgba(45,53,54,0.1); }
+.page:not(#page-home) .tier-card.featured .tier-perks li strong { color: var(--ink); }
+.page:not(#page-home) .tier-card.featured .tier-perks li::before { color: var(--gold); }
+.page:not(#page-home) .tier-note { color: var(--dust); opacity: 0.65; }
+.page:not(#page-home) .tier-card.featured .tier-note { color: var(--mid); opacity: 0.85; }
+.page:not(#page-home) .mem-note {
+  background: rgba(242,239,226,0.04);
+  border-left-color: var(--gold-lt);
+  color: var(--dust);
+}
+.page:not(#page-home) .mem-note strong { color: var(--pearl); }
+
+/* Pricing tabs & rows */
+.page:not(#page-home) .pricing-tabs { border-bottom-color: rgba(242,239,226,0.12); }
+.page:not(#page-home) .ptab-btn { color: var(--dust); }
+.page:not(#page-home) .ptab-btn:hover { color: var(--gold-lt); }
+.page:not(#page-home) .ptab-btn.active { color: var(--pearl); border-bottom-color: var(--gold-lt); }
+.page:not(#page-home) .category-label {
+  color: var(--gold-lt);
+  border-bottom-color: rgba(242,239,226,0.12);
+}
+.page:not(#page-home) .price-row { border-bottom-color: rgba(242,239,226,0.08); }
+.page:not(#page-home) .price-service { color: var(--pearl); }
+.page:not(#page-home) .price-detail { color: var(--dust); opacity: 0.7; }
+.page:not(#page-home) .price-amount {
+  font-family: 'Nunito', 'Avenir Next', sans-serif;
+  font-weight: 700;
+  color: var(--pearl);
+}
+.page:not(#page-home) .price-amount span { color: var(--dust); opacity: 0.7; }
+.page:not(#page-home) .pricing-note {
+  background: rgba(242,239,226,0.04);
+  border-left-color: var(--gold-lt);
+  color: var(--dust);
+}
+
+/* Packages */
+.page:not(#page-home) .pkg-card {
+  background: var(--ink);
+  border-color: rgba(242,239,226,0.12);
+}
+.page:not(#page-home) .pkg-card.signature { border-color: var(--gold-lt); }
+.page:not(#page-home) .pkg-card.signature::before {
+  background: var(--gold-lt);
+  color: var(--ink);
+}
+.page:not(#page-home) .pkg-name {
+  font-family: 'Nunito', 'Avenir Next', sans-serif;
+  font-weight: 800;
+  color: var(--pearl);
+  letter-spacing: -0.01em;
+}
+.page:not(#page-home) .pkg-tagline { color: var(--gold-lt); }
+.page:not(#page-home) .pkg-includes { color: var(--dust); opacity: 0.7; }
+.page:not(#page-home) .pkg-items li { color: var(--dust); border-bottom-color: rgba(242,239,226,0.06); }
+.page:not(#page-home) .pkg-items li::before { color: var(--gold-lt); }
+.page:not(#page-home) .pkg-pricing { border-top-color: rgba(242,239,226,0.12); }
+.page:not(#page-home) .pkg-price {
+  font-family: 'Nunito', 'Avenir Next', sans-serif;
+  font-weight: 800;
+  color: var(--pearl);
+}
+.page:not(#page-home) .pkg-savings { color: var(--gold-lt); }
+.page:not(#page-home) .pkg-retail { color: var(--dust); opacity: 0.5; }
+
+/* Boosters */
+.page:not(#page-home) .boosters-grid {
+  background: rgba(242,239,226,0.1);
+  border-color: rgba(242,239,226,0.1);
+}
+.page:not(#page-home) .booster-cell { background: var(--ink); }
+.page:not(#page-home) .booster-name { color: var(--pearl); }
+.page:not(#page-home) .booster-desc { color: var(--dust); opacity: 0.75; }
+.page:not(#page-home) .booster-price {
+  font-family: 'Nunito', 'Avenir Next', sans-serif;
+  font-weight: 800;
+  color: var(--gold-lt);
+  border-top-color: rgba(242,239,226,0.1);
+}
+
+/* Contact / intro / why bands (contact page) */
+.page:not(#page-home) .intro-band,
+.page:not(#page-home) .contact-band {
+  background: var(--ink);
+  color: var(--pearl);
+}
+.page:not(#page-home) .intro-band strong { color: var(--pearl); }
+.page:not(#page-home) .contact-band h2 {
+  font-family: 'Nunito', 'Avenir Next', sans-serif;
+  font-weight: 300;
+  color: var(--pearl);
+}
+.page:not(#page-home) .contact-band h2 em { font-style: normal; font-weight: 800; color: var(--gold-lt); }
+.page:not(#page-home) .contact-item-label { color: var(--gold-lt); }
+.page:not(#page-home) .contact-item-value,
+.page:not(#page-home) .contact-item-value a { color: var(--pearl); }
+.page:not(#page-home) .contact-item-value a:hover { color: var(--gold-lt); }
+
+/* Section title / eyebrow when embedded in dark pages */
+.page:not(#page-home) .section-eyebrow { color: var(--gold-lt); }
+.page:not(#page-home) .section-title {
+  font-family: 'Nunito', 'Avenir Next', sans-serif;
+  font-weight: 300;
+  color: var(--pearl);
+}
+.page:not(#page-home) .section-title em { font-style: normal; font-weight: 800; color: var(--gold-lt); }
+
+/* Buttons on dark pages */
+.page:not(#page-home) .btn-outline { border-color: var(--gold-lt); color: var(--gold-lt); }
+.page:not(#page-home) .btn-outline:hover { border-color: var(--pearl); color: var(--pearl); }
+
+/* Gold rule accent */
+.page:not(#page-home) .gold-rule { background: var(--gold-lt); }
+
 </style>
+
 </head>
 <body>
 
