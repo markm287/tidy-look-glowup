@@ -829,6 +829,273 @@ site-footer {
   .ptab-btn { padding: 12px 14px; font-size: 10px; }
   .pricing-page { padding: 32px 16px; }
 }
+
+/* ── ARCHITECTURAL HOME (scoped to #page-home) ── */
+#page-home .arch-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 82vh;
+  border-bottom: 1px solid rgba(45,53,54,0.12);
+  background: var(--pearl);
+}
+#page-home .arch-hero-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 72px;
+  background: var(--pearl);
+}
+#page-home .arch-brand {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin-bottom: 56px;
+}
+#page-home .arch-eyebrow {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 24px;
+}
+#page-home .arch-headline {
+  font-family: 'Nunito', sans-serif;
+  font-size: clamp(44px, 5.4vw, 76px);
+  font-weight: 300;
+  line-height: 1.05;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+  margin: 0 0 28px;
+  max-width: 560px;
+}
+#page-home .arch-headline em {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--gold);
+}
+#page-home .arch-sub {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.65;
+  color: rgba(45,53,54,0.82);
+  max-width: 460px;
+  margin: 0 0 40px;
+  letter-spacing: 0;
+  text-transform: none;
+}
+#page-home .arch-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 56px;
+}
+#page-home .arch-btn-solid {
+  background: var(--ink);
+  color: var(--pearl);
+  border: none;
+  padding: 16px 34px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+#page-home .arch-btn-solid:hover { background: var(--gold); transform: translateY(-1px); }
+#page-home .arch-btn-ghost {
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--ink);
+  padding: 16px 34px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+#page-home .arch-btn-ghost:hover { background: var(--ink); color: var(--pearl); }
+#page-home .arch-social {
+  display: flex;
+  gap: 18px;
+  padding-top: 32px;
+  border-top: 1px solid rgba(45,53,54,0.12);
+  width: fit-content;
+}
+#page-home .arch-social a {
+  width: 34px; height: 34px;
+  border: 1px solid var(--ink);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--ink);
+  transition: background 0.2s ease, color 0.2s ease;
+}
+#page-home .arch-social a:hover { background: var(--ink); color: var(--pearl); }
+#page-home .arch-hero-visual {
+  position: relative;
+  background: var(--mist);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 56px;
+  overflow: hidden;
+}
+#page-home .arch-visual-frame {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  background: var(--gold);
+  box-shadow: 0 40px 80px -30px rgba(45,53,54,0.35);
+  position: relative;
+  overflow: hidden;
+}
+#page-home .arch-visual-frame::after {
+  content: 'Precision · Aesthetic · Care';
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  color: rgba(242,239,226,0.55);
+  font-size: 11px;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+#page-home .arch-visual-shape {
+  position: absolute;
+  bottom: -64px;
+  right: -64px;
+  width: 128px;
+  height: 128px;
+  background: var(--pearl);
+  transform: rotate(45deg);
+  border: 1px solid rgba(45,53,54,0.08);
+}
+
+#page-home .arch-intro {
+  background: var(--pearl);
+  padding: 72px 72px;
+  border-bottom: 1px solid rgba(45,53,54,0.12);
+}
+#page-home .arch-intro p {
+  max-width: 780px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.7;
+  color: rgba(45,53,54,0.82);
+  letter-spacing: 0;
+  text-transform: none;
+  margin: 0;
+}
+#page-home .arch-intro strong { color: var(--ink); font-weight: 500; }
+
+#page-home .arch-services {
+  background: var(--pearl);
+  padding: 96px 72px;
+}
+#page-home .arch-services-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 32px;
+  margin-bottom: 56px;
+}
+#page-home .arch-services-title {
+  font-family: 'Nunito', sans-serif;
+  font-size: 34px;
+  font-weight: 300;
+  color: var(--ink);
+  margin: 0 0 12px;
+  font-style: italic;
+  text-decoration: underline;
+  text-decoration-color: var(--gold-lt);
+  text-underline-offset: 10px;
+  text-decoration-thickness: 1px;
+}
+#page-home .arch-services-desc {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  max-width: 460px;
+  line-height: 1.6;
+  margin: 0;
+}
+#page-home .arch-services-count {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.28em;
+  color: var(--ink);
+}
+#page-home .arch-services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-left: 1px solid rgba(45,53,54,0.12);
+  border-top: 1px solid rgba(45,53,54,0.12);
+}
+#page-home .arch-cell {
+  padding: 40px 32px;
+  border-right: 1px solid rgba(45,53,54,0.12);
+  border-bottom: 1px solid rgba(45,53,54,0.12);
+  background: var(--pearl);
+  cursor: pointer;
+  transition: background 0.25s ease;
+  position: relative;
+}
+#page-home .arch-cell:hover { background: rgba(179,201,214,0.22); }
+#page-home .arch-cell-num {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: var(--gold);
+  display: block;
+  margin-bottom: 32px;
+}
+#page-home .arch-cell-name {
+  font-family: 'Nunito', sans-serif;
+  font-size: 19px;
+  font-weight: 500;
+  color: var(--ink);
+  margin: 0 0 16px;
+  transition: transform 0.25s ease;
+}
+#page-home .arch-cell:hover .arch-cell-name { transform: translateX(4px); }
+#page-home .arch-cell-rule {
+  width: 32px;
+  height: 1px;
+  background: var(--gold-lt);
+  margin-bottom: 20px;
+  transition: width 0.35s ease;
+}
+#page-home .arch-cell:hover .arch-cell-rule { width: 100%; }
+#page-home .arch-cell-desc {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(45,53,54,0.7);
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  #page-home .arch-hero { grid-template-columns: 1fr; min-height: 0; }
+  #page-home .arch-hero-copy { padding: 56px 28px; }
+  #page-home .arch-hero-visual { padding: 32px; min-height: 420px; }
+  #page-home .arch-intro,
+  #page-home .arch-services { padding: 56px 28px; }
+  #page-home .arch-services-grid { grid-template-columns: repeat(2, 1fr); }
+  #page-home .arch-cell { padding: 28px 22px; }
+}
+@media (max-width: 520px) {
+  #page-home .arch-services-grid { grid-template-columns: 1fr; }
+}
 </style>
 </head>
 <body>
