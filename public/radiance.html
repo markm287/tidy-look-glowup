@@ -1016,31 +1016,47 @@ site-footer {
   grid-column: span 4;
   grid-row: span 4;
   background: var(--pearl);
-  justify-content: flex-end;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
 }
-#page-home .hl-badge {
-  width: 64px; height: 64px;
-  border: 1px solid rgba(45,53,54,0.2);
-  border-radius: 50%;
-  display: flex; align-items: center; justify-content: center;
+#page-home .tile-highlight-light::after {
+  content: "";
+  position: absolute;
+  left: 32px;
+  right: 32px;
+  bottom: 92px;
+  height: 1px;
+  background: rgba(45,53,54,0.15);
+}
+#page-home .hl-eyebrow {
   color: var(--ink);
-  font-size: 22px;
-  font-weight: 300;
-  align-self: flex-start;
+  opacity: 0.55;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  margin: 0;
 }
 #page-home .hl-title {
   color: var(--ink);
-  font-size: 38px;
+  font-size: 42px;
   font-weight: 800;
   letter-spacing: -0.02em;
-  line-height: 1;
-  margin: auto 0 12px;
+  line-height: 0.95;
+  margin: auto 0 14px;
+}
+#page-home .hl-title em {
+  font-style: italic;
+  font-weight: 400;
+  color: rgba(45,53,54,0.55);
 }
 #page-home .hl-desc {
   color: rgba(45,53,54,0.7);
   font-size: 13px;
   line-height: 1.55;
   margin: 0;
+  max-width: 260px;
 }
 
 #page-home .tile-highlight-dark {
@@ -1048,28 +1064,50 @@ site-footer {
   grid-row: span 4;
   background: var(--ink);
   border: 1px solid rgba(179,201,214,0.3);
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
 }
-#page-home .hl-icon {
-  color: var(--mist);
-  margin-bottom: 20px;
+#page-home .tile-highlight-dark::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 85% 15%, rgba(196,168,110,0.18), transparent 55%),
+    radial-gradient(circle at 15% 90%, rgba(179,201,214,0.10), transparent 60%);
+  pointer-events: none;
+}
+#page-home .tile-highlight-dark > * { position: relative; z-index: 1; }
+#page-home .hl-dark-eyebrow {
+  color: var(--gold-lt);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  margin: 0;
 }
 #page-home .hl-dark-title {
   color: var(--pearl);
-  font-size: 24px;
-  font-weight: 700;
+  font-size: 42px;
+  font-weight: 800;
+  font-style: normal;
+  letter-spacing: -0.02em;
+  line-height: 0.95;
+  margin: auto 0 14px;
+}
+#page-home .hl-dark-title em {
   font-style: italic;
-  margin: 0 0 12px;
+  font-weight: 400;
+  color: var(--gold-lt);
 }
 #page-home .hl-dark-desc {
-  color: var(--gold-lt);
+  color: var(--mist);
   font-size: 13px;
   line-height: 1.6;
-  max-width: 220px;
+  max-width: 260px;
   margin: 0;
 }
+
 
 #page-home .bento-intro {
   grid-column: span 12;
@@ -1479,19 +1517,18 @@ site-footer {
 
       <!-- Highlight Light -->
       <div class="tile tile-highlight-light">
-        <div class="hl-badge">01</div>
-        <h3 class="hl-title">Aesthetic<br>Precision</h3>
+        <p class="hl-eyebrow">Principle 01</p>
+        <h3 class="hl-title">Aesthetic<br><em>precision.</em></h3>
         <p class="hl-desc">Every injection and treatment is measured for anatomical balance and natural results.</p>
       </div>
 
       <!-- Highlight Dark -->
       <div class="tile tile-highlight-dark">
-        <div class="hl-icon">
-          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-        </div>
-        <h3 class="hl-dark-title">Physician Led</h3>
+        <p class="hl-dark-eyebrow">Principle 02</p>
+        <h3 class="hl-dark-title">Physician<br><em>led.</em></h3>
         <p class="hl-dark-desc">Medical-grade safety with luxury spa comfort at every visit.</p>
       </div>
+
 
       <!-- Intro band tile -->
       <div class="bento-intro">
