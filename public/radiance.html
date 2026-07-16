@@ -829,6 +829,273 @@ site-footer {
   .ptab-btn { padding: 12px 14px; font-size: 10px; }
   .pricing-page { padding: 32px 16px; }
 }
+
+/* ── ARCHITECTURAL HOME (scoped to #page-home) ── */
+#page-home .arch-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 82vh;
+  border-bottom: 1px solid rgba(45,53,54,0.12);
+  background: var(--pearl);
+}
+#page-home .arch-hero-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 72px;
+  background: var(--pearl);
+}
+#page-home .arch-brand {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin-bottom: 56px;
+}
+#page-home .arch-eyebrow {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 24px;
+}
+#page-home .arch-headline {
+  font-family: 'Nunito', sans-serif;
+  font-size: clamp(44px, 5.4vw, 76px);
+  font-weight: 300;
+  line-height: 1.05;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+  margin: 0 0 28px;
+  max-width: 560px;
+}
+#page-home .arch-headline em {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--gold);
+}
+#page-home .arch-sub {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.65;
+  color: rgba(45,53,54,0.82);
+  max-width: 460px;
+  margin: 0 0 40px;
+  letter-spacing: 0;
+  text-transform: none;
+}
+#page-home .arch-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 56px;
+}
+#page-home .arch-btn-solid {
+  background: var(--ink);
+  color: var(--pearl);
+  border: none;
+  padding: 16px 34px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+#page-home .arch-btn-solid:hover { background: var(--gold); transform: translateY(-1px); }
+#page-home .arch-btn-ghost {
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--ink);
+  padding: 16px 34px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+#page-home .arch-btn-ghost:hover { background: var(--ink); color: var(--pearl); }
+#page-home .arch-social {
+  display: flex;
+  gap: 18px;
+  padding-top: 32px;
+  border-top: 1px solid rgba(45,53,54,0.12);
+  width: fit-content;
+}
+#page-home .arch-social a {
+  width: 34px; height: 34px;
+  border: 1px solid var(--ink);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--ink);
+  transition: background 0.2s ease, color 0.2s ease;
+}
+#page-home .arch-social a:hover { background: var(--ink); color: var(--pearl); }
+#page-home .arch-hero-visual {
+  position: relative;
+  background: var(--mist);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 56px;
+  overflow: hidden;
+}
+#page-home .arch-visual-frame {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  background: var(--gold);
+  box-shadow: 0 40px 80px -30px rgba(45,53,54,0.35);
+  position: relative;
+  overflow: hidden;
+}
+#page-home .arch-visual-frame::after {
+  content: 'Precision · Aesthetic · Care';
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  color: rgba(242,239,226,0.55);
+  font-size: 11px;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+#page-home .arch-visual-shape {
+  position: absolute;
+  bottom: -64px;
+  right: -64px;
+  width: 128px;
+  height: 128px;
+  background: var(--pearl);
+  transform: rotate(45deg);
+  border: 1px solid rgba(45,53,54,0.08);
+}
+
+#page-home .arch-intro {
+  background: var(--pearl);
+  padding: 72px 72px;
+  border-bottom: 1px solid rgba(45,53,54,0.12);
+}
+#page-home .arch-intro p {
+  max-width: 780px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.7;
+  color: rgba(45,53,54,0.82);
+  letter-spacing: 0;
+  text-transform: none;
+  margin: 0;
+}
+#page-home .arch-intro strong { color: var(--ink); font-weight: 500; }
+
+#page-home .arch-services {
+  background: var(--pearl);
+  padding: 96px 72px;
+}
+#page-home .arch-services-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 32px;
+  margin-bottom: 56px;
+}
+#page-home .arch-services-title {
+  font-family: 'Nunito', sans-serif;
+  font-size: 34px;
+  font-weight: 300;
+  color: var(--ink);
+  margin: 0 0 12px;
+  font-style: italic;
+  text-decoration: underline;
+  text-decoration-color: var(--gold-lt);
+  text-underline-offset: 10px;
+  text-decoration-thickness: 1px;
+}
+#page-home .arch-services-desc {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  max-width: 460px;
+  line-height: 1.6;
+  margin: 0;
+}
+#page-home .arch-services-count {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.28em;
+  color: var(--ink);
+}
+#page-home .arch-services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-left: 1px solid rgba(45,53,54,0.12);
+  border-top: 1px solid rgba(45,53,54,0.12);
+}
+#page-home .arch-cell {
+  padding: 40px 32px;
+  border-right: 1px solid rgba(45,53,54,0.12);
+  border-bottom: 1px solid rgba(45,53,54,0.12);
+  background: var(--pearl);
+  cursor: pointer;
+  transition: background 0.25s ease;
+  position: relative;
+}
+#page-home .arch-cell:hover { background: rgba(179,201,214,0.22); }
+#page-home .arch-cell-num {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: var(--gold);
+  display: block;
+  margin-bottom: 32px;
+}
+#page-home .arch-cell-name {
+  font-family: 'Nunito', sans-serif;
+  font-size: 19px;
+  font-weight: 500;
+  color: var(--ink);
+  margin: 0 0 16px;
+  transition: transform 0.25s ease;
+}
+#page-home .arch-cell:hover .arch-cell-name { transform: translateX(4px); }
+#page-home .arch-cell-rule {
+  width: 32px;
+  height: 1px;
+  background: var(--gold-lt);
+  margin-bottom: 20px;
+  transition: width 0.35s ease;
+}
+#page-home .arch-cell:hover .arch-cell-rule { width: 100%; }
+#page-home .arch-cell-desc {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(45,53,54,0.7);
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  #page-home .arch-hero { grid-template-columns: 1fr; min-height: 0; }
+  #page-home .arch-hero-copy { padding: 56px 28px; }
+  #page-home .arch-hero-visual { padding: 32px; min-height: 420px; }
+  #page-home .arch-intro,
+  #page-home .arch-services { padding: 56px 28px; }
+  #page-home .arch-services-grid { grid-template-columns: repeat(2, 1fr); }
+  #page-home .arch-cell { padding: 28px 22px; }
+}
+@media (max-width: 520px) {
+  #page-home .arch-services-grid { grid-template-columns: 1fr; }
+}
 </style>
 </head>
 <body>
@@ -863,103 +1130,60 @@ site-footer {
 <!-- ══════════════ HOME PAGE ══════════════ -->
 <div id="page-home" class="page active">
 
-  <div class="hero">
-    <img src="/__l5e/assets-v1/dd56e400-700b-4fd0-b1d9-4504550b3881/radiance-logo.png" alt="Radiance Med Spa" style="height:140px;width:auto;display:block;margin:0 auto 28px;position:relative;z-index:1;">
-    <p class="hero-eyebrow">Medically Supervised Aesthetic Care · Chambersburg, PA</p>
-    
-    <h1>Elevate Your<br><em>Natural Radiance</em></h1>
-    <p class="hero-sub">Physician-overseen treatments delivered with clinical precision and a commitment to your individual results.</p>
-    <div class="hero-actions">
-      <button class="btn-primary" onclick="showPage('contact')">Book a Consultation</button>    <div class="social-links" style="margin-top:20px;">
-      <a class="social-link" href="https://m.facebook.com/profile.php?id=61584037294695" target="_blank" rel="noopener" style="color:#5a5a54;">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-        
-      </a>
-      <a class="social-link" href="https://www.instagram.com/radiancepa" target="_blank" rel="noopener" style="color:#5a5a54;">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-        
-      </a>
+  <div class="arch-hero">
+    <div class="arch-hero-copy">
+      <div class="arch-brand">Radiance Med Spa</div>
+      <p class="arch-eyebrow">Medically Supervised Aesthetic Care · Chambersburg, PA</p>
+      <h1 class="arch-headline">Elevate Your <em>Natural</em> Radiance</h1>
+      <p class="arch-sub">Physician-overseen treatments delivered with clinical precision and a commitment to your individual results.</p>
+      <div class="arch-actions">
+        <button class="arch-btn-solid" onclick="showPage('contact')">Book a Consultation</button>
+        <button class="arch-btn-ghost" onclick="showPage('pricing')">View Treatments</button>
+      </div>
+      <div class="arch-social">
+        <a href="https://m.facebook.com/profile.php?id=61584037294695" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/radiancepa" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+      </div>
     </div>
-      <button class="btn-outline" onclick="showPage('pricing')">View Treatments</button>
+    <div class="arch-hero-visual">
+      <div class="arch-visual-frame"></div>
+      <div class="arch-visual-shape"></div>
     </div>
-    <div class="gold-rule"></div>
   </div>
 
-  <div class="intro-band">
+  <div class="arch-intro">
     <p>At Radiance Med Spa, we believe exceptional aesthetic outcomes begin with <strong>exceptional clinical standards</strong>. Our medically supervised practice in Chambersburg, Pennsylvania offers a curated range of injectable, laser, and wellness treatments — each personalized to your goals, performed with precision, and supported by physician oversight at every step.</p>
   </div>
 
-  <div class="services-section">
-    <div class="section-header">
-      <p class="section-eyebrow">What We Offer</p>
-      <h2 class="section-title">Our <em>Services</em></h2>
-      <p class="section-desc">From injectables and energy-based treatments to medical wellness programs, our service menu is designed to deliver meaningful, lasting results.</p>
+  <div class="arch-services">
+    <div class="arch-services-header">
+      <div>
+        <h2 class="arch-services-title">Curated Treatments</h2>
+        <p class="arch-services-desc">Every procedure performed under physician oversight, dedicated to facial harmony and lasting results.</p>
+      </div>
+      <div class="arch-services-count">EXPLORE ALL [16]</div>
     </div>
-    <div class="services-grid">
-      <div class="service-cell">
-        <div class="service-cell-name">Neurotoxin</div>
-        <div class="service-cell-desc">Botox, Jeuveau, Xeomin & Dysport for lines, wrinkles, and facial contouring.</div>
-      </div>
-      <div class="service-cell">
-        <div class="service-cell-name">Dermal Filler</div>
-        <div class="service-cell-desc">Hyaluronic acid filler for lips, cheeks, jawline, chin, and tear troughs.</div>
-      </div>
-      <div class="service-cell">
-        <div class="service-cell-name">Sculptra & Radiesse</div>
-        <div class="service-cell-desc">Biostimulator treatments that rebuild collagen for long-lasting volume and skin quality.</div>
-      </div>
-      <div class="service-cell">
-        <div class="service-cell-name">RF Microneedling</div>
-        <div class="service-cell-desc">Radiofrequency microneedling for skin tightening, texture, and resurfacing on the face, neck, and body.</div>
-      </div>
-      <div class="service-cell">
-        <div class="service-cell-name">Non-Invasive RF</div>
-        <div class="service-cell-desc">Gentle, no-downtime radiofrequency for skin tightening and contouring on the face, neck, and body.</div>
-      </div>
-      <div class="service-cell">
-        <div class="service-cell-name">IPL Photofacial</div>
-        <div class="service-cell-desc">Intense pulsed light to address pigment, sun damage, redness, and overall clarity.</div>
-      </div>
-      <div class="service-cell">
-        <div class="service-cell-name">Laser Hair Removal</div>
-        <div class="service-cell-desc">Long-term hair reduction for face and body — small, medium, and large areas.</div>
-      </div>
-      <div class="service-cell">
-        <div class="service-cell-name">Spider Vein Treatment</div>
-        <div class="service-cell-desc">Laser vein treatment and sclerotherapy for leg and facial spider veins.</div>
-      </div>
-      <div class="service-cell">
-        <div class="service-cell-name">Chemical Peels</div>
-        <div class="service-cell-desc">Superficial and medium-depth peels for tone, texture, and radiance.</div>
-      </div>
-      <div class="service-cell">
-        <div class="service-cell-name">Glacé Facial</div>
-        <div class="service-cell-desc">Our signature luxury cryo-infusion facial, tailored to your skin's unique needs.</div>
-      </div>
-      <div class="service-cell">
-        <div class="service-cell-name">GLP-1 Programs</div>
-        <div class="service-cell-desc">Medically supervised Semaglutide and Tirzepatide weight management programs.</div>
-      </div>
-      <div class="service-cell">
-        <div class="service-cell-name">IV Therapy</div>
-        <div class="service-cell-desc">Hydration, vitamin infusion, and NAD+ drips for energy, recovery, and wellness.</div>
-      </div>
-      <div class="service-cell">
-        <div class="service-cell-name">Peptide Therapy</div>
-        <div class="service-cell-desc">Customized peptide protocols for recovery, anti-aging, and performance support.</div>
-      </div>
-      <div class="service-cell">
-        <div class="service-cell-name">Kybella</div>
-        <div class="service-cell-desc">Injectable fat reduction for the submental area and double chin.</div>
-      </div>
-      <div class="service-cell">
-        <div class="service-cell-name">LED Light Therapy</div>
-        <div class="service-cell-desc">Red, near-infrared, and blue light therapy for healing, collagen support, and clarity.</div>
-      </div>
-      <div class="service-cell">
-        <div class="service-cell-name">Microneedling</div>
-        <div class="service-cell-desc">Traditional collagen-induction microneedling with optional regenerative boosters.</div>
-      </div>
+    <div class="arch-services-grid">
+      <div class="arch-cell"><span class="arch-cell-num">01</span><h3 class="arch-cell-name">Neurotoxin</h3><div class="arch-cell-rule"></div><p class="arch-cell-desc">Botox, Jeuveau, Xeomin & Dysport for lines and facial contouring.</p></div>
+      <div class="arch-cell"><span class="arch-cell-num">02</span><h3 class="arch-cell-name">Dermal Filler</h3><div class="arch-cell-rule"></div><p class="arch-cell-desc">Hyaluronic acid filler for lips, cheeks, jawline, chin, and tear troughs.</p></div>
+      <div class="arch-cell"><span class="arch-cell-num">03</span><h3 class="arch-cell-name">Sculptra & Radiesse</h3><div class="arch-cell-rule"></div><p class="arch-cell-desc">Biostimulator treatments that rebuild collagen for long-lasting volume.</p></div>
+      <div class="arch-cell"><span class="arch-cell-num">04</span><h3 class="arch-cell-name">RF Microneedling</h3><div class="arch-cell-rule"></div><p class="arch-cell-desc">Radiofrequency microneedling for tightening on face, neck, and body.</p></div>
+      <div class="arch-cell"><span class="arch-cell-num">05</span><h3 class="arch-cell-name">Non-Invasive RF</h3><div class="arch-cell-rule"></div><p class="arch-cell-desc">Gentle, no-downtime radiofrequency for tightening and contouring.</p></div>
+      <div class="arch-cell"><span class="arch-cell-num">06</span><h3 class="arch-cell-name">IPL Photofacial</h3><div class="arch-cell-rule"></div><p class="arch-cell-desc">Intense pulsed light to address pigment, sun damage, and redness.</p></div>
+      <div class="arch-cell"><span class="arch-cell-num">07</span><h3 class="arch-cell-name">Laser Hair Removal</h3><div class="arch-cell-rule"></div><p class="arch-cell-desc">Long-term hair reduction for face and body — all treatment areas.</p></div>
+      <div class="arch-cell"><span class="arch-cell-num">08</span><h3 class="arch-cell-name">Spider Vein Treatment</h3><div class="arch-cell-rule"></div><p class="arch-cell-desc">Laser vein treatment and sclerotherapy for leg and facial veins.</p></div>
+      <div class="arch-cell"><span class="arch-cell-num">09</span><h3 class="arch-cell-name">Chemical Peels</h3><div class="arch-cell-rule"></div><p class="arch-cell-desc">Superficial and medium-depth peels for tone, texture, and radiance.</p></div>
+      <div class="arch-cell"><span class="arch-cell-num">10</span><h3 class="arch-cell-name">Glacé Facial</h3><div class="arch-cell-rule"></div><p class="arch-cell-desc">Our signature luxury cryo-infusion facial, tailored to your skin.</p></div>
+      <div class="arch-cell"><span class="arch-cell-num">11</span><h3 class="arch-cell-name">GLP-1 Programs</h3><div class="arch-cell-rule"></div><p class="arch-cell-desc">Medically supervised Semaglutide and Tirzepatide weight programs.</p></div>
+      <div class="arch-cell"><span class="arch-cell-num">12</span><h3 class="arch-cell-name">IV Therapy</h3><div class="arch-cell-rule"></div><p class="arch-cell-desc">Hydration, vitamin infusion, and NAD+ drips for energy and wellness.</p></div>
+      <div class="arch-cell"><span class="arch-cell-num">13</span><h3 class="arch-cell-name">Peptide Therapy</h3><div class="arch-cell-rule"></div><p class="arch-cell-desc">Customized peptide protocols for recovery and anti-aging support.</p></div>
+      <div class="arch-cell"><span class="arch-cell-num">14</span><h3 class="arch-cell-name">Kybella</h3><div class="arch-cell-rule"></div><p class="arch-cell-desc">Injectable fat reduction for the submental area and double chin.</p></div>
+      <div class="arch-cell"><span class="arch-cell-num">15</span><h3 class="arch-cell-name">LED Light Therapy</h3><div class="arch-cell-rule"></div><p class="arch-cell-desc">Red, near-infrared, and blue light therapy for healing and clarity.</p></div>
+      <div class="arch-cell"><span class="arch-cell-num">16</span><h3 class="arch-cell-name">Microneedling</h3><div class="arch-cell-rule"></div><p class="arch-cell-desc">Traditional collagen-induction microneedling with regenerative boosters.</p></div>
     </div>
   </div>
 
