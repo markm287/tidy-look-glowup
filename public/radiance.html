@@ -855,7 +855,11 @@ site-footer {
 #page-home .tile-brand .brand-logo {
   height: 200px;
   width: auto;
+  max-width: 100%;
   display: block;
+}
+@media (max-width: 700px) {
+  #page-home .tile-brand .brand-logo { height: 110px; }
 }
 #page-home .brand-sub {
   color: var(--ink);
