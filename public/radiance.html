@@ -1566,6 +1566,40 @@ body::after {
   #page-home .tile-hero .ring { animation: none; }
 }
 
+/* Stock photo band shared across pages */
+.photo-band {
+  max-width: 1180px;
+  margin: 40px auto 60px;
+  padding: 0 24px;
+}
+.photo-band figure {
+  margin: 0;
+  border: 1px solid rgba(242,239,226,0.14);
+  overflow: hidden;
+  background: #0f1414;
+}
+.photo-band img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+.photo-band figcaption {
+  padding: 14px 20px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(242,239,226,0.75);
+  border-top: 1px solid rgba(242,239,226,0.10);
+  background: rgba(255,255,255,0.02);
+}
+@media (max-width: 700px) {
+  .photo-band { margin: 24px auto 36px; padding: 0 16px; }
+  .photo-band figcaption { font-size: 11px; padding: 12px 14px; }
+}
+
 </style>
 
 </head>
