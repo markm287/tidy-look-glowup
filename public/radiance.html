@@ -2767,6 +2767,48 @@ body::after {
       closeMenu();
     }
   });
+
+  /* Cinematic wow: cursor-follow tile glow */
+  document.addEventListener('pointermove', (e) => {
+    const tile = e.target.closest && e.target.closest('.tile');
+    if (!tile) return;
+    const r = tile.getBoundingClientRect();
+    tile.style.setProperty('--mx', ((e.clientX - r.left) / r.width * 100) + '%');
+    tile.style.setProperty('--my', ((e.clientY - r.top) / r.height * 100) + '%');
+  });
+
+  /* Scroll reveal */
+  const revealSel = '.tile, .about-section, .section-title, .about-hero > *, .contact-band > *, .hl-title, .hl-dark-title, .diff-card, .provider-card, .plan-card, .price-row, .approach-item, .service-card';
+  const revealTargets = document.querySelectorAll(revealSel);
+  revealTargets.forEach(el => el.classList.add('reveal-init'));
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => {
+          entry.target.classList.remove('reveal-init');
+          entry.target.classList.add('reveal-in');
+        }, (i % 6) * 60);
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+  revealTargets.forEach(el => io.observe(el));
+
+  /* Re-run reveal when navigating between pages */
+  const _showPage = window.showPage;
+  if (typeof _showPage === 'function') {
+    window.showPage = function(name) {
+      _showPage(name);
+      requestAnimationFrame(() => {
+        document.querySelectorAll('.page.active ' + revealSel).forEach(el => {
+          if (!el.classList.contains('reveal-in')) {
+            el.classList.add('reveal-init');
+            io.observe(el);
+          }
+        });
+      });
+    };
+  }
 </script>
 
 </body>
