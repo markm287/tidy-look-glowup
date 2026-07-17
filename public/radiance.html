@@ -1566,6 +1566,40 @@ body::after {
   #page-home .tile-hero .ring { animation: none; }
 }
 
+/* Stock photo band shared across pages */
+.photo-band {
+  max-width: 1180px;
+  margin: 40px auto 60px;
+  padding: 0 24px;
+}
+.photo-band figure {
+  margin: 0;
+  border: 1px solid rgba(242,239,226,0.14);
+  overflow: hidden;
+  background: #0f1414;
+}
+.photo-band img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+.photo-band figcaption {
+  padding: 14px 20px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(242,239,226,0.75);
+  border-top: 1px solid rgba(242,239,226,0.10);
+  background: rgba(255,255,255,0.02);
+}
+@media (max-width: 700px) {
+  .photo-band { margin: 24px auto 36px; padding: 0 16px; }
+  .photo-band figcaption { font-size: 11px; padding: 12px 14px; }
+}
+
 </style>
 
 </head>
@@ -1696,6 +1730,13 @@ body::after {
     </div>
   </div>
 
+  <div class="photo-band">
+    <figure>
+      <img src="/images/facial-injections.jpg" alt="Radiance Med Spa patient receiving a precision facial injection" loading="lazy" width="1280" height="960">
+      <figcaption>Injectable artistry — measured, precise, natural</figcaption>
+    </figure>
+  </div>
+
   <div class="why-band">
     <div class="why-inner">
       <p class="section-eyebrow">Why Radiance</p>
@@ -1761,6 +1802,13 @@ body::after {
     <p class="hero-eyebrow">Our Story & Mission</p>
     <h1>About <em>Radiance</em></h1>
     <p>A medically supervised aesthetic practice built on the belief that clinical excellence and genuine care are inseparable.</p>
+  </div>
+
+  <div class="photo-band">
+    <figure>
+      <img src="/images/skincare-products.jpg" alt="Medical-grade skincare serum being applied at Radiance Med Spa" loading="lazy" width="1280" height="960">
+      <figcaption>Physician-dispensed skincare · Alastin · SkinBetter Science</figcaption>
+    </figure>
   </div>
 
   <div class="about-body">
@@ -1849,6 +1897,13 @@ body::after {
     <p class="hero-eyebrow">Meet the Team</p>
     <h1>Our <em>Providers</em></h1>
     <p>Experienced, credentialed aesthetic providers practicing under physician oversight — dedicated to your safety and your results.</p>
+  </div>
+
+  <div class="photo-band">
+    <figure>
+      <img src="/images/microneedling.jpg" alt="Microneedling treatment performed at Radiance Med Spa" loading="lazy" width="1280" height="960">
+      <figcaption>Advanced treatments performed by credentialed providers</figcaption>
+    </figure>
   </div>
 
   <div class="providers-page">
@@ -1946,6 +2001,13 @@ body::after {
     <p>Consistent treatments produce the best results. Our membership tiers reward loyalty with automatic savings on every service, every visit.</p>
   </div>
 
+  <div class="photo-band">
+    <figure>
+      <img src="/images/hydradermabrasion.jpg" alt="Hydradermabrasion facial at Radiance Med Spa" loading="lazy" width="1280" height="960">
+      <figcaption>Member savings on every facial, laser, and injectable visit</figcaption>
+    </figure>
+  </div>
+
   <div class="mem-page">
 
     <div class="section-header">
@@ -2023,6 +2085,13 @@ body::after {
     <p class="hero-eyebrow">Transparent Pricing</p>
     <h1>Treatments</h1>
     <p>Clear, defined pricing across all services. Members receive 10–20% off automatically at checkout.</p>
+  </div>
+
+  <div class="photo-band">
+    <figure>
+      <img src="/images/rf-microneedling.jpg" alt="RF microneedling treatment at Radiance Med Spa" loading="lazy" width="1280" height="960">
+      <figcaption>RF microneedling — collagen remodeling for face, neck, and body</figcaption>
+    </figure>
   </div>
 
   <div class="pricing-page">
@@ -2625,6 +2694,14 @@ body::after {
     <h1>Book a <em>Consultation</em></h1>
     <p>We would love to meet you. Reach out by phone or email to schedule your consultation — $50, fully credited toward any service you book.</p>
   </div>
+
+  <div class="photo-band">
+    <figure>
+      <img src="/images/non-invasive-rf.jpg" alt="Non-invasive radiofrequency skin tightening at Radiance Med Spa" loading="lazy" width="1280" height="960">
+      <figcaption>Comfortable, no-downtime skin tightening & contouring</figcaption>
+    </figure>
+  </div>
+
   <div class="location-band" style="background: var(--pearl); padding: 64px 40px;">
     <div class="location-inner" style="max-width: 800px;">
       <div class="location-info">
