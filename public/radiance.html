@@ -497,12 +497,14 @@ body {
 .pkg-items li::before { content: '·'; color: var(--gold); font-size: 16px; line-height: 1.2; }
 .pkg-pricing {
   display: flex;
+  flex-wrap: wrap;
   align-items: baseline;
   gap: 10px;
   margin-top: 16px;
   padding-top: 16px;
   border-top: 1px solid var(--dust);
 }
+
 .pkg-price { font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 400; color: var(--ink); }
 .pkg-savings { font-size: 11px; color: var(--sage); font-weight: 400; }
 .pkg-retail { font-size: 11px; color: #aaa; text-decoration: line-through; margin-left: auto; }
