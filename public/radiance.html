@@ -892,13 +892,15 @@ site-footer {
 
 
 #page-home .tile-social {
-  grid-column: span 4;
-  order: 99;
+  grid-column: 9 / span 4;
+  grid-row: span 2;
   background: var(--gold);
   cursor: pointer;
   justify-content: space-between;
   transition: filter 0.25s ease;
 }
+
+
 #page-home .tile-social:hover { filter: brightness(1.08); }
 #page-home .tile-social .social-row { display: flex; justify-content: flex-end; gap: 14px; color: var(--pearl); }
 #page-home .tile-social .social-row a { color: var(--pearl); display: inline-flex; }
@@ -994,10 +996,14 @@ site-footer {
 
 #page-home .tile-services {
   grid-column: span 4;
-  grid-row: span 4;
+  grid-row: span 3;
   background: var(--ink);
   border: 1px solid rgba(242,239,226,0.12);
+  padding-bottom: 24px;
+  justify-content: flex-start;
 }
+
+
 #page-home .services-heading {
   color: var(--pearl);
   font-size: 18px;
@@ -1662,18 +1668,7 @@ body::after {
       </div>
 
 
-      <!-- Social -->
-      <div class="tile tile-social" onclick="window.open('https://www.instagram.com/radiancepa','_blank')">
-        <div class="social-row">
-          <a href="https://m.facebook.com/profile.php?id=61584037294695" target="_blank" rel="noopener" aria-label="Facebook" onclick="event.stopPropagation();">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-          </a>
-          <a href="https://www.instagram.com/radiancepa" target="_blank" rel="noopener" aria-label="Instagram" onclick="event.stopPropagation();">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-          </a>
-        </div>
-        <div class="social-caption">Follow our work</div>
-      </div>
+
 
       <!-- Hero -->
       <div class="tile tile-hero">
@@ -1737,6 +1732,21 @@ body::after {
         <h3 class="hl-dark-title">Physician<br><em>led.</em></h3>
         <p class="hl-dark-desc">Medical-grade safety with luxury spa comfort at every visit.</p>
       </div>
+
+      <!-- Social (under Physician-led) -->
+      <div class="tile tile-social" onclick="window.open('https://www.instagram.com/radiancepa','_blank')">
+        <div class="social-row">
+          <a href="https://m.facebook.com/profile.php?id=61584037294695" target="_blank" rel="noopener" aria-label="Facebook" onclick="event.stopPropagation();">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/radiancepa" target="_blank" rel="noopener" aria-label="Instagram" onclick="event.stopPropagation();">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+        </div>
+        <div class="social-caption">Follow our work</div>
+      </div>
+
+
 
 
       <!-- Intro band tile -->
@@ -1891,11 +1901,20 @@ body::after {
         <div class="location-detail">
           <div class="location-detail-label">Hours</div>
           <div class="location-detail-value">
-            Monday – Friday: 9am – 5pm<br>
-            Saturday: By appointment<br>
-            Sunday: Closed
+            <strong>By appointment only</strong>
           </div>
         </div>
+        <div class="location-detail">
+          <div class="location-detail-label">Scheduled Hours (Starting November 2026)</div>
+          <div class="location-detail-value">
+            Monday, Thursday, Friday: 9am – 4pm<br>
+            Tuesday, Wednesday: 12pm – 7pm<br>
+            Saturday: 8am – 12pm (first Saturday of the month only)<br>
+            Sunday: Closed<br>
+            <em style="color:var(--gold-lt);">Additional appointment times available if necessary</em>
+          </div>
+        </div>
+
       </div>
       <a class="map-placeholder" href="https://www.google.com/maps/search/?api=1&query=Radiance+Med+Spa+Chambersburg%2C+PA" target="_blank" rel="noopener" aria-label="Open location in Google Maps" style="text-decoration:none;color:inherit;cursor:pointer;padding:0;overflow:hidden;position:relative;display:block;">
         <iframe src="https://maps.google.com/maps?q=Radiance+Med+Spa+Chambersburg+PA&z=14&output=embed" style="border:0;width:100%;height:100%;position:absolute;inset:0;pointer-events:none;" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map of Radiance Med Spa"></iframe>
