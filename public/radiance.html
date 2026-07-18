@@ -2898,12 +2898,12 @@ body::after {
     // Update desktop nav
     document.querySelectorAll('.nav-links .nav-btn').forEach(b => {
       b.classList.remove('active');
-      const t = b.textContent.toLowerCase();
+      const t = b.textContent.trim().toLowerCase();
       if (
         (id === 'home' && t === 'home') ||
         (id === 'about' && t === 'about') ||
         (id === 'providers' && t === 'providers') ||
-        (id === 'memberships' && t === 'memberships') ||
+        (id === 'memberships' && t === 'vip') ||
         (id === 'pricing' && t.includes('treatment'))
       ) b.classList.add('active');
     });
@@ -2911,15 +2911,16 @@ body::after {
     // Update mobile drawer
     document.querySelectorAll('.mobile-drawer .nav-btn').forEach(b => {
       b.classList.remove('active');
-      const t = b.textContent.toLowerCase();
+      const t = b.textContent.trim().toLowerCase();
       if (
         (id === 'home' && t === 'home') ||
         (id === 'about' && t === 'about') ||
         (id === 'providers' && t === 'providers') ||
-        (id === 'memberships' && t === 'memberships') ||
+        (id === 'memberships' && t === 'vip') ||
         (id === 'pricing' && t.includes('treatment'))
       ) b.classList.add('active');
     });
+
 
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
