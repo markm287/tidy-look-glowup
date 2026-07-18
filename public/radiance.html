@@ -1484,17 +1484,11 @@ body::after {
   letter-spacing: -0.04em;
 }
 #page-home .hero-title strong {
-  background: linear-gradient(100deg, var(--pearl) 0%, var(--pearl) 40%, #fff8dc 50%, var(--pearl) 60%, var(--pearl) 100%);
-  background-size: 200% 100%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: shimmer 6s ease-in-out infinite;
+  color: var(--pearl);
+  -webkit-text-fill-color: var(--pearl);
+  background: none;
 }
-@keyframes shimmer {
-  0%, 100% { background-position: 100% 0; }
-  50%      { background-position: 0 0; }
-}
+
 #page-home .tile-hero .ring {
   animation: ringFloat 12s ease-in-out infinite;
 }
