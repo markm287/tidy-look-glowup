@@ -3093,6 +3093,68 @@ body::after {
       });
     };
   }
+
+  /* Scroll progress bar */
+  (function(){
+    const bar = document.getElementById('wow-scroll-bar');
+    if (!bar) return;
+    const update = () => {
+      const h = document.documentElement;
+      const max = h.scrollHeight - h.clientHeight;
+      const pct = max > 0 ? (h.scrollTop / max) * 100 : 0;
+      bar.style.width = pct + '%';
+    };
+    document.addEventListener('scroll', update, { passive: true });
+    update();
+  })();
+
+  /* Magnetic hover for CTAs */
+  document.querySelectorAll('.nav-cta, .tile-cta, .btn-primary').forEach(el => {
+    el.addEventListener('pointermove', (e) => {
+      const r = el.getBoundingClientRect();
+      const x = (e.clientX - r.left - r.width/2) * 0.15;
+      const y = (e.clientY - r.top - r.height/2) * 0.15;
+      el.style.transform = `translate(${x}px, ${y}px) scale(1.02)`;
+    });
+    el.addEventListener('pointerleave', () => { el.style.transform = ''; });
+  });
+
+  /* Animated counters */
+  (function(){
+    const nums = document.querySelectorAll('.wow-stat .num');
+    if (!nums.length) return;
+    const animateNum = (el) => {
+      const target = parseFloat(el.dataset.count || '0');
+      const suffix = el.dataset.suffix || '';
+      const plain = el.dataset.plain === '1';
+      const dur = 1600;
+      const start = performance.now();
+      const step = (t) => {
+        const p = Math.min((t - start) / dur, 1);
+        const eased = 1 - Math.pow(1 - p, 3);
+        const v = Math.round(target * eased);
+        el.textContent = plain ? v : v + suffix;
+        if (p < 1) requestAnimationFrame(step);
+      };
+      requestAnimationFrame(step);
+    };
+    const cio = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { animateNum(e.target); cio.unobserve(e.target); }
+      });
+    }, { threshold: 0.4 });
+    nums.forEach(n => cio.observe(n));
+  })();
+
+  /* Parallax on hero brand logo */
+  (function(){
+    const logo = document.querySelector('#page-home .brand-logo');
+    if (!logo) return;
+    document.addEventListener('scroll', () => {
+      const y = Math.min(window.scrollY, 400);
+      logo.style.transform = `translateY(${y * 0.12}px)`;
+    }, { passive: true });
+  })();
 </script>
 
 </body>
