@@ -2842,7 +2842,7 @@ body::after {
   });
 
   /* Scroll reveal */
-  const revealSel = '.tile, .about-section, .section-title, .about-hero > *, .contact-band > *, .hl-title, .hl-dark-title, .diff-card, .provider-card, .plan-card, .price-row, .approach-item, .service-card';
+  const revealSel = '.tile, .about-section, .section-title, .about-hero > *, .contact-band > *, .hl-title, .hl-dark-title, .diff-card, .provider-card, .plan-card, .price-row, .approach-item, .service-card, .location-info, .photo-band';
   const revealTargets = document.querySelectorAll(revealSel);
   revealTargets.forEach(el => el.classList.add('reveal-init'));
   const io = new IntersectionObserver((entries) => {
