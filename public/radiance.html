@@ -1673,61 +1673,7 @@ body::after {
 .photo-band figure.reveal-in img { transform: scale(1.08); }
 
 /* Magnetic-look CTA scale + glow */
-.nav-cta, .tile-cta, .btn-primary, .btn-secondary {
-  transition: transform 0.4s cubic-bezier(.2,.7,.2,1), box-shadow 0.4s ease, letter-spacing 0.4s ease;
-}
-.nav-cta:hover, .tile-cta:hover, .btn-primary:hover, .btn-secondary:hover {
-  transform: translateY(-2px) scale(1.02);
-  box-shadow: 0 20px 50px -20px rgba(152,170,157,0.55);
-  letter-spacing: 0.22em;
-}
 
-/* Marquee treatment ticker */
-.wow-marquee {
-  max-width: 1180px;
-  margin: 0 auto 40px;
-  padding: 18px 0;
-  border-top: 1px solid rgba(242,239,226,0.10);
-  border-bottom: 1px solid rgba(242,239,226,0.10);
-  overflow: hidden;
-  position: relative;
-  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
-}
-.wow-marquee-track {
-  display: flex;
-  gap: 60px;
-  width: max-content;
-  animation: marqueeSlide 38s linear infinite;
-  font-family: 'Cormorant Garamond', serif;
-  font-style: italic;
-  font-size: 26px;
-  color: rgba(242,239,226,0.72);
-  white-space: nowrap;
-}
-.wow-marquee-track span::before {
-  content: '✦';
-  color: var(--gold, #a97a3f);
-  margin-right: 60px;
-  font-style: normal;
-  font-size: 18px;
-  vertical-align: middle;
-}
-@keyframes marqueeSlide {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
-}
-
-/* Stats band with animated counters */
-.wow-stats {
-  max-width: 1180px;
-  margin: 20px auto 60px;
-  padding: 40px 24px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
-  border-top: 1px solid rgba(242,239,226,0.10);
-  border-bottom: 1px solid rgba(242,239,226,0.10);
-}
 .wow-stat {
   text-align: center;
   color: var(--pearl, #f2efe2);
