@@ -1353,9 +1353,22 @@ site-footer {
 /* Packages */
 .page:not(#page-home) .pkg-card {
   background: var(--ink);
-  border-color: rgba(242,239,226,0.12);
+  border-color: var(--gold-lt);
 }
 .page:not(#page-home) .pkg-card.signature { border-color: var(--gold-lt); }
+.page:not(#page-home) .pkg-vip {
+  flex-basis: 100%;
+  font-size: 12px;
+  color: var(--gold-lt);
+  margin-top: 6px;
+  letter-spacing: 0.02em;
+}
+.page:not(#page-home) .pkg-vip strong {
+  font-family: 'Nunito', 'Avenir Next', sans-serif;
+  font-weight: 800;
+  color: var(--pearl);
+}
+
 .page:not(#page-home) .pkg-card.signature::before {
   background: var(--gold-lt);
   color: var(--ink);
