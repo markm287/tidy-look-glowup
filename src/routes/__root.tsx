@@ -80,6 +80,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { title: "Radiance Med Spa — Chambersburg, PA" },
       { name: "description", content: "Radiance Med Spa in Chambersburg, PA — refined aesthetic treatments, injectables, and skin care in an elegant setting." },
       { name: "author", content: "Lovable" },
+      { name: "google-site-verification", content: "OygmQAdWWaQAW4YI3ZqUknubsD48TC3ps5q-0NDWWPc" },
       { property: "og:title", content: "Radiance Med Spa — Chambersburg, PA" },
       { property: "og:description", content: "Radiance Med Spa in Chambersburg, PA — refined aesthetic treatments, injectables, and skin care in an elegant setting." },
       { property: "og:type", content: "website" },
