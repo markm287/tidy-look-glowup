@@ -24,15 +24,18 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   return (
-    <iframe
-      src="/radiance.html"
-      title="Radiance Med Spa"
-      style={{
-        border: "none",
-        width: "100vw",
-        height: "100vh",
-        display: "block",
-      }}
-    />
+    <>
+      <style>{`
+        html, body { margin: 0; height: 100%; overflow: hidden; overscroll-behavior: none; }
+        .radiance-frame {
+          border: 0;
+          display: block;
+          width: 100vw;
+          height: 100vh;
+          height: 100dvh;
+        }
+      `}</style>
+      <iframe src="/radiance.html" title="Radiance Med Spa" className="radiance-frame" />
+    </>
   );
 }
