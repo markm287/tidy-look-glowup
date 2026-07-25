@@ -1,0 +1,14 @@
+# Radiance Med Spa
+
+> Physician-led medical spa in Chambersburg, PA offering injectables, laser, RF microneedling, facials, IV therapy, and skincare.
+
+Radiance Med Spa provides medically supervised aesthetic care with an emphasis on natural, refined results. Treatments are delivered by licensed providers under physician oversight.
+
+## Pages
+
+- [Home](/): Overview of Radiance Med Spa and services.
+- [About](/#about): Practice philosophy, values, and location.
+- [Providers](/#providers): Meet the clinical team.
+- [VIP](/#memberships): VIP membership tiers and benefits.
+- [Treatments](/#pricing): Full treatment menu with pricing — injectables, devices, wellness, facials, packages, and boosters.
+- [Book a Consultation](/#contact): Booking info, hours, and contact details.
