@@ -1548,14 +1548,7 @@ body::after {
 
 /* Inner-page hero: cinematic watermark + gold hairline */
 .page:not(#page-home) .about-hero { isolation: isolate; }
-.page:not(#page-home) .about-hero::after {
-  content: '';
-  position: absolute;
-  left: 50%; top: 0; transform: translateX(-50%);
-  width: 68px; height: 1px;
-  background: var(--gold-lt);
-  opacity: 0.7;
-}
+.page:not(#page-home) .about-hero::after { content: none; }
 .page:not(#page-home) .about-hero > * { position: relative; z-index: 1; }
 .page:not(#page-home) .about-hero::before { content: none; }
 
