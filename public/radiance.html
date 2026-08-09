@@ -3070,15 +3070,8 @@ body::after {
 
 
 
-  /* Parallax on hero brand logo */
-  (function(){
-    const logo = document.querySelector('#page-home .brand-logo');
-    if (!logo) return;
-    document.addEventListener('scroll', () => {
-      const y = Math.min(window.scrollY, 400);
-      logo.style.transform = `translateY(${y * 0.12}px)`;
-    }, { passive: true });
-  })();
+
+
 </script>
 
 </body>
