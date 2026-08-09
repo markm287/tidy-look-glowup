@@ -1697,14 +1697,8 @@ body::after {
   box-shadow: 0 0 12px rgba(169,122,63,0.6);
 }
 
-/* Gentle floating for brand logo */
-#page-home .brand-logo {
-  animation: brandFloat 9s ease-in-out infinite;
-}
-@keyframes brandFloat {
-  0%,100% { transform: translateY(0); }
-  50%     { transform: translateY(-6px); }
-}
+/* Brand logo stays still */
+
 
 @media (prefers-reduced-motion: reduce) {
   #page-home .tile-hero::before,
