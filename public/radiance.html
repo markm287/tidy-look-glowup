@@ -41,7 +41,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  height: 60px;
+  min-height: 60px;
   z-index: 100;
   background: var(--ink);
   display: flex;
@@ -64,7 +64,7 @@ body {
 .nav-links {
   display: flex;
   gap: 0;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 .nav-btn {
   background: none;
@@ -74,7 +74,6 @@ body {
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.18em;
-  line-height: 1;
   text-transform: uppercase;
   padding: 22px 20px;
   cursor: pointer;
