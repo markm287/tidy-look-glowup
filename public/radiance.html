@@ -25,6 +25,18 @@ a[href^="tel:"], a[href^="mailto:"] { color: inherit; text-decoration: none; -we
 }
 
 html { scroll-behavior: smooth; }
+html, body { height: 100%; overflow: hidden; }
+
+/* Inner scroll surface: rubber-band happens here, header never moves */
+#page-scroll {
+  position: fixed;
+  inset: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+
 
 body {
   background: var(--pearl);
@@ -3063,17 +3075,42 @@ body::after {
     };
   }
 
+  /* Move page content into an inner scroll container so rubber-band
+     overscroll happens inside it and never moves the fixed header */
+  (function(){
+    if (document.getElementById('page-scroll')) return;
+    const nav = document.querySelector('.site-nav');
+    const drawer = document.getElementById('mobile-drawer');
+    const bar = document.getElementById('wow-scroll-bar');
+    const keep = new Set([nav, drawer, bar]);
+    const wrap = document.createElement('div');
+    wrap.id = 'page-scroll';
+    const kids = Array.from(document.body.childNodes);
+    document.body.appendChild(wrap);
+    kids.forEach(n => {
+      if (keep.has(n)) return;
+      if (n.nodeType === 1 && (n.tagName === 'SCRIPT' || n.tagName === 'STYLE')) return;
+      wrap.appendChild(n);
+    });
+    window.__scroller = wrap;
+    const nativeScrollTo = window.scrollTo.bind(window);
+    window.scrollTo = function(opts){
+      if (opts && typeof opts === 'object') wrap.scrollTo(opts);
+      else wrap.scrollTo({ top: arguments[1] || 0 });
+    };
+  })();
+
   /* Scroll progress bar */
   (function(){
     const bar = document.getElementById('wow-scroll-bar');
+    const sc = window.__scroller || document.documentElement;
     if (!bar) return;
     const update = () => {
-      const h = document.documentElement;
-      const max = h.scrollHeight - h.clientHeight;
-      const pct = max > 0 ? (h.scrollTop / max) * 100 : 0;
+      const max = sc.scrollHeight - sc.clientHeight;
+      const pct = max > 0 ? (sc.scrollTop / max) * 100 : 0;
       bar.style.width = pct + '%';
     };
-    document.addEventListener('scroll', update, { passive: true });
+    sc.addEventListener('scroll', update, { passive: true });
     update();
   })();
 
@@ -3091,6 +3128,7 @@ body::after {
     sync();
     window.addEventListener('resize', sync);
   })();
+
 
 </script>
 
