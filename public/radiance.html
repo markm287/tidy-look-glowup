@@ -41,6 +41,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
+  height: 60px;
   z-index: 100;
   background: var(--ink);
   display: flex;
@@ -49,6 +50,7 @@ body {
   padding: 0 32px;
   border-bottom: 1px solid rgba(255,255,255,0.06);
 }
+.nav-spacer { height: 60px; }
 .nav-logo {
   font-family: 'Cormorant Garamond', serif;
   font-size: 20px;
@@ -62,7 +64,7 @@ body {
 .nav-links {
   display: flex;
   gap: 0;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 .nav-btn {
   background: none;
@@ -72,6 +74,7 @@ body {
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.18em;
+  line-height: 1;
   text-transform: uppercase;
   padding: 22px 20px;
   cursor: pointer;
@@ -794,7 +797,7 @@ site-footer {
 .mobile-drawer {
   display: none;
   position: fixed;
-  top: 57px;
+  top: 60px;
   left: 0; right: 0;
   background: var(--ink);
   border-top: 1px solid rgba(255,255,255,0.08);
@@ -1749,6 +1752,7 @@ body::after {
     <span></span><span></span><span></span>
   </button>
 </nav>
+<div class="nav-spacer"></div>
 <div class="wow-scroll-bar" id="wow-scroll-bar"></div>
 
 <!-- ══════════════ MOBILE DRAWER ══════════════ -->
