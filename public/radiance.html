@@ -3077,10 +3077,20 @@ body::after {
     update();
   })();
 
-
-
-
-
+  /* Keep nav spacer + drawer aligned with fixed nav height */
+  (function(){
+    const nav = document.querySelector('.site-nav');
+    const spacer = document.querySelector('.nav-spacer');
+    const drawer = document.getElementById('mobile-drawer');
+    function sync() {
+      if (!nav) return;
+      const h = nav.offsetHeight + 'px';
+      if (spacer) spacer.style.height = h;
+      if (drawer) drawer.style.top = h;
+    }
+    sync();
+    window.addEventListener('resize', sync);
+  })();
 
 </script>
 
