@@ -1700,18 +1700,6 @@ body::after {
 
 
 
-/* Scroll progress bar */
-.wow-scroll-bar {
-  position: fixed;
-  top: 0; left: 0;
-  height: 2px;
-  width: 0%;
-  background: linear-gradient(90deg, transparent, #a97a3f 40%, #f7f3ec 100%);
-  z-index: 10000;
-  pointer-events: none;
-  transition: width 0.1s linear;
-  box-shadow: 0 0 12px rgba(169,122,63,0.6);
-}
 
 /* Brand logo stays still */
 
@@ -1764,7 +1752,7 @@ body::after {
   </button>
 </nav>
 <div class="nav-spacer"></div>
-<div class="wow-scroll-bar" id="wow-scroll-bar"></div>
+
 
 <!-- ══════════════ MOBILE DRAWER ══════════════ -->
 <div class="mobile-drawer" id="mobile-drawer">
@@ -3083,8 +3071,7 @@ body::after {
     if (document.getElementById('page-scroll')) return;
     const nav = document.querySelector('.site-nav');
     const drawer = document.getElementById('mobile-drawer');
-    const bar = document.getElementById('wow-scroll-bar');
-    const keep = new Set([nav, drawer, bar]);
+    const keep = new Set([nav, drawer]);
     const wrap = document.createElement('div');
     wrap.id = 'page-scroll';
     const kids = Array.from(document.body.childNodes);
@@ -3102,19 +3089,6 @@ body::after {
     };
   })();
 
-  /* Scroll progress bar */
-  (function(){
-    const bar = document.getElementById('wow-scroll-bar');
-    const sc = window.__scroller || document.documentElement;
-    if (!bar) return;
-    const update = () => {
-      const max = sc.scrollHeight - sc.clientHeight;
-      const pct = max > 0 ? (sc.scrollTop / max) * 100 : 0;
-      bar.style.width = pct + '%';
-    };
-    sc.addEventListener('scroll', update, { passive: true });
-    update();
-  })();
 
   /* Keep nav spacer + drawer aligned with fixed nav height */
   (function(){
