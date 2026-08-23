@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tidy-look-glowup.lovable.app/sitemap.xml
+Sitemap: https://radiancepa.com/sitemap.xml
