@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import "@tanstack/start-client-core";
 
-const BASE_URL = "https://tidy-look-glowup.lovable.app";
+const BASE_URL = "https://radiancepa.com";
 
 interface SitemapEntry {
   path: string;
