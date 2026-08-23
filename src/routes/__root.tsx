@@ -85,12 +85,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:description", content: "Physician-led med spa in Chambersburg, PA. Botox, microneedling, laser hair removal, RF, chemical peels, skincare, weight loss, peptides & GLP." },
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "Radiance Med Spa" },
-      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/115c1b1e-58ff-411d-99ce-8365134417f8" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@Lovable" },
       { name: "twitter:title", content: "Radiance Med Spa — Aesthetic & Wellness Services in Chambersburg, PA" },
       { name: "twitter:description", content: "Physician-led med spa in Chambersburg, PA. Botox, microneedling, laser hair removal, RF, chemical peels, skincare, weight loss, peptides & GLP." },
-      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/115c1b1e-58ff-411d-99ce-8365134417f8" },
     ],
     links: [
       {
