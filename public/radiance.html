@@ -1740,20 +1740,212 @@ body::after {
 .booster-price { font-size: 20px; }
 </style>
 
+<!-- ══════════════ EDITORIAL LAYER ══════════════ -->
+<style>
+/* ── Typography register ── */
+h1, h2, h3, .section-title, .cta-title, .hl-title, .hl-dark-title, .tier-name,
+.contact-band h2, .about-hero h1, .fh-hero-title {
+  font-family: 'Hunter', 'Cormorant Garamond', serif !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+}
+.section-title em, .contact-band h2 em, .about-hero h1 em,
+.hl-title em, .hl-dark-title em, .tier-name em { font-style: normal !important; }
+.section-eyebrow, .hero-eyebrow, .cta-eyebrow, .contact-item-label, .tier-badge,
+.brand-sub, .services-heading, .why-item h4 {
+  font-family: 'Nunito', sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.3em !important;
+  text-transform: uppercase !important;
+}
+
+/* ── Nav: links left, wordmark centered, CTA block right ── */
+.site-nav {
+  min-height: 68px;
+  padding: 0 0 0 32px;
+  background: var(--ink);
+  border-bottom: 1px solid rgba(230,235,233,0.12);
+}
+.nav-spacer { height: 68px; }
+.site-nav .nav-logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.nav-btn {
+  font-size: 11px;
+  letter-spacing: 0.24em;
+  padding: 24px 18px;
+  border-bottom: none;
+  color: var(--pearl);
+  opacity: 0.72;
+}
+.nav-btn:hover { opacity: 1; color: var(--pearl); }
+.nav-btn.active { opacity: 1; color: var(--pearl); border-bottom: none; text-decoration: underline; text-underline-offset: 7px; text-decoration-thickness: 1px; text-decoration-color: var(--yarmouth); }
+.nav-cta-corner {
+  margin-left: auto;
+  align-self: stretch;
+  background: var(--pearl);
+  color: var(--ink);
+  font-size: 11px;
+  letter-spacing: 0.26em;
+  padding: 0 34px;
+  border-left: 1px solid rgba(230,235,233,0.12);
+}
+.nav-cta-corner:hover { background: var(--yarmouth); }
+@media (max-width: 960px) {
+  .site-nav { padding: 0 16px; }
+  .nav-cta-corner { display: none; }
+}
+
+/* ── Split hero ── */
+#page-home .fh-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: calc(100dvh - 68px);
+  background: var(--ink);
+}
+#page-home .fh-hero-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 72px clamp(28px, 6vw, 96px);
+}
+#page-home .fh-hero-title {
+  font-size: clamp(40px, 5.4vw, 82px);
+  line-height: 1.02;
+  color: var(--pearl);
+  margin: 0 0 28px;
+  max-width: 12ch;
+}
+#page-home .fh-hero-lede {
+  color: var(--mist);
+  font-size: 13px;
+  line-height: 1.9;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  max-width: 46ch;
+  margin: 0 0 44px;
+}
+.fh-btn {
+  align-self: flex-start;
+  background: transparent;
+  color: var(--pearl);
+  border: 1px solid rgba(230,235,233,0.5);
+  font-family: 'Nunito', sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  padding: 17px 34px;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+.fh-btn:hover { background: var(--pearl); color: var(--ink); border-color: var(--pearl); }
+#page-home .fh-hero-visual {
+  position: relative;
+  background: linear-gradient(160deg, var(--mist), var(--yarmouth) 60%, var(--pearl));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  padding: 64px 32px;
+  overflow: hidden;
+}
+#page-home .fh-hero-arc {
+  position: absolute;
+  width: 78%;
+  aspect-ratio: 1;
+  border: 1px solid rgba(45,53,54,0.22);
+  border-radius: 50%;
+  right: -14%;
+  pointer-events: none;
+}
+#page-home .fh-hero-logo {
+  position: relative;
+  height: clamp(96px, 13vw, 190px);
+  width: auto;
+  max-width: 86%;
+  filter: brightness(0) saturate(0);
+  opacity: 0.92;
+}
+#page-home .fh-hero-place {
+  position: relative;
+  margin: 0;
+  color: rgba(45,53,54,0.75);
+  font-size: 10.5px;
+  font-weight: 500;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  text-align: center;
+}
+@media (max-width: 820px) {
+  #page-home .fh-hero { grid-template-columns: 1fr; min-height: 0; }
+  #page-home .fh-hero-visual { order: -1; min-height: 44vh; }
+  #page-home .fh-hero-copy { padding: 56px 24px 64px; }
+}
+
+/* ── Buttons everywhere: thin editorial squares ── */
+.btn-primary, .btn-outline, .nav-cta:not(.nav-cta-corner) {
+  font-size: 11px !important;
+  letter-spacing: 0.26em !important;
+  padding: 16px 32px !important;
+  border-radius: 0 !important;
+}
+.btn-outline { border: 1px solid rgba(230,235,233,0.45); }
+
+/* ── Inner page heroes: left-aligned editorial masthead ── */
+.page:not(#page-home) .about-hero {
+  text-align: left;
+  padding: clamp(72px, 11vw, 132px) clamp(28px, 6vw, 96px) clamp(56px, 7vw, 88px);
+  border-bottom: 1px solid rgba(230,235,233,0.14);
+}
+.page:not(#page-home) .about-hero > img {
+  height: 40px !important;
+  margin: 0 0 40px !important;
+}
+.page:not(#page-home) .about-hero h1 {
+  font-size: clamp(38px, 6vw, 78px) !important;
+  line-height: 1.03 !important;
+  max-width: 18ch;
+  margin: 14px 0 24px;
+}
+.page:not(#page-home) .about-hero p {
+  font-size: 13px !important;
+  letter-spacing: 0.14em;
+  line-height: 1.9;
+  text-transform: uppercase;
+  max-width: 52ch;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* ── Section rhythm ── */
+.section-header { margin-bottom: 56px; }
+.section-title { font-size: clamp(28px, 4.4vw, 52px) !important; line-height: 1.05 !important; }
+.contact-band h2 { font-size: clamp(28px, 4.4vw, 52px) !important; }
+.photo-band figure img { filter: saturate(0.85) contrast(1.03); }
+.renovation-note { border-radius: 0 !important; font-size: 12.5px !important; letter-spacing: 0.12em; text-transform: uppercase; }
+</style>
+
+
 </head>
 <body>
 
 <!-- ══════════════ SITE NAV ══════════════ -->
 <nav class="site-nav">
-  <div class="nav-logo" onclick="showPage('home')" style="padding:6px 0;display:flex;align-items:center;"><img src="/__l5e/assets-v1/5b2f4f42-9e06-434c-91f6-dcf15650198f/radiance-logo.png" alt="Radiance Med Spa" style="height:44px;width:auto;display:block;filter:brightness(0) invert(1);"></div>
   <div class="nav-links">
     <button class="nav-btn active" onclick="showPage('home')">Home</button>
     <button class="nav-btn" onclick="showPage('about')">About</button>
     <button class="nav-btn" onclick="showPage('providers')">Providers</button>
     <button class="nav-btn" onclick="showPage('memberships')">VIP</button>
     <button class="nav-btn" onclick="showPage('pricing')">Treatments</button>
-    <button class="nav-cta" onclick="showPage('contact')">Book Now</button>
   </div>
+  <div class="nav-logo" onclick="showPage('home')" style="padding:6px 0;display:flex;align-items:center;"><img src="/__l5e/assets-v1/5b2f4f42-9e06-434c-91f6-dcf15650198f/radiance-logo.png" alt="Radiance Med Spa" style="height:40px;width:auto;display:block;filter:brightness(0) invert(1);"></div>
+  <button class="nav-cta nav-cta-corner" onclick="showPage('contact')">Book Now</button>
   <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
     <span></span><span></span><span></span>
   </button>
@@ -1776,25 +1968,22 @@ body::after {
 <!-- ══════════════ HOME PAGE ══════════════ -->
 <div id="page-home" class="page active">
 
+  <!-- ══ SPLIT HERO ══ -->
+  <section class="fh-hero">
+    <div class="fh-hero-copy">
+      <h1 class="fh-hero-title">Elevate your natural radiance.</h1>
+      <p class="fh-hero-lede">Experience physician-overseen precision and artistry in every treatment. We specialize in non-surgical rejuvenation tailored to your unique profile.</p>
+      <button class="fh-btn" onclick="showPage('contact')">Book a Consultation</button>
+    </div>
+    <div class="fh-hero-visual">
+      <span class="fh-hero-arc"></span>
+      <img src="/__l5e/assets-v1/5b2f4f42-9e06-434c-91f6-dcf15650198f/radiance-logo.png" alt="Radiance Med Spa" class="fh-hero-logo">
+      <p class="fh-hero-place">Medically Supervised Aesthetic Care · Chambersburg, PA</p>
+    </div>
+  </section>
+
   <div class="bento-wrap">
     <div class="bento">
-
-      <!-- Brand -->
-      <div class="tile tile-brand">
-        <img class="brand-logo" src="/__l5e/assets-v1/5b2f4f42-9e06-434c-91f6-dcf15650198f/radiance-logo.png" alt="Radiance Med Spa">
-        <p class="brand-sub">Medically Supervised Aesthetic Care · Chambersburg, PA</p>
-      </div>
-
-
-
-
-      <!-- Hero -->
-      <div class="tile tile-hero">
-        <span class="ring"></span>
-        
-        <h1 class="hero-title"><span class="word">Elevate</span> <span class="word">Your</span><strong><span class="word">Natural</span> <span class="word">Radiance.</span></strong></h1>
-        <p class="hero-lede">Experience physician-overseen precision and artistry in every treatment. We specialize in non-surgical rejuvenation tailored to your unique profile.</p>
-      </div>
 
       <!-- CTA Primary -->
       <div class="tile tile-cta primary" onclick="showPage('contact')">
@@ -2242,7 +2431,7 @@ body::after {
     <p class="hero-eyebrow">Transparent Pricing</p>
     <h1>Treatments</h1>
     <p>Clear, defined pricing across all services. VIP clients receive 5–15% off automatically at checkout (excluding packages).</p>
-    <p class="renovation-note" style="max-width:720px;margin:22px auto 0;padding:18px 22px;border:1px solid rgba(169,122,63,0.45);border-radius:12px;background:rgba(169,122,63,0.08);color:var(--pearl);font-size:1.05rem;line-height:1.55;"><strong>Renovation update:</strong> Services other than neurotoxin and dermal fillers are not currently available and will resume once our renovation is completed in November/December 2026.</p>
+    <p class="renovation-note" style="max-width:720px;margin:26px 0 0;border-radius:0;padding:18px 22px;border:1px solid rgba(169,122,63,0.45);border-radius:12px;background:rgba(169,122,63,0.08);color:var(--pearl);font-size:1.05rem;line-height:1.55;"><strong>Renovation update:</strong> Services other than neurotoxin and dermal fillers are not currently available and will resume once our renovation is completed in November/December 2026.</p>
   </div>
 
   <div class="photo-band">
@@ -2882,7 +3071,7 @@ body::after {
     <p class="hero-eyebrow">Get In Touch</p>
     <h1>Book a <em>Consultation</em></h1>
     <p>We would love to meet you. Reach out by phone or email to schedule your consultation — $50, fully credited toward any service you book.</p>
-    <p class="renovation-note" style="max-width:720px;margin:22px auto 0;padding:18px 22px;border:1px solid rgba(169,122,63,0.45);border-radius:12px;background:rgba(169,122,63,0.08);color:var(--pearl);font-size:1.05rem;line-height:1.55;"><strong>Renovation update:</strong> Services other than neurotoxin and dermal fillers are not currently available and will resume once our renovation is completed in November/December 2026.</p>
+    <p class="renovation-note" style="max-width:720px;margin:26px 0 0;border-radius:0;padding:18px 22px;border:1px solid rgba(169,122,63,0.45);border-radius:12px;background:rgba(169,122,63,0.08);color:var(--pearl);font-size:1.05rem;line-height:1.55;"><strong>Renovation update:</strong> Services other than neurotoxin and dermal fillers are not currently available and will resume once our renovation is completed in November/December 2026.</p>
   </div>
 
   <div class="photo-band">
