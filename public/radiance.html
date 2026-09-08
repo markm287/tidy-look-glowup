@@ -21,13 +21,28 @@ a[href^="tel:"], a[href^="mailto:"] { color: inherit; text-decoration: none; -we
   --ink:     #2d3536;
   --mist:    #a9bdc4;   /* Ether */
   --pearl:   #e6ebe9;   /* Blue Veil */
-  --gold:    #6e8471;   /* Jadite */
+  --gold:    #6e8471;   /* Jadite SW 6459 */
   --gold-lt: #98aa9d;
   --sage:    #6e8471;
   --dust:    #a9bdc4;
   --white:   #ffffff;
   --mid:     #5a6663;
   --yarmouth:#b5c8c9;   /* Yarmouth Blue */
+  --slow:    #c4d1c0;   /* Slow Green SW 6456 */
+  --dashing: #e4e0d6;   /* Dashing SW 9544 */
+  --navy:    #2f4257;   /* upholstery navy */
+  --brass:   #c9a24b;   /* brass / lighting accent */
+  --walnut:  #6b4230;   /* walnut millwork */
+}
+
+/* Art-deco fan motif from the interior design boards */
+.deco-fan {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.16;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='60' viewBox='0 0 120 60'%3E%3Cg fill='none' stroke='%236e8471' stroke-width='1.2'%3E%3Cpath d='M0 60a60 60 0 0 1 120 0'/%3E%3Cpath d='M15 60a45 45 0 0 1 90 0'/%3E%3Cpath d='M30 60a30 30 0 0 1 60 0'/%3E%3Cpath d='M45 60a15 15 0 0 1 30 0'/%3E%3C/g%3E%3Cg fill='none' stroke='%23c9a24b' stroke-width='0.8'%3E%3Cpath d='M-60 60a60 60 0 0 1 120 0'/%3E%3Cpath d='M60 60a60 60 0 0 1 120 0'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 120px 60px;
 }
 
 html { scroll-behavior: smooth; }
@@ -88,10 +103,10 @@ body {
   background: none;
   border: none;
   color: var(--dust);
-  font-family: 'Nunito', sans-serif;
-  font-size: 14px;
+  font-family: 'Hunter', 'Cormorant Garamond', serif;
+  font-size: 17px;
   font-weight: 400;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   padding: 22px 20px;
   cursor: pointer;
@@ -104,15 +119,16 @@ body {
   background: var(--gold);
   color: var(--white);
   border: none;
-  font-family: 'Nunito', sans-serif;
-  font-size: 13px;
-  font-weight: 500;
-  letter-spacing: 0.2em;
+  font-family: 'Hunter', 'Cormorant Garamond', serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   padding: 12px 22px;
   cursor: pointer;
   transition: background 0.2s;
   margin-left: 12px;
+  border-bottom: 2px solid var(--brass);
 }
 .nav-cta:hover { background: var(--gold-lt); }
 
@@ -122,23 +138,27 @@ body {
 
 /* ── HERO ── */
 .hero {
-  background: var(--mist);
+  background: linear-gradient(180deg, var(--slow) 0%, var(--mist) 100%);
   padding: 80px 40px 70px;
   text-align: center;
   position: relative;
   overflow: hidden;
 }
+.hero > * { position: relative; z-index: 1; }
 .hero::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: none;
   pointer-events: none;
+  opacity: 0.14;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='60' viewBox='0 0 120 60'%3E%3Cg fill='none' stroke='%232d3536' stroke-width='1.1'%3E%3Cpath d='M0 60a60 60 0 0 1 120 0'/%3E%3Cpath d='M15 60a45 45 0 0 1 90 0'/%3E%3Cpath d='M30 60a30 30 0 0 1 60 0'/%3E%3Cpath d='M45 60a15 15 0 0 1 30 0'/%3E%3C/g%3E%3Cg fill='none' stroke='%23c9a24b' stroke-width='0.9'%3E%3Cpath d='M-60 60a60 60 0 0 1 120 0'/%3E%3Cpath d='M60 60a60 60 0 0 1 120 0'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 120px 60px;
 }
 .hero-eyebrow {
-  font-size: 13px;
-  font-weight: 500;
-  letter-spacing: 0.4em;
+  font-family: 'Hunter', 'Cormorant Garamond', serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.38em;
   text-transform: uppercase;
   color: var(--gold);
   margin-bottom: 20px;
@@ -165,31 +185,37 @@ body {
   background: var(--gold);
   color: var(--white);
   border: none;
-  font-family: 'Nunito', sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0.2em;
+  font-family: 'Hunter', 'Cormorant Garamond', serif;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   padding: 14px 32px;
   cursor: pointer;
   transition: background 0.2s;
+  border-bottom: 2px solid var(--brass);
 }
 .btn-primary:hover { background: var(--gold-lt); }
 .btn-outline {
   background: transparent;
   color: var(--mid);
   border: 1px solid var(--dust);
-  font-family: 'Nunito', sans-serif;
-  font-size: 14px;
+  font-family: 'Hunter', 'Cormorant Garamond', serif;
+  font-size: 17px;
   font-weight: 400;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   padding: 14px 32px;
   cursor: pointer;
   transition: border-color 0.2s, color 0.2s;
 }
 .btn-outline:hover { border-color: var(--yarmouth); color: var(--yarmouth); }
-.gold-rule { width: 48px; height: 1px; background: var(--gold); margin: 32px auto 0; }
+.gold-rule {
+  width: 64px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--gold) 0 33%, var(--brass) 33% 66%, var(--gold) 66% 100%);
+  margin: 32px auto 0;
+}
 
 /* ── INTRO BAND ── */
 .intro-band {
@@ -215,9 +241,10 @@ body {
 }
 .section-header { margin-bottom: 44px; }
 .section-eyebrow {
-  font-size: 13px;
-  font-weight: 500;
-  letter-spacing: 0.35em;
+  font-family: 'Hunter', 'Cormorant Garamond', serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.33em;
   text-transform: uppercase;
   color: var(--gold);
   margin-bottom: 10px;
@@ -278,9 +305,10 @@ body {
   margin-top: 44px;
 }
 .why-item h4 {
-  font-size: 13px;
-  font-weight: 500;
-  letter-spacing: 0.25em;
+  font-family: 'Hunter', 'Cormorant Garamond', serif;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--gold-lt);
   margin-bottom: 10px;
@@ -332,9 +360,10 @@ body {
 }
 .contact-item { text-align: center; }
 .contact-item-label {
-  font-size: 12px;
-  font-weight: 500;
-  letter-spacing: 0.3em;
+  font-family: 'Hunter', 'Cormorant Garamond', serif;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.28em;
   text-transform: uppercase;
   color: var(--gold);
   margin-bottom: 6px;
@@ -366,9 +395,10 @@ body {
 }
 .tier-card.featured { background: var(--ink); color: var(--mist); }
 .tier-badge {
-  font-size: 12px;
-  font-weight: 500;
-  letter-spacing: 0.3em;
+  font-family: 'Hunter', 'Cormorant Garamond', serif;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.28em;
   text-transform: uppercase;
   color: var(--gold);
   margin-bottom: 20px;
@@ -433,10 +463,10 @@ body {
   border: none;
   border-bottom: 2px solid transparent;
   margin-bottom: -1px;
-  font-family: 'Nunito', sans-serif;
-  font-size: 13.5px;
+  font-family: 'Hunter', 'Cormorant Garamond', serif;
+  font-size: 16.5px;
   font-weight: 400;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--mid);
   padding: 14px 22px;
