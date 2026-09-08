@@ -1862,6 +1862,56 @@ body::after {
 .page:not(#page-home) .pricing-note { border-left-color: var(--brass) !important; }
 .page:not(#page-home) .tier-card.featured { background: var(--slow) !important; color: var(--ink) !important; }
 .page:not(#page-home) .booster-price { color: var(--brass) !important; }
+
+/* ── CLARITY BOOST: stronger contrast & weight for readability ── */
+body { font-weight: 400; }
+
+/* Home page: lighten/weight the secondary text that was washing out */
+#page-home .brand-sub { color: var(--pearl); opacity: 1; font-weight: 500; }
+#page-home .hero-title { font-weight: 400; }
+#page-home .hero-title strong { font-weight: 700; }
+#page-home .hero-lede { color: var(--pearl); font-weight: 400; }
+#page-home .services-list li { color: var(--pearl); font-weight: 500; }
+#page-home .services-list li:hover { color: var(--white); }
+#page-home .hl-eyebrow { opacity: 0.9; }
+#page-home .hl-title em { color: rgba(45,53,54,0.9); }
+#page-home .hl-desc { color: rgba(45,53,54,0.92); font-weight: 400; }
+#page-home .hl-dark-eyebrow { color: var(--pearl); }
+#page-home .hl-dark-title em { color: var(--pearl); opacity: 0.9; }
+#page-home .hl-dark-desc { color: var(--pearl); font-weight: 400; }
+#page-home .bento-intro p { color: var(--pearl); font-weight: 400; }
+#page-home .why-item h4 { color: var(--pearl); font-weight: 500; }
+#page-home .why-item p { color: var(--pearl); font-weight: 400; }
+#page-home .contact-band p { color: var(--pearl); font-weight: 400; }
+#page-home .contact-item-label { color: var(--pearl); font-weight: 500; }
+#page-home .contact-item-value a { color: var(--pearl); }
+
+/* Inner dark pages: lift body/descriptive text out of the dust */
+.page:not(#page-home) .about-hero p,
+.page:not(#page-home) .about-section p,
+.page:not(#page-home) .location-detail-value,
+.page:not(#page-home) .provider-bio,
+.page:not(#page-home) .tier-perks li,
+.page:not(#page-home) .mem-note,
+.page:not(#page-home) .pricing-note,
+.page:not(#page-home) .price-detail,
+.page:not(#page-home) .pkg-tagline,
+.page:not(#page-home) .pkg-includes,
+.page:not(#page-home) .pkg-items li,
+.page:not(#page-home) .booster-desc,
+.page:not(#page-home) .contact-band p { color: var(--pearl); font-weight: 400; }
+.page:not(#page-home) .about-section p strong,
+.page:not(#page-home) .tier-perks li strong,
+.page:not(#page-home) .mem-note strong,
+.page:not(#page-home) .pkg-vip strong { color: var(--white); font-weight: 600; }
+.page:not(#page-home) .category-label,
+.page:not(#page-home) .contact-item-label { color: var(--pearl); font-weight: 500; }
+.page:not(#page-home) .price-amount { font-weight: 700; }
+
+/* Footer clarity */
+.footer-address { color: var(--pearl); font-weight: 400; }
+.footer-links a { color: var(--pearl); font-weight: 500; }
+.footer-copy { color: var(--pearl); opacity: 0.8; }
 </style>
 
 </head>
