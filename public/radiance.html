@@ -1912,6 +1912,58 @@ body { font-weight: 400; }
 .footer-address { color: var(--pearl); font-weight: 400; }
 .footer-links a { color: var(--pearl); font-weight: 500; }
 .footer-copy { color: var(--pearl); opacity: 0.8; }
+
+/* ── TYPE CONSISTENCY: Hunter for headings only, Nunito for all small labels ── */
+.page:not(#page-home) .provider-cred,
+.page:not(#page-home) .specialty-tag,
+.page:not(#page-home) .location-detail-label,
+.page:not(#page-home) .tier-badge,
+.page:not(#page-home) .section-eyebrow,
+.page:not(#page-home) .hero-eyebrow,
+#page-home .cta-eyebrow,
+#page-home .brand-tagline {
+  font-family: 'Nunito', system-ui, sans-serif !important;
+  letter-spacing: 0.16em;
+  font-weight: 600;
+}
+
+/* ── PROVIDERS PAGE CLARITY ── */
+.page:not(#page-home) .provider-name { color: var(--white); font-size: 26px; }
+.page:not(#page-home) .provider-cred { color: var(--brass); font-size: 12.5px; }
+.page:not(#page-home) .provider-bio {
+  color: var(--pearl);
+  font-weight: 400;
+  font-size: 15.5px;
+  line-height: 1.8;
+}
+.page:not(#page-home) .specialty-tag {
+  color: var(--pearl) !important;
+  background: rgba(230,235,233,0.08) !important;
+  border-color: rgba(201,162,75,0.5) !important;
+  font-size: 12.5px;
+}
+.page:not(#page-home) .provider-photo { color: var(--brass); }
+.page:not(#page-home) .section-desc { color: var(--pearl); font-weight: 400; }
+
+/* ── VIP PAGE CLARITY ── */
+.page:not(#page-home) .tier-name { color: var(--white); }
+.page:not(#page-home) .tier-price { color: var(--brass); }
+.page:not(#page-home) .tier-badge { color: var(--brass); }
+.page:not(#page-home) .tier-perks li {
+  color: var(--pearl);
+  font-weight: 400;
+  font-size: 14.5px;
+  line-height: 1.7;
+}
+.page:not(#page-home) .tier-perks li strong { color: var(--white); font-weight: 600; }
+.page:not(#page-home) .tier-note { color: var(--pearl); opacity: 0.85; font-weight: 400; }
+.page:not(#page-home) .tier-card.featured .tier-name,
+.page:not(#page-home) .tier-card.featured .tier-perks li,
+.page:not(#page-home) .tier-card.featured .tier-perks li strong,
+.page:not(#page-home) .tier-card.featured .tier-note { color: var(--ink); font-weight: 500; }
+.page:not(#page-home) .tier-card.featured .tier-perks li { font-weight: 400; }
+.page:not(#page-home) .tier-card.featured .tier-price,
+.page:not(#page-home) .tier-card.featured .tier-badge { color: #8a6a1f; }
 </style>
 
 </head>
