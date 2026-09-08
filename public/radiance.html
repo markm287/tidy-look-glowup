@@ -1802,6 +1802,65 @@ body::after {
 
 .pricing-tabs { border-bottom-color: var(--gold-lt); }
 .ptab-btn.active { border-bottom-color: var(--yarmouth); }
+/* ── HUNTER DISPLAY TYPE ACROSS INNER PAGES ── */
+.page:not(#page-home) .about-hero h1,
+.page:not(#page-home) .about-section h2,
+.page:not(#page-home) .location-info h3,
+.page:not(#page-home) .provider-name,
+.page:not(#page-home) .tier-name,
+.page:not(#page-home) .pkg-name,
+.page:not(#page-home) .price-amount,
+#page-home .tile-cta-title,
+#page-home .hl-title,
+#page-home .hl-dark-title {
+  font-family: 'Hunter', 'Cormorant Garamond', serif !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.01em;
+}
+.page:not(#page-home) .about-hero h1 em,
+.page:not(#page-home) .about-section h2 em,
+.page:not(#page-home) .location-info h3 em {
+  font-weight: 400 !important;
+  font-style: italic;
+  color: var(--gold-lt);
+}
+.page:not(#page-home) .about-hero h1 { letter-spacing: 0.02em; }
+.page:not(#page-home) .provider-cred,
+.page:not(#page-home) .specialty-tag,
+.page:not(#page-home) .location-detail-label,
+#page-home .tile-label,
+#page-home .services-label {
+  font-family: 'Hunter', 'Cormorant Garamond', serif;
+  letter-spacing: 0.22em;
+}
+
+/* Brass hairline detailing echoing the interior brass fixtures */
+#page-home .tile-brand { border-bottom: 2px solid rgba(201,162,75,0.55); position: relative; overflow: hidden; }
+#page-home .tile-cta { border-bottom: 2px solid rgba(201,162,75,0.5); }
+#page-home .tile-social { border-bottom: 2px solid rgba(201,162,75,0.5); }
+#page-home .tile-highlight-light { border-bottom: 2px solid var(--brass); }
+#page-home .tile-highlight-dark { border-bottom: 2px solid rgba(201,162,75,0.55); }
+#page-home .tile-services { border-top: 2px solid rgba(201,162,75,0.5); }
+#page-home .tile-brand::after {
+  content: '';
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 60px;
+  opacity: 0.09;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='60' viewBox='0 0 120 60'%3E%3Cg fill='none' stroke='%23c9a24b' stroke-width='1.1'%3E%3Cpath d='M0 60a60 60 0 0 1 120 0'/%3E%3Cpath d='M15 60a45 45 0 0 1 90 0'/%3E%3Cpath d='M30 60a30 30 0 0 1 60 0'/%3E%3Cpath d='M45 60a15 15 0 0 1 30 0'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 120px 60px;
+}
+.page:not(#page-home) .about-hero { border-bottom: 2px solid rgba(201,162,75,0.45); }
+.page:not(#page-home) .value-cell { border-top: 2px solid rgba(201,162,75,0.35); }
+.page:not(#page-home) .ptab-btn.active { border-bottom-color: var(--brass) !important; color: var(--pearl); }
+.page:not(#page-home) .category-label { border-bottom-color: rgba(201,162,75,0.4) !important; }
+.page:not(#page-home) .pkg-card.signature { border-color: var(--brass) !important; }
+.page:not(#page-home) .pkg-card.signature::before { background: var(--brass) !important; color: var(--ink) !important; }
+.page:not(#page-home) .mem-note,
+.page:not(#page-home) .pricing-note { border-left-color: var(--brass) !important; }
+.page:not(#page-home) .tier-card.featured { background: var(--slow) !important; color: var(--ink) !important; }
+.page:not(#page-home) .booster-price { color: var(--brass) !important; }
 </style>
 
 </head>
