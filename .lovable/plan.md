@@ -1,37 +1,28 @@
+# Chambersburg Local Search Optimization
+
 ## Goal
-Make the Treatments page easier to read by increasing text sizes across the pricing table, tab bar, category labels, packages, boosters, and retail rows — without changing layout, colors, or content.
+Help Radiance Med Spa appear more clearly in local searches around Chambersburg, Pennsylvania, while keeping homepage copy polished and visitor-friendly.
 
-## Changes (public/radiance.html, styles only)
+## Changes
 
-Tabs
-- `.ptab-btn` font-size: 10.5px → 12.5px; padding: 12px 20px → 14px 22px
+### Google business information
+- Expand the existing medical-business search markup with the practice address, phone, email, map link, appointment status, Chambersburg service area, social profiles, and core treatment categories.
+- Keep the business name, address, and phone consistent everywhere.
 
-Category headings
-- `.category-label` font-size: 9.5px → 11px; letter-spacing slightly tightened for legibility
+### Local search wording
+- Refine the homepage title and description around “med spa in Chambersburg, PA” and the most important services without adding a keyword-stuffed visible paragraph.
+- Keep the existing homepage design and brand copy unchanged.
 
-Pricing rows (Injectables, Devices & Laser, Wellness, Facials & Peels, Retail)
-- `.price-service` 13px → 15px
-- `.price-detail` 11px → 12.5px, color lightened to `var(--mid)` for better contrast
-- `.price-amount` 18px → 22px
-- `.price-amount span` (unit label like "/unit") 11px → 12.5px
-- `.price-row` vertical padding 11px → 13px
+### Practice address page
+- Add a dedicated `/chambersburg-med-spa` page matching the current botanical, dark editorial design.
+- Include one clear page heading, address, clickable phone and email, current appointment-only status, November 2026 scheduled hours, Google Maps directions, service overview, and links back to Treatments and booking.
+- Add page-specific search/social metadata and local medical-business structured information.
 
-Packages
-- `.pkg-name` 22px → 26px
-- `.pkg-tagline` 11px → 12.5px
-- `.pkg-includes` 11px → 12px
-- `.pkg-items li` 12.5px → 14px
-- `.pkg-price` 28px → 32px
-- `.pkg-savings` / `.pkg-retail` 11px → 12.5px
-
-Boosters
-- Bump booster service/price font sizes proportionally to match the new price-row scale
-
-Pricing notes
-- `.pricing-note` 12.5px → 13.5px
-
-## Out of scope
-- No copy changes, no color palette changes, no layout restructuring, no changes to other pages.
+### Discoverability
+- Add the practice address page to the sitemap.
+- Add a natural link to it from the existing site footer so visitors and search engines can find it.
 
 ## Verification
-- Reload `/` (which iframes `public/radiance.html`), visit Treatments, and spot-check each tab on desktop and mobile widths.
+- Check the homepage and address page on desktop and mobile.
+- Confirm the map, phone, email, navigation, and booking links work.
+- Confirm titles, descriptions, canonical URLs, structured information, and sitemap entries are present.
