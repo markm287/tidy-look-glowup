@@ -93,8 +93,7 @@ body {
   padding: 16px 0;
   cursor: pointer;
 }
-.nav-logo img { width: 38px; height: 38px; object-fit: contain; filter: invert(1); }
-.nav-logo span { color: var(--pearl); font-size: 19px; line-height: 1; letter-spacing: 0.08em; }
+.nav-logo img { height: 44px; width: auto; object-fit: contain; filter: brightness(0) invert(1); }
 .nav-logo em { color: var(--gold-lt); font-style: italic; }
 .nav-links {
   display: flex;
@@ -800,8 +799,7 @@ site-footer {
   border-top: 1px solid rgba(242,239,226,0.08);
 }
 .footer-logo { margin-bottom: 20px; }
-.footer-logo img { width: 74px; height: 74px; object-fit: contain; filter: invert(1); opacity: 0.95; }
-.footer-logo span { display: block; margin-top: 8px; color: var(--pearl); font-family: 'Hunter', 'Cormorant Garamond', serif; font-size: 25px; letter-spacing: 0.08em; }
+.footer-logo img { height: 72px; width: auto; object-fit: contain; filter: brightness(0) invert(1); opacity: 0.95; }
 .footer-address { font-size: 15px; color: var(--dust); margin-bottom: 20px; line-height: 1.7; letter-spacing: 0.04em; }
 .footer-address a:hover { color: var(--yarmouth); }
 .footer-links { display: flex; justify-content: center; gap: 28px; flex-wrap: wrap; margin-bottom: 24px; }
@@ -934,26 +932,16 @@ site-footer {
   gap: 24px;
 }
 #page-home .tile-brand .brand-logo {
-  height: 190px;
-  width: 190px;
+  height: 200px;
+  width: auto;
   object-fit: contain;
-  filter: invert(1);
   max-width: 100%;
   display: block;
   margin: 0 auto;
 }
-#page-home .brand-name {
-  margin: -10px 0 0;
-  color: var(--pearl);
-  font-family: 'Hunter', 'Cormorant Garamond', serif;
-  font-size: clamp(34px, 5vw, 64px);
-  line-height: 1;
-  letter-spacing: 0.08em;
-}
 .page-mark { width: 112px; height: 112px; object-fit: contain; filter: invert(1); display: block; margin: 0 auto 18px; position: relative; z-index: 1; }
 @media (max-width: 700px) {
-  #page-home .tile-brand .brand-logo { width: 116px; height: 116px; }
-  #page-home .brand-name { font-size: 34px; }
+  #page-home .tile-brand .brand-logo { width: auto; height: 110px; }
 }
 #page-home .brand-sub {
   color: var(--mist);
@@ -1986,7 +1974,7 @@ body { font-weight: 400; }
 
 <!-- ══════════════ SITE NAV ══════════════ -->
 <nav class="site-nav">
-  <div class="nav-logo" onclick="showPage('home')" style="padding:6px 0;display:flex;align-items:center;gap:10px;"><img src="/__l5e/assets-v1/2acddc9f-3dde-4483-b365-5dcd91f01251/radiance-starburst-black.png" alt=""><span>Radiance Med Spa</span></div>
+  <div class="nav-logo" onclick="showPage('home')" style="padding:6px 0;display:flex;align-items:center;"><img src="/__l5e/assets-v1/5b2f4f42-9e06-434c-91f6-dcf15650198f/radiance-logo.png" alt="Radiance Med Spa"></div>
   <div class="nav-links">
     <button class="nav-btn active" onclick="showPage('home')">Home</button>
     <button class="nav-btn" onclick="showPage('about')">About</button>
@@ -2022,8 +2010,7 @@ body { font-weight: 400; }
 
       <!-- Brand -->
       <div class="tile tile-brand">
-        <img class="brand-logo" src="/__l5e/assets-v1/2acddc9f-3dde-4483-b365-5dcd91f01251/radiance-starburst-black.png" alt="Radiance Med Spa starburst logo">
-        <p class="brand-name">Radiance Med Spa</p>
+        <img class="brand-logo" src="/__l5e/assets-v1/5b2f4f42-9e06-434c-91f6-dcf15650198f/radiance-logo.png" alt="Radiance Med Spa">
         <p class="brand-sub">Medically Supervised Aesthetic Care · Chambersburg, PA</p>
       </div>
 
@@ -3182,7 +3169,7 @@ body { font-weight: 400; }
 
 <!-- ══════════════ FOOTER ══════════════ -->
 <site-footer>
-  <div class="footer-logo"><img src="/__l5e/assets-v1/2acddc9f-3dde-4483-b365-5dcd91f01251/radiance-starburst-black.png" alt="Radiance Med Spa starburst logo" style="display:block;margin:0 auto;"><span>Radiance Med Spa</span></div>
+  <div class="footer-logo"><img src="/__l5e/assets-v1/5b2f4f42-9e06-434c-91f6-dcf15650198f/radiance-logo.png" alt="Radiance Med Spa" style="display:block;margin:0 auto;"></div>
   <div class="footer-address"><a href="https://www.google.com/maps/search/?api=1&query=Radiance+Med+Spa+Chambersburg%2C+PA" target="_blank" rel="noopener" aria-label="Open location in Google Maps" style="color:inherit;text-decoration:none;">154 Franklin Farm Lane · Chambersburg, PA 17202</a><br><a href="tel:7175168272" style="color:inherit;text-decoration:none;">(717) 516-8272</a> · <a href="mailto:contact@radiancepa.com" style="color:inherit;text-decoration:none;">contact@radiancepa.com</a></div>
   <div class="footer-links">
     <a onclick="showPage('home')">Home</a>
