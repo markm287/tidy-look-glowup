@@ -3178,6 +3178,7 @@ body { font-weight: 400; }
     <a onclick="showPage('memberships')">VIP</a>
     <a onclick="showPage('pricing')">Treatments</a>
     <a onclick="showPage('contact')">Contact</a>
+    <a href="/chambersburg-med-spa">Chambersburg Location</a>
   </div>
   <div class="social-links">
     <a class="social-link" href="https://m.facebook.com/profile.php?id=61584037294695" target="_blank" rel="noopener">
@@ -3227,6 +3228,11 @@ body { font-weight: 400; }
 
 
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  const requestedPage = window.location.hash.slice(1);
+  if (['home', 'about', 'providers', 'memberships', 'pricing', 'contact'].includes(requestedPage)) {
+    showPage(requestedPage);
   }
 
   function toggleMenu() {
