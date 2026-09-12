@@ -77,18 +77,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Radiance Med Spa — Botox, Fillers, Sculptra, Radiesse | Chambersburg, PA" },
-      { name: "description", content: "Physician-led med spa in Chambersburg, PA. Botox, fillers, Sculptra, Radiesse, microneedling, laser, RF, peels, skincare, weight loss, peptides & GLP." },
-      { name: "author", content: "Lovable" },
+      { name: "author", content: "Radiance Med Spa" },
       { name: "google-site-verification", content: "OygmQAdWWaQAW4YI3ZqUknubsD48TC3ps5q-0NDWWPc" },
-      { property: "og:title", content: "Radiance Med Spa — Botox, Fillers, Sculptra, Radiesse | Chambersburg, PA" },
-      { property: "og:description", content: "Physician-led med spa in Chambersburg, PA. Botox, fillers, Sculptra, Radiesse, microneedling, laser, RF, peels, skincare, weight loss, peptides & GLP." },
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "Radiance Med Spa" },
-      { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
-      { name: "twitter:title", content: "Radiance Med Spa — Botox, Fillers, Sculptra, Radiesse | Chambersburg, PA" },
-      { name: "twitter:description", content: "Physician-led med spa in Chambersburg, PA. Botox, fillers, Sculptra, Radiesse, microneedling, laser, RF, peels, skincare, weight loss, peptides & GLP." },
     ],
     links: [
       {
@@ -103,10 +95,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "MedicalBusiness",
+          "@id": "https://radiancepa.com/#medicalbusiness",
           name: "Radiance Med Spa",
           url: "https://radiancepa.com",
           telephone: "+1-717-516-8272",
           email: "contact@radiancepa.com",
+          hasMap: "https://www.google.com/maps/search/?api=1&query=Radiance+Med+Spa+Chambersburg%2C+PA",
+          appointmentRequired: true,
+          description: "Physician-supervised medical aesthetics practice in Chambersburg, Pennsylvania, currently open by appointment only.",
           image: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/115c1b1e-58ff-411d-99ce-8365134417f8",
           address: {
             "@type": "PostalAddress",
@@ -117,7 +113,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
             addressCountry: "US",
           },
           medicalSpecialty: "CosmeticProcedure",
-          areaServed: "Chambersburg, PA",
+          areaServed: {
+            "@type": "City",
+            name: "Chambersburg",
+            containedInPlace: { "@type": "State", name: "Pennsylvania" },
+          },
+          sameAs: [
+            "https://www.instagram.com/radiancepa",
+            "https://m.facebook.com/profile.php?id=61584037294695",
+          ],
           hasOfferCatalog: {
             "@type": "OfferCatalog",
             name: "Aesthetic and Wellness Services",
