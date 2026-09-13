@@ -192,7 +192,7 @@
 .location-hours div { display: flex; justify-content: space-between; gap: 20px; padding: 10px 0; border-bottom: 1px solid color-mix(in oklch, var(--location-mist) 14%, transparent); }
 .location-hours dt { color: color-mix(in oklch, var(--location-pearl) 78%, transparent); }
 .location-hours dd { margin: 0; color: var(--location-pearl); font-weight: 700; text-align: right; }
-.location-note { color: var(--location-jadite) !important; font-size: 14px !important; }
+.location-note { color: var(--location-jadite) !important; font-size: 13px !important; }
 
 .location-map-band { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(36px, 6vw, 90px); align-items: center; padding: clamp(60px, 8vw, 110px) clamp(24px, 7vw, 100px); background: var(--location-deep); }
 .location-map-band p { color: color-mix(in oklch, var(--location-pearl) 78%, transparent); font-size: 15px; line-height: 1.8; }
