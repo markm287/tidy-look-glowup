@@ -168,25 +168,25 @@
   border-bottom: 1px solid color-mix(in oklch, var(--location-mist) 18%, transparent);
 }
 .location-nav img { width: min(260px, 52vw); height: 48px; object-fit: contain; object-position: left center; filter: brightness(0) invert(1); }
-.location-nav-link { color: var(--location-pearl); font-size: 14px; font-weight: 700; text-decoration: none; }
+.location-nav-link { color: var(--location-pearl); font-size: 13px; font-weight: 700; text-decoration: none; }
 
 .location-hero { max-width: 980px; margin: 0 auto; padding: clamp(64px, 10vw, 130px) 24px 90px; text-align: center; }
 .location-mark { width: 90px; height: 90px; margin: 0 auto 24px; object-fit: contain; filter: invert(1); }
-.location-eyebrow, .location-label { margin: 0 0 14px; color: var(--location-mist); font-size: 12px; font-weight: 800; letter-spacing: .2em; text-transform: uppercase; }
+.location-eyebrow, .location-label { margin: 0 0 14px; color: var(--location-mist); font-size: 11px; font-weight: 800; letter-spacing: .2em; text-transform: uppercase; }
 .location-hero h1, .location-details h2, .location-map-band h2 { font-family: Hunter, Georgia, serif; font-weight: 400; letter-spacing: 0; }
-.location-hero h1 { max-width: 850px; margin: 0 auto; font-size: clamp(46px, 7vw, 86px); line-height: 1.03; }
+.location-hero h1 { max-width: 850px; margin: 0 auto; font-size: clamp(42px, 6.5vw, 78px); line-height: 1.03; }
 .location-hero h1 em { color: var(--location-mist); font-style: normal; }
-.location-intro { max-width: 720px; margin: 28px auto 0; color: color-mix(in oklch, var(--location-pearl) 82%, transparent); font-size: 18px; line-height: 1.75; }
+.location-intro { max-width: 720px; margin: 28px auto 0; color: color-mix(in oklch, var(--location-pearl) 82%, transparent); font-size: 17px; line-height: 1.75; }
 .location-actions { margin-top: 36px; display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
-.location-button { min-width: 170px; padding: 15px 24px; border: 1px solid var(--location-mist); color: var(--location-pearl); font-size: 13px; font-weight: 800; letter-spacing: .1em; text-decoration: none; text-transform: uppercase; }
+.location-button { min-width: 170px; padding: 15px 24px; border: 1px solid var(--location-mist); color: var(--location-pearl); font-size: 12px; font-weight: 800; letter-spacing: .1em; text-decoration: none; text-transform: uppercase; }
 .location-button-primary { background: var(--location-mist); color: var(--location-deep); }
 
 .location-details { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: 1px solid color-mix(in oklch, var(--location-mist) 20%, transparent); border-bottom: 1px solid color-mix(in oklch, var(--location-mist) 20%, transparent); }
 .location-details article { padding: clamp(42px, 6vw, 78px); }
 .location-details article + article { border-left: 1px solid color-mix(in oklch, var(--location-mist) 20%, transparent); }
-.location-details h2, .location-map-band h2 { margin: 0 0 22px; font-size: clamp(32px, 4vw, 52px); }
-.location-details h3 { margin: 28px 0 14px; color: var(--location-mist); font-size: 14px; letter-spacing: .06em; }
-.location-details p, .location-details address { color: color-mix(in oklch, var(--location-pearl) 80%, transparent); font-size: 16px; font-style: normal; line-height: 1.8; }
+.location-details h2, .location-map-band h2 { margin: 0 0 22px; font-size: clamp(30px, 3.6vw, 48px); }
+.location-details h3 { margin: 28px 0 14px; color: var(--location-mist); font-size: 13px; letter-spacing: .06em; }
+.location-details p, .location-details address { color: color-mix(in oklch, var(--location-pearl) 80%, transparent); font-size: 15px; font-style: normal; line-height: 1.8; }
 .location-details a, .location-text-links a, .location-footer a { color: inherit; }
 .location-hours { margin: 0; }
 .location-hours div { display: flex; justify-content: space-between; gap: 20px; padding: 10px 0; border-bottom: 1px solid color-mix(in oklch, var(--location-mist) 14%, transparent); }
@@ -195,16 +195,16 @@
 .location-note { color: var(--location-jadite) !important; font-size: 14px !important; }
 
 .location-map-band { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(36px, 6vw, 90px); align-items: center; padding: clamp(60px, 8vw, 110px) clamp(24px, 7vw, 100px); background: var(--location-deep); }
-.location-map-band p { color: color-mix(in oklch, var(--location-pearl) 78%, transparent); font-size: 16px; line-height: 1.8; }
+.location-map-band p { color: color-mix(in oklch, var(--location-pearl) 78%, transparent); font-size: 15px; line-height: 1.8; }
 .location-text-links { display: flex; gap: 24px; flex-wrap: wrap; margin-top: 28px; }
 .location-text-links a { color: var(--location-mist); font-weight: 800; text-underline-offset: 6px; }
 .location-map { position: relative; min-height: 380px; overflow: hidden; border: 1px solid color-mix(in oklch, var(--location-mist) 34%, transparent); }
 .location-map iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; pointer-events: none; }
-.location-map span { position: absolute; inset: auto 0 0; padding: 14px; background: color-mix(in oklch, var(--location-deep) 92%, transparent); color: var(--location-pearl); font-size: 13px; font-weight: 800; letter-spacing: .08em; text-align: center; text-transform: uppercase; }
-.location-footer { padding: 30px clamp(20px, 5vw, 72px); display: flex; justify-content: space-between; gap: 20px; color: color-mix(in oklch, var(--location-pearl) 65%, transparent); font-size: 13px; }
+.location-map span { position: absolute; inset: auto 0 0; padding: 14px; background: color-mix(in oklch, var(--location-deep) 92%, transparent); color: var(--location-pearl); font-size: 12px; font-weight: 800; letter-spacing: .08em; text-align: center; text-transform: uppercase; }
+.location-footer { padding: 30px clamp(20px, 5vw, 72px); display: flex; justify-content: space-between; gap: 20px; color: color-mix(in oklch, var(--location-pearl) 65%, transparent); font-size: 12px; }
 
 @media (max-width: 720px) {
-  .location-nav-link { font-size: 12px; }
+  .location-nav-link { font-size: 11px; }
   .location-details, .location-map-band { grid-template-columns: 1fr; }
   .location-details article + article { border-left: 0; border-top: 1px solid color-mix(in oklch, var(--location-mist) 20%, transparent); }
   .location-map { min-height: 300px; }
