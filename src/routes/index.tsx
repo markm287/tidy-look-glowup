@@ -3,7 +3,7 @@ import { createFileRoute } from "@tanstack/react-router";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Med Spa in Chambersburg, PA | Radiance Med Spa" },
+      { title: "Radiance Med Spa - Chambersburg, PA" },
       {
         name: "description",
         content:
