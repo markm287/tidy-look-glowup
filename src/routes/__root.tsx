@@ -143,6 +143,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           },
         }),
       },
+      {
+        src: "https://connect.podium.com/widget.js#ORG_TOKEN=05017428-b5ba-4c5d-9649-8f862d0be0ca",
+        defer: true,
+        id: "podium-widget",
+        "data-organization-api-token": "05017428-b5ba-4c5d-9649-8f862d0be0ca",
+      },
     ],
   }),
   shellComponent: RootShell,
