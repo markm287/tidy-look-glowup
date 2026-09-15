@@ -44,16 +44,16 @@ for (const [id, title] of Object.entries(tabTitles)) {
     const label = decode(bm[1]);
     const body = bm[2];
     const items = [];
-    const rowRe = /<div class="price-service">([\s\S]*?)<\/div>\s*(?:<div class="price-amount">([\s\S]*?)<\/div>)?/g;
-    let rm;
-    while ((rm = rowRe.exec(body))) {
-      const raw = rm[1];
-      const detailMatch = raw.match(/<div class="price-detail">([\s\S]*?)<\/div>/);
-      const name = decode(raw.replace(/<div class="price-detail">[\s\S]*?<\/div>/g, ""));
+    for (const chunk of body.split('<div class="price-row"').slice(1)) {
+      const serviceMatch = chunk.match(/<div class="price-service">([\s\S]*?)(?=<div class="price-detail">|<\/div>)/);
+      if (!serviceMatch) continue;
+      const name = decode(serviceMatch[1]);
       if (!name) continue;
+      const detailMatch = chunk.match(/<div class="price-detail">([\s\S]*?)<\/div>/);
+      const amountMatch = chunk.match(/<div class="price-amount">([\s\S]*?)<\/div>\s*(?:<\/div>|$)/);
       items.push({
         name,
-        price: rm[2] ? decode(rm[2]) : null,
+        price: amountMatch ? decode(amountMatch[1]) : null,
         detail: detailMatch ? decode(detailMatch[1]) : null,
       });
     }
