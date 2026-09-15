@@ -1,0 +1,567 @@
+{
+  "generatedFrom": "public/radiance.html",
+  "categories": [
+    {
+      "id": "injectables",
+      "title": "Injectables",
+      "blocks": [
+        {
+          "category": "Consultation",
+          "items": [
+            {
+              "name": "Provider Consultation $50 fully credited toward any service booked at or after your visit",
+              "price": null,
+              "detail": null
+            }
+          ]
+        },
+        {
+          "category": "Neurotoxin",
+          "items": [
+            {
+              "name": "Botox — Per Unit Priced per unit; units vary by area and individual",
+              "price": null,
+              "detail": null
+            },
+            {
+              "name": "Jeuveau — Per Unit Priced per unit; units vary by area and individual",
+              "price": null,
+              "detail": null
+            },
+            {
+              "name": "Dysport — Per Unit Requires more units than Botox; comparable results",
+              "price": null,
+              "detail": null
+            }
+          ]
+        },
+        {
+          "category": "Dermal Filler",
+          "items": [
+            {
+              "name": "Dermal Filler Pricing varies by product and volume",
+              "price": null,
+              "detail": null
+            },
+            {
+              "name": "Lips Typical: 1–2 syringes",
+              "price": null,
+              "detail": null
+            },
+            {
+              "name": "Cheeks / Midface Typical: 2–4 syringes",
+              "price": null,
+              "detail": null
+            },
+            {
+              "name": "Jawline / Chin Typical: 2–4 syringes",
+              "price": null,
+              "detail": null
+            },
+            {
+              "name": "Nasolabial Folds / Marionette Lines Typical: 1–2 syringes",
+              "price": null,
+              "detail": null
+            },
+            {
+              "name": "Tear Trough / Under Eye Typical: 1–2 syringes; highly technical area",
+              "price": null,
+              "detail": null
+            }
+          ]
+        },
+        {
+          "category": "Biostimulators",
+          "items": [
+            {
+              "name": "Sculptra Per vial; most protocols use 2–4 vials over 2–3 sessions",
+              "price": null,
+              "detail": null
+            },
+            {
+              "name": "Radiesse Per syringe; face or hands",
+              "price": null,
+              "detail": null
+            },
+            {
+              "name": "Hyperdilute Radiesse Diluted for skin tightening & collagen stimulation; neck, décolleté, arms, knees",
+              "price": null,
+              "detail": null
+            }
+          ]
+        },
+        {
+          "category": "Other Injectables",
+          "items": [
+            {
+              "name": "Kybella — Double Chin Per vial; most clients need 2–4 sessions of 1–3 vials",
+              "price": null,
+              "detail": null
+            },
+            {
+              "name": "Hyaluronidase Enzyme that dissolves unwanted or misplaced hyaluronic acid filler — per vial; most clients need 2+ vials",
+              "price": null,
+              "detail": null
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "A provider consultation is required prior to any treatment. All injectable pricing is per unit or per syringe/vial as noted. Unit totals vary based on individual anatomy, treatment area, and desired outcome and will be determined during your consultation."
+      ]
+    },
+    {
+      "id": "devices",
+      "title": "Devices & Laser",
+      "blocks": [
+        {
+          "category": "Consultation",
+          "items": [
+            {
+              "name": "Provider Consultation $50 fully credited toward any service booked at or after your visit",
+              "price": null,
+              "detail": null
+            }
+          ]
+        },
+        {
+          "category": "RF Microneedling",
+          "items": [
+            {
+              "name": "Face Single session; series of 3–6 recommended",
+              "price": null,
+              "detail": null
+            },
+            {
+              "name": "Neck Add-on or standalone",
+              "price": null,
+              "detail": null
+            },
+            {
+              "name": "Face + Neck Combined treatment",
+              "price": null,
+              "detail": null
+            },
+            {
+              "name": "Body Area Abdomen, arms, etc.; size and complexity may vary",
+              "price": null,
+              "detail": null
+            }
+          ]
+        },
+        {
+          "category": "Non-Invasive RF",
+          "items": [
+            {
+              "name": "Eye Area Periorbital tightening",
+              "price": null,
+              "detail": null
+            },
+            {
+              "name": "Lower Face",
+              "price": "$300",
+              "detail": null
+            },
+            {
+              "name": "Full Face",
+              "price": "$400",
+              "detail": null
+            },
+            {
+              "name": "Neck",
+              "price": "$300",
+              "detail": null
+            },
+            {
+              "name": "Face + Neck",
+              "price": "$600",
+              "detail": null
+            },
+            {
+              "name": "Face + Neck + Chest",
+              "price": "$700",
+              "detail": null
+            },
+            {
+              "name": "Abdomen",
+              "price": "$600",
+              "detail": null
+            },
+            {
+              "name": "Arms",
+              "price": "$600",
+              "detail": null
+            }
+          ]
+        },
+        {
+          "category": "Microneedling",
+          "items": [
+            {
+              "name": "Face Traditional collagen-induction microneedling",
+              "price": null,
+              "detail": null
+            }
+          ]
+        },
+        {
+          "category": "IPL Photofacial",
+          "items": [
+            {
+              "name": "Face Pigment, redness, sun damage; series of 3 recommended",
+              "price": null,
+              "detail": null
+            },
+            {
+              "name": "Neck or Chest Add-on or standalone",
+              "price": null,
+              "detail": null
+            }
+          ]
+        },
+        {
+          "category": "Laser Hair Removal",
+          "items": [
+            {
+              "name": "Small Area Upper lip, chin, underarms, bikini line",
+              "price": null,
+              "detail": null
+            },
+            {
+              "name": "Medium Area Full face, Brazilian, lower legs",
+              "price": null,
+              "detail": null
+            },
+            {
+              "name": "Large Area Full legs, back, chest, abdomen",
+              "price": null,
+              "detail": null
+            }
+          ]
+        },
+        {
+          "category": "Spider Vein Treatments",
+          "items": [
+            {
+              "name": "Laser — Legs Per session; multiple sessions common",
+              "price": null,
+              "detail": null
+            },
+            {
+              "name": "Laser — Face / Rosacea",
+              "price": "$300 / session",
+              "detail": null
+            },
+            {
+              "name": "Sclerotherapy — Legs Per session; most clients need 2–4 sessions",
+              "price": null,
+              "detail": null
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "A provider consultation is required prior to any treatment. Most device and laser treatments require multiple sessions for optimal results; your provider will build a personalized plan during your consultation."
+      ]
+    },
+    {
+      "id": "wellness",
+      "title": "Wellness",
+      "blocks": [
+        {
+          "category": "Consultation",
+          "items": [
+            {
+              "name": "Provider Consultation $50 fully credited toward any service booked at or after your visit",
+              "price": null,
+              "detail": null
+            }
+          ]
+        },
+        {
+          "category": "IV Therapy",
+          "items": [
+            {
+              "name": "Basic Hydration Saline + electrolytes",
+              "price": null,
+              "detail": null
+            },
+            {
+              "name": "Myers' Cocktail B-complex, Vitamin C, magnesium, calcium",
+              "price": null,
+              "detail": null
+            },
+            {
+              "name": "Immunity Boost Vitamin C, zinc, B-complex",
+              "price": null,
+              "detail": null
+            },
+            {
+              "name": "Hydration / Recovery Rapid rehydration + electrolyte replenishment",
+              "price": null,
+              "detail": null
+            },
+            {
+              "name": "Energy / Performance B-complex, amino acids, taurine",
+              "price": null,
+              "detail": null
+            },
+            {
+              "name": "Beauty / Glow Glutathione, biotin, Vitamin C",
+              "price": null,
+              "detail": null
+            },
+            {
+              "name": "Recovery / Anti-Inflammation Targeted anti-inflammatory blend",
+              "price": null,
+              "detail": null
+            },
+            {
+              "name": "NAD+ Premium 2–4 hr infusion",
+              "price": null,
+              "detail": null
+            }
+          ]
+        },
+        {
+          "category": "Add-On Shots",
+          "items": [
+            {
+              "name": "Vitamin B12",
+              "price": "$25",
+              "detail": null
+            },
+            {
+              "name": "Vitamin D",
+              "price": "$25",
+              "detail": null
+            },
+            {
+              "name": "Glutathione",
+              "price": "$30",
+              "detail": null
+            },
+            {
+              "name": "Vitamin C",
+              "price": "$25",
+              "detail": null
+            }
+          ]
+        },
+        {
+          "category": "Weight Management",
+          "items": [
+            {
+              "name": "GLP-1 — Semaglutide Monthly prescription management + monitoring",
+              "price": null,
+              "detail": null
+            },
+            {
+              "name": "GLP-1 — Tirzepatide Monthly prescription management + monitoring",
+              "price": null,
+              "detail": null
+            }
+          ]
+        },
+        {
+          "category": "Peptide Therapy",
+          "items": [
+            {
+              "name": "Peptide Protocol Individualized",
+              "price": null,
+              "detail": null
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "A provider consultation is required prior to any treatment to establish medical appropriateness and build your individualized protocol. Ongoing monitoring is included in monthly program fees."
+      ]
+    },
+    {
+      "id": "facials",
+      "title": "Facials & Peels",
+      "blocks": [
+        {
+          "category": "Consultation",
+          "items": [
+            {
+              "name": "Provider Consultation $50 fully credited toward any service booked at or after your visit",
+              "price": null,
+              "detail": null
+            }
+          ]
+        },
+        {
+          "category": "Facials",
+          "items": [
+            {
+              "name": "Glacé Facial Luxury cryo-infusion facial — our signature service.",
+              "price": null,
+              "detail": null
+            }
+          ]
+        },
+        {
+          "category": "Chemical Peels — PCA Skin Professional Protocols",
+          "items": [
+            {
+              "name": "Brightening Peel PCA Skin Sensi Peel or Pigment Gel Peel. Targets hyperpigmentation, sun damage, and uneven tone. Minimal downtime; suitable for all Fitzpatrick skin types including sensitive and darker complexions.",
+              "price": null,
+              "detail": null
+            },
+            {
+              "name": "Anti-Aging Retinol Peel PCA Skin Ultra Peel I or Retinol Treatment for Wrinkles. Smooths texture, reduces fine lines, and stimulates collagen synthesis. Expect 3–5 days of mild peeling.",
+              "price": null,
+              "detail": null
+            },
+            {
+              "name": "Acne Clarifying Peel PCA Skin Acne/Oily Skin Treatment. Salicylic and kojic acid blend to reduce active breakouts, minimize pore appearance, and regulate oil production.",
+              "price": null,
+              "detail": null
+            },
+            {
+              "name": "Advanced Resurfacing Peel PCA Skin Ultra Peel Forte or Modified Jessner. Deeper resurfacing for stubborn texture, acne scarring, or advanced photoaging. Allow 5–7 days downtime. Provider-assessed; requires prior peel history on file.",
+              "price": null,
+              "detail": null
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "A provider consultation is required prior to any treatment, including your first peel service. VIP discounts apply to all facial and peel services. Results may vary based on individual skin type and condition."
+      ]
+    },
+    {
+      "id": "packages",
+      "title": "Packages",
+      "blocks": [],
+      "notes": []
+    },
+    {
+      "id": "boosters",
+      "title": "Boosters",
+      "blocks": [],
+      "notes": []
+    },
+    {
+      "id": "retail",
+      "title": "Retail",
+      "blocks": [
+        {
+          "category": "Alastin Skincare",
+          "items": [
+            {
+              "name": "Regenerating Skin Nectar Pre- & post-procedure serum; pairs with every needling or laser treatment",
+              "price": null,
+              "detail": null
+            },
+            {
+              "name": "Restorative Skin Complex Daily anti-aging serum; TriHex Technology for collagen & elastin support",
+              "price": null,
+              "detail": null
+            },
+            {
+              "name": "Restorative Eye Treatment Targets puffiness, dark circles, and fine lines",
+              "price": null,
+              "detail": null
+            },
+            {
+              "name": "Soothe + Protect Recovery Balm Post-procedure recovery; calms and protects compromised skin",
+              "price": null,
+              "detail": null
+            },
+            {
+              "name": "HydraTint Pro Mineral SPF 36 Tinted mineral SPF; everyday protection with a natural finish",
+              "price": null,
+              "detail": null
+            },
+            {
+              "name": "TransFORM Body Treatment Skin-tightening body serum; pairs with GLP-1 programs and RF body treatments",
+              "price": null,
+              "detail": null
+            }
+          ]
+        },
+        {
+          "category": "PCA Skin",
+          "items": [
+            {
+              "name": "Hyaluronic Acid Boosting Serum Plumping hydration serum; hyaluronic acid with niacinamide",
+              "price": null,
+              "detail": null
+            },
+            {
+              "name": "Vitamin B3 Brightening Serum Niacinamide serum for tone, clarity & discoloration",
+              "price": null,
+              "detail": null
+            },
+            {
+              "name": "C&E Advanced Serum Vitamin C + E antioxidant serum; environmental defense and radiance",
+              "price": null,
+              "detail": null
+            },
+            {
+              "name": "Intensive Brightening Treatment: 0.5% Pure Retinol Night Retinol night treatment for pigment, texture & fine lines",
+              "price": null,
+              "detail": null
+            },
+            {
+              "name": "Retinol Renewal with RestorAtive Complex Gentle nightly retinol; smoother texture with less irritation",
+              "price": null,
+              "detail": null
+            },
+            {
+              "name": "Ideal Complex Revitalizing Eye Gel Peptide eye gel; puffiness, dark circles and crepiness",
+              "price": null,
+              "detail": null
+            },
+            {
+              "name": "Facial Wash — Gentle or Blemish Control Daily cleanser; choose formula based on your skin type",
+              "price": null,
+              "detail": null
+            },
+            {
+              "name": "Nutrient Toner Alcohol-free toner; balances and preps skin after cleansing",
+              "price": null,
+              "detail": null
+            },
+            {
+              "name": "Clearskin Moisturizer Lightweight calming moisturizer for acne-prone or sensitive skin",
+              "price": null,
+              "detail": null
+            },
+            {
+              "name": "ReBalance Moisturizer Barrier-supporting moisturizer for redness-prone skin",
+              "price": null,
+              "detail": null
+            },
+            {
+              "name": "Weightless Protection Broad Spectrum SPF 45 Oil-free daily sunscreen; matte, non-greasy finish",
+              "price": null,
+              "detail": null
+            },
+            {
+              "name": "Sheer Tint Broad Spectrum SPF 45 Universal tinted mineral SPF; natural everyday coverage",
+              "price": null,
+              "detail": null
+            },
+            {
+              "name": "Acne Gel Targeted spot treatment for active breakouts",
+              "price": null,
+              "detail": null
+            },
+            {
+              "name": "Body Therapy Rich body moisturizer; smooths rough, dry skin",
+              "price": null,
+              "detail": null
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "VIP clients enjoy exclusive retail benefits — ask our team."
+      ]
+    }
+  ]
+}
