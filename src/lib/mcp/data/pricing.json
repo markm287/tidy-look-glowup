@@ -9,9 +9,9 @@
           "category": "Consultation",
           "items": [
             {
-              "name": "Provider Consultation $50 fully credited toward any service booked at or after your visit",
-              "price": null,
-              "detail": null
+              "name": "Provider Consultation",
+              "price": "$50",
+              "detail": "$50 fully credited toward any service booked at or after your visit"
             }
           ]
         },
@@ -19,19 +19,19 @@
           "category": "Neurotoxin",
           "items": [
             {
-              "name": "Botox — Per Unit Priced per unit; units vary by area and individual",
-              "price": null,
-              "detail": null
+              "name": "Botox — Per Unit",
+              "price": "$14 / unit",
+              "detail": "Priced per unit; units vary by area and individual"
             },
             {
-              "name": "Jeuveau — Per Unit Priced per unit; units vary by area and individual",
-              "price": null,
-              "detail": null
+              "name": "Jeuveau — Per Unit",
+              "price": "$12 / unit",
+              "detail": "Priced per unit; units vary by area and individual"
             },
             {
-              "name": "Dysport — Per Unit Requires more units than Botox; comparable results",
-              "price": null,
-              "detail": null
+              "name": "Dysport — Per Unit",
+              "price": "$5 / unit",
+              "detail": "Requires more units than Botox; comparable results"
             }
           ]
         },
@@ -39,34 +39,34 @@
           "category": "Dermal Filler",
           "items": [
             {
-              "name": "Dermal Filler Pricing varies by product and volume",
-              "price": null,
-              "detail": null
+              "name": "Dermal Filler",
+              "price": "Starting at $550 / syringe",
+              "detail": "Pricing varies by product and volume"
             },
             {
-              "name": "Lips Typical: 1–2 syringes",
+              "name": "Lips",
               "price": null,
-              "detail": null
+              "detail": "Typical: 1–2 syringes"
             },
             {
-              "name": "Cheeks / Midface Typical: 2–4 syringes",
+              "name": "Cheeks / Midface",
               "price": null,
-              "detail": null
+              "detail": "Typical: 2–4 syringes"
             },
             {
-              "name": "Jawline / Chin Typical: 2–4 syringes",
+              "name": "Jawline / Chin",
               "price": null,
-              "detail": null
+              "detail": "Typical: 2–4 syringes"
             },
             {
-              "name": "Nasolabial Folds / Marionette Lines Typical: 1–2 syringes",
+              "name": "Nasolabial Folds / Marionette Lines",
               "price": null,
-              "detail": null
+              "detail": "Typical: 1–2 syringes"
             },
             {
-              "name": "Tear Trough / Under Eye Typical: 1–2 syringes; highly technical area",
+              "name": "Tear Trough / Under Eye",
               "price": null,
-              "detail": null
+              "detail": "Typical: 1–2 syringes; highly technical area"
             }
           ]
         },
@@ -74,19 +74,19 @@
           "category": "Biostimulators",
           "items": [
             {
-              "name": "Sculptra Per vial; most protocols use 2–4 vials over 2–3 sessions",
-              "price": null,
-              "detail": null
+              "name": "Sculptra",
+              "price": "$900 / vial",
+              "detail": "Per vial; most protocols use 2–4 vials over 2–3 sessions"
             },
             {
-              "name": "Radiesse Per syringe; face or hands",
-              "price": null,
-              "detail": null
+              "name": "Radiesse",
+              "price": "$900 / syringe",
+              "detail": "Per syringe; face or hands"
             },
             {
-              "name": "Hyperdilute Radiesse Diluted for skin tightening & collagen stimulation; neck, décolleté, arms, knees",
-              "price": null,
-              "detail": null
+              "name": "Hyperdilute Radiesse",
+              "price": "$800 / syringe",
+              "detail": "Diluted for skin tightening & collagen stimulation; neck, décolleté, arms, knees"
             }
           ]
         },
@@ -94,14 +94,14 @@
           "category": "Other Injectables",
           "items": [
             {
-              "name": "Kybella — Double Chin Per vial; most clients need 2–4 sessions of 1–3 vials",
-              "price": null,
-              "detail": null
+              "name": "Kybella — Double Chin",
+              "price": "$650 / vial",
+              "detail": "Per vial; most clients need 2–4 sessions of 1–3 vials"
             },
             {
-              "name": "Hyaluronidase Enzyme that dissolves unwanted or misplaced hyaluronic acid filler — per vial; most clients need 2+ vials",
-              "price": null,
-              "detail": null
+              "name": "Hyaluronidase",
+              "price": "$300 / vial",
+              "detail": "Enzyme that dissolves unwanted or misplaced hyaluronic acid filler — per vial; most clients need 2+ vials"
             }
           ]
         }
@@ -118,9 +118,9 @@
           "category": "Consultation",
           "items": [
             {
-              "name": "Provider Consultation $50 fully credited toward any service booked at or after your visit",
-              "price": null,
-              "detail": null
+              "name": "Provider Consultation",
+              "price": "$50",
+              "detail": "$50 fully credited toward any service booked at or after your visit"
             }
           ]
         },
@@ -128,24 +128,24 @@
           "category": "RF Microneedling",
           "items": [
             {
-              "name": "Face Single session; series of 3–6 recommended",
-              "price": null,
-              "detail": null
+              "name": "Face",
+              "price": "$800",
+              "detail": "Single session; series of 3–6 recommended"
             },
             {
-              "name": "Neck Add-on or standalone",
-              "price": null,
-              "detail": null
+              "name": "Neck",
+              "price": "$500",
+              "detail": "Add-on or standalone"
             },
             {
-              "name": "Face + Neck Combined treatment",
-              "price": null,
-              "detail": null
+              "name": "Face + Neck",
+              "price": "$1,000",
+              "detail": "Combined treatment"
             },
             {
-              "name": "Body Area Abdomen, arms, etc.; size and complexity may vary",
-              "price": null,
-              "detail": null
+              "name": "Body Area",
+              "price": "$500–$1,000",
+              "detail": "Abdomen, arms, etc.; size and complexity may vary"
             }
           ]
         },
@@ -153,9 +153,9 @@
           "category": "Non-Invasive RF",
           "items": [
             {
-              "name": "Eye Area Periorbital tightening",
-              "price": null,
-              "detail": null
+              "name": "Eye Area",
+              "price": "$200",
+              "detail": "Periorbital tightening"
             },
             {
               "name": "Lower Face",
@@ -198,9 +198,9 @@
           "category": "Microneedling",
           "items": [
             {
-              "name": "Face Traditional collagen-induction microneedling",
-              "price": null,
-              "detail": null
+              "name": "Face",
+              "price": "$300",
+              "detail": "Traditional collagen-induction microneedling"
             }
           ]
         },
@@ -208,14 +208,14 @@
           "category": "IPL Photofacial",
           "items": [
             {
-              "name": "Face Pigment, redness, sun damage; series of 3 recommended",
-              "price": null,
-              "detail": null
+              "name": "Face",
+              "price": "$400",
+              "detail": "Pigment, redness, sun damage; series of 3 recommended"
             },
             {
-              "name": "Neck or Chest Add-on or standalone",
-              "price": null,
-              "detail": null
+              "name": "Neck or Chest",
+              "price": "$350",
+              "detail": "Add-on or standalone"
             }
           ]
         },
@@ -223,19 +223,19 @@
           "category": "Laser Hair Removal",
           "items": [
             {
-              "name": "Small Area Upper lip, chin, underarms, bikini line",
-              "price": null,
-              "detail": null
+              "name": "Small Area",
+              "price": "$125 / session",
+              "detail": "Upper lip, chin, underarms, bikini line"
             },
             {
-              "name": "Medium Area Full face, Brazilian, lower legs",
-              "price": null,
-              "detail": null
+              "name": "Medium Area",
+              "price": "$250 / session",
+              "detail": "Full face, Brazilian, lower legs"
             },
             {
-              "name": "Large Area Full legs, back, chest, abdomen",
-              "price": null,
-              "detail": null
+              "name": "Large Area",
+              "price": "$400 / session",
+              "detail": "Full legs, back, chest, abdomen"
             }
           ]
         },
@@ -243,9 +243,9 @@
           "category": "Spider Vein Treatments",
           "items": [
             {
-              "name": "Laser — Legs Per session; multiple sessions common",
-              "price": null,
-              "detail": null
+              "name": "Laser — Legs",
+              "price": "$400 / session",
+              "detail": "Per session; multiple sessions common"
             },
             {
               "name": "Laser — Face / Rosacea",
@@ -253,9 +253,9 @@
               "detail": null
             },
             {
-              "name": "Sclerotherapy — Legs Per session; most clients need 2–4 sessions",
-              "price": null,
-              "detail": null
+              "name": "Sclerotherapy — Legs",
+              "price": "$450 / session",
+              "detail": "Per session; most clients need 2–4 sessions"
             }
           ]
         }
@@ -272,9 +272,9 @@
           "category": "Consultation",
           "items": [
             {
-              "name": "Provider Consultation $50 fully credited toward any service booked at or after your visit",
-              "price": null,
-              "detail": null
+              "name": "Provider Consultation",
+              "price": "$50",
+              "detail": "$50 fully credited toward any service booked at or after your visit"
             }
           ]
         },
@@ -282,44 +282,44 @@
           "category": "IV Therapy",
           "items": [
             {
-              "name": "Basic Hydration Saline + electrolytes",
-              "price": null,
-              "detail": null
+              "name": "Basic Hydration",
+              "price": "$125",
+              "detail": "Saline + electrolytes"
             },
             {
-              "name": "Myers' Cocktail B-complex, Vitamin C, magnesium, calcium",
-              "price": null,
-              "detail": null
+              "name": "Myers' Cocktail",
+              "price": "$130",
+              "detail": "B-complex, Vitamin C, magnesium, calcium"
             },
             {
-              "name": "Immunity Boost Vitamin C, zinc, B-complex",
-              "price": null,
-              "detail": null
+              "name": "Immunity Boost",
+              "price": "$130",
+              "detail": "Vitamin C, zinc, B-complex"
             },
             {
-              "name": "Hydration / Recovery Rapid rehydration + electrolyte replenishment",
-              "price": null,
-              "detail": null
+              "name": "Hydration / Recovery",
+              "price": "$100",
+              "detail": "Rapid rehydration + electrolyte replenishment"
             },
             {
-              "name": "Energy / Performance B-complex, amino acids, taurine",
-              "price": null,
-              "detail": null
+              "name": "Energy / Performance",
+              "price": "$140",
+              "detail": "B-complex, amino acids, taurine"
             },
             {
-              "name": "Beauty / Glow Glutathione, biotin, Vitamin C",
-              "price": null,
-              "detail": null
+              "name": "Beauty / Glow",
+              "price": "$150",
+              "detail": "Glutathione, biotin, Vitamin C"
             },
             {
-              "name": "Recovery / Anti-Inflammation Targeted anti-inflammatory blend",
-              "price": null,
-              "detail": null
+              "name": "Recovery / Anti-Inflammation",
+              "price": "$150",
+              "detail": "Targeted anti-inflammatory blend"
             },
             {
-              "name": "NAD+ Premium 2–4 hr infusion",
-              "price": null,
-              "detail": null
+              "name": "NAD+",
+              "price": "Starting at $350",
+              "detail": "Premium 2–4 hr infusion"
             }
           ]
         },
@@ -352,14 +352,14 @@
           "category": "Weight Management",
           "items": [
             {
-              "name": "GLP-1 — Semaglutide Monthly prescription management + monitoring",
-              "price": null,
-              "detail": null
+              "name": "GLP-1 — Semaglutide",
+              "price": "$250 / month",
+              "detail": "Monthly prescription management + monitoring"
             },
             {
-              "name": "GLP-1 — Tirzepatide Monthly prescription management + monitoring",
-              "price": null,
-              "detail": null
+              "name": "GLP-1 — Tirzepatide",
+              "price": "$350 / month",
+              "detail": "Monthly prescription management + monitoring"
             }
           ]
         },
@@ -367,9 +367,9 @@
           "category": "Peptide Therapy",
           "items": [
             {
-              "name": "Peptide Protocol Individualized",
-              "price": null,
-              "detail": null
+              "name": "Peptide Protocol",
+              "price": "$200–$500 / month",
+              "detail": "Individualized"
             }
           ]
         }
@@ -386,9 +386,9 @@
           "category": "Consultation",
           "items": [
             {
-              "name": "Provider Consultation $50 fully credited toward any service booked at or after your visit",
-              "price": null,
-              "detail": null
+              "name": "Provider Consultation",
+              "price": "$50",
+              "detail": "$50 fully credited toward any service booked at or after your visit"
             }
           ]
         },
@@ -396,9 +396,9 @@
           "category": "Facials",
           "items": [
             {
-              "name": "Glacé Facial Luxury cryo-infusion facial — our signature service.",
-              "price": null,
-              "detail": null
+              "name": "Glacé Facial",
+              "price": "$200",
+              "detail": "Luxury cryo-infusion facial — our signature service."
             }
           ]
         },
@@ -406,24 +406,24 @@
           "category": "Chemical Peels — PCA Skin Professional Protocols",
           "items": [
             {
-              "name": "Brightening Peel PCA Skin Sensi Peel or Pigment Gel Peel. Targets hyperpigmentation, sun damage, and uneven tone. Minimal downtime; suitable for all Fitzpatrick skin types including sensitive and darker complexions.",
-              "price": null,
-              "detail": null
+              "name": "Brightening Peel",
+              "price": "$150",
+              "detail": "PCA Skin Sensi Peel or Pigment Gel Peel. Targets hyperpigmentation, sun damage, and uneven tone. Minimal downtime; suitable for all Fitzpatrick skin types including sensitive and darker complexions."
             },
             {
-              "name": "Anti-Aging Retinol Peel PCA Skin Ultra Peel I or Retinol Treatment for Wrinkles. Smooths texture, reduces fine lines, and stimulates collagen synthesis. Expect 3–5 days of mild peeling.",
-              "price": null,
-              "detail": null
+              "name": "Anti-Aging Retinol Peel",
+              "price": "$175",
+              "detail": "PCA Skin Ultra Peel I or Retinol Treatment for Wrinkles. Smooths texture, reduces fine lines, and stimulates collagen synthesis. Expect 3–5 days of mild peeling."
             },
             {
-              "name": "Acne Clarifying Peel PCA Skin Acne/Oily Skin Treatment. Salicylic and kojic acid blend to reduce active breakouts, minimize pore appearance, and regulate oil production.",
-              "price": null,
-              "detail": null
+              "name": "Acne Clarifying Peel",
+              "price": "$150",
+              "detail": "PCA Skin Acne/Oily Skin Treatment. Salicylic and kojic acid blend to reduce active breakouts, minimize pore appearance, and regulate oil production."
             },
             {
-              "name": "Advanced Resurfacing Peel PCA Skin Ultra Peel Forte or Modified Jessner. Deeper resurfacing for stubborn texture, acne scarring, or advanced photoaging. Allow 5–7 days downtime. Provider-assessed; requires prior peel history on file.",
-              "price": null,
-              "detail": null
+              "name": "Advanced Resurfacing Peel",
+              "price": "$275",
+              "detail": "PCA Skin Ultra Peel Forte or Modified Jessner. Deeper resurfacing for stubborn texture, acne scarring, or advanced photoaging. Allow 5–7 days downtime. Provider-assessed; requires prior peel history on file."
             }
           ]
         }
@@ -452,34 +452,34 @@
           "category": "Alastin Skincare",
           "items": [
             {
-              "name": "Regenerating Skin Nectar Pre- & post-procedure serum; pairs with every needling or laser treatment",
-              "price": null,
-              "detail": null
+              "name": "Regenerating Skin Nectar",
+              "price": "$195",
+              "detail": "Pre- & post-procedure serum; pairs with every needling or laser treatment"
             },
             {
-              "name": "Restorative Skin Complex Daily anti-aging serum; TriHex Technology for collagen & elastin support",
-              "price": null,
-              "detail": null
+              "name": "Restorative Skin Complex",
+              "price": "$215",
+              "detail": "Daily anti-aging serum; TriHex Technology for collagen & elastin support"
             },
             {
-              "name": "Restorative Eye Treatment Targets puffiness, dark circles, and fine lines",
-              "price": null,
-              "detail": null
+              "name": "Restorative Eye Treatment",
+              "price": "$105",
+              "detail": "Targets puffiness, dark circles, and fine lines"
             },
             {
-              "name": "Soothe + Protect Recovery Balm Post-procedure recovery; calms and protects compromised skin",
-              "price": null,
-              "detail": null
+              "name": "Soothe + Protect Recovery Balm",
+              "price": "$55",
+              "detail": "Post-procedure recovery; calms and protects compromised skin"
             },
             {
-              "name": "HydraTint Pro Mineral SPF 36 Tinted mineral SPF; everyday protection with a natural finish",
-              "price": null,
-              "detail": null
+              "name": "HydraTint Pro Mineral SPF 36",
+              "price": "$65",
+              "detail": "Tinted mineral SPF; everyday protection with a natural finish"
             },
             {
-              "name": "TransFORM Body Treatment Skin-tightening body serum; pairs with GLP-1 programs and RF body treatments",
-              "price": null,
-              "detail": null
+              "name": "TransFORM Body Treatment",
+              "price": "$195",
+              "detail": "Skin-tightening body serum; pairs with GLP-1 programs and RF body treatments"
             }
           ]
         },
@@ -487,74 +487,74 @@
           "category": "PCA Skin",
           "items": [
             {
-              "name": "Hyaluronic Acid Boosting Serum Plumping hydration serum; hyaluronic acid with niacinamide",
-              "price": null,
-              "detail": null
+              "name": "Hyaluronic Acid Boosting Serum",
+              "price": "$125",
+              "detail": "Plumping hydration serum; hyaluronic acid with niacinamide"
             },
             {
-              "name": "Vitamin B3 Brightening Serum Niacinamide serum for tone, clarity & discoloration",
-              "price": null,
-              "detail": null
+              "name": "Vitamin B3 Brightening Serum",
+              "price": "$118",
+              "detail": "Niacinamide serum for tone, clarity & discoloration"
             },
             {
-              "name": "C&E Advanced Serum Vitamin C + E antioxidant serum; environmental defense and radiance",
-              "price": null,
-              "detail": null
+              "name": "C&E Advanced Serum",
+              "price": "$135",
+              "detail": "Vitamin C + E antioxidant serum; environmental defense and radiance"
             },
             {
-              "name": "Intensive Brightening Treatment: 0.5% Pure Retinol Night Retinol night treatment for pigment, texture & fine lines",
-              "price": null,
-              "detail": null
+              "name": "Intensive Brightening Treatment: 0.5% Pure Retinol Night",
+              "price": "$130",
+              "detail": "Retinol night treatment for pigment, texture & fine lines"
             },
             {
-              "name": "Retinol Renewal with RestorAtive Complex Gentle nightly retinol; smoother texture with less irritation",
-              "price": null,
-              "detail": null
+              "name": "Retinol Renewal with RestorAtive Complex",
+              "price": "$110",
+              "detail": "Gentle nightly retinol; smoother texture with less irritation"
             },
             {
-              "name": "Ideal Complex Revitalizing Eye Gel Peptide eye gel; puffiness, dark circles and crepiness",
-              "price": null,
-              "detail": null
+              "name": "Ideal Complex Revitalizing Eye Gel",
+              "price": "$95",
+              "detail": "Peptide eye gel; puffiness, dark circles and crepiness"
             },
             {
-              "name": "Facial Wash — Gentle or Blemish Control Daily cleanser; choose formula based on your skin type",
-              "price": null,
-              "detail": null
+              "name": "Facial Wash — Gentle or Blemish Control",
+              "price": "$38",
+              "detail": "Daily cleanser; choose formula based on your skin type"
             },
             {
-              "name": "Nutrient Toner Alcohol-free toner; balances and preps skin after cleansing",
-              "price": null,
-              "detail": null
+              "name": "Nutrient Toner",
+              "price": "$42",
+              "detail": "Alcohol-free toner; balances and preps skin after cleansing"
             },
             {
-              "name": "Clearskin Moisturizer Lightweight calming moisturizer for acne-prone or sensitive skin",
-              "price": null,
-              "detail": null
+              "name": "Clearskin Moisturizer",
+              "price": "$52",
+              "detail": "Lightweight calming moisturizer for acne-prone or sensitive skin"
             },
             {
-              "name": "ReBalance Moisturizer Barrier-supporting moisturizer for redness-prone skin",
-              "price": null,
-              "detail": null
+              "name": "ReBalance Moisturizer",
+              "price": "$56",
+              "detail": "Barrier-supporting moisturizer for redness-prone skin"
             },
             {
-              "name": "Weightless Protection Broad Spectrum SPF 45 Oil-free daily sunscreen; matte, non-greasy finish",
-              "price": null,
-              "detail": null
+              "name": "Weightless Protection Broad Spectrum SPF 45",
+              "price": "$48",
+              "detail": "Oil-free daily sunscreen; matte, non-greasy finish"
             },
             {
-              "name": "Sheer Tint Broad Spectrum SPF 45 Universal tinted mineral SPF; natural everyday coverage",
-              "price": null,
-              "detail": null
+              "name": "Sheer Tint Broad Spectrum SPF 45",
+              "price": "$52",
+              "detail": "Universal tinted mineral SPF; natural everyday coverage"
             },
             {
-              "name": "Acne Gel Targeted spot treatment for active breakouts",
-              "price": null,
-              "detail": null
+              "name": "Acne Gel",
+              "price": "$45",
+              "detail": "Targeted spot treatment for active breakouts"
             },
             {
-              "name": "Body Therapy Rich body moisturizer; smooths rough, dry skin",
-              "price": null,
-              "detail": null
+              "name": "Body Therapy",
+              "price": "$46",
+              "detail": "Rich body moisturizer; smooths rough, dry skin"
             }
           ]
         }
