@@ -435,14 +435,100 @@
     {
       "id": "packages",
       "title": "Packages",
-      "blocks": [],
-      "notes": []
+      "blocks": [
+        {
+          "category": "Packages",
+          "items": [
+            {
+              "name": "RF Microneedling Series",
+              "price": "$2,550",
+              "detail": "3-session face & neck series — the clinical standard for results · Includes: 3 RF Microneedling sessions (face & neck); Sessions spaced 4–6 weeks apart; Save 15% vs. single-session rate (20% for VIP) · Save $450 · Single-session total $3,000 · VIP price $2,400 · Save 20%"
+            },
+            {
+              "name": "IPL Photofacial Series",
+              "price": "$1,020",
+              "detail": "3-session brightening series — pigment, redness & sun damage · Includes: 3 IPL Photofacial sessions (face); Sessions spaced 3–4 weeks apart; Save 15% vs. single-session rate (20% for VIP) · Save $180 · Single-session total $1,200 · VIP price $960 · Save 20%"
+            },
+            {
+              "name": "Microneedling Series",
+              "price": "$765",
+              "detail": "3-session skin rejuvenation series · Includes: 3 Microneedling sessions (face); Sessions spaced 4 weeks apart; Save 15% vs. single-session rate (20% for VIP) · Save $135 · Single-session total $900 · VIP price $720 · Save 20%"
+            },
+            {
+              "name": "Laser Hair Removal Series",
+              "price": "From $637",
+              "detail": "6-session prepay — any single area · Includes: 6 laser hair removal sessions (single area of choice); Sessions spaced 4–6 weeks apart; Save 15% vs. single-session rate (20% for VIP) · Save 15% · Single-session total From $750 · VIP price From $600 · Save 20%"
+            },
+            {
+              "name": "Non-Invasive RF Series — Face",
+              "price": "$2,040",
+              "detail": "6-session tightening & contouring series — full face · Includes: 6 Non-Invasive RF sessions (full face); Comfortable, no downtime; Save $360 vs. single-session rate · Save 15% · Single-session total $2,400 · VIP price $1,920 · Save 20%"
+            },
+            {
+              "name": "Non-Invasive RF Series — Face + Neck",
+              "price": "$3,060",
+              "detail": "6-session tightening series — face and neck · Includes: 6 Non-Invasive RF sessions (face + neck); Comfortable, no downtime; Save $810 vs. single-session rate · Save 15% · Single-session total $3,600 · VIP price $2,880 · Save 20%"
+            },
+            {
+              "name": "Non-Invasive RF Series — Abdomen",
+              "price": "$3,060",
+              "detail": "6-session body contouring & tightening series · Includes: 6 Non-Invasive RF sessions (abdomen); Comfortable, no downtime; Save $540 vs. single-session rate · Save 15% · Single-session total $3,600 · VIP price $2,880 · Save 20%"
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Pre-paid series save 15% vs. single-session pricing for non-VIP clients, and 20% for VIP. All packages are valid for 18 months from purchase."
+      ]
     },
     {
       "id": "boosters",
       "title": "Boosters",
-      "blocks": [],
-      "notes": []
+      "blocks": [
+        {
+          "category": "Boosters",
+          "items": [
+            {
+              "name": "Non-Invasive RF",
+              "price": "From $100 as add-on",
+              "detail": "Skin tightening & contouring on any area (eye, face, neck, chest, abdomen, arms) — 50% off standalone pricing when added to another treatment"
+            },
+            {
+              "name": "Topical Exosomes",
+              "price": "$400 standalone",
+              "detail": "Amplifies regenerative signaling and speeds healing"
+            },
+            {
+              "name": "PDGF Growth Factor Serum",
+              "price": "$400 standalone",
+              "detail": "Platelet-derived growth factor topical; pairs with any needling treatment"
+            },
+            {
+              "name": "PDRN / Polynucleotide Booster",
+              "price": "$400 standalone",
+              "detail": "DNA repair and skin renewal signaling"
+            },
+            {
+              "name": "LED Light Therapy",
+              "price": "$100 standalone",
+              "detail": "20-min red/NIR or blue light; standalone or post-treatment add-on"
+            },
+            {
+              "name": "Neck Décolletage Peel",
+              "price": "$115 standalone",
+              "detail": "Superficial peel extended to neck/chest; pairs with any facial peel"
+            },
+            {
+              "name": "PCA Skin / Alastin Sample Kit",
+              "price": "$75 standalone",
+              "detail": "Procedure-paired retail starter set; extends your results at home"
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Enhance your treatment outcomes with targeted add-ons. Luminary VIP receive one complimentary booster per quarter; Radiant VIP receive two."
+      ]
     },
     {
       "id": "retail",
