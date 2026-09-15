@@ -31,4 +31,4 @@ export const practice = {
     { tier: "Luminary", benefit: "10% off, plus one complimentary booster per quarter" },
     { tier: "Radiant", benefit: "15% off, plus two complimentary boosters per quarter" },
   ],
-} as const;
+};
