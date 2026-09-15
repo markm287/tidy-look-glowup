@@ -1,0 +1,98 @@
+{
+  "version": 1,
+  "sdk_version": "2.1.0",
+  "path": "/mcp",
+  "auth": {
+    "type": "none"
+  },
+  "mcp": {
+    "server": {
+      "name": "radiance-website",
+      "version": "0.1.0",
+      "title": "Radiance Website"
+    },
+    "tools": [
+      {
+        "name": "get_practice_info",
+        "title": "Get practice info",
+        "description": "Get Radiance Med Spa's address, phone, email, Google Maps link, current booking status, hours, consultation policy, and VIP membership tiers.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "list_treatments",
+        "title": "List treatments and pricing",
+        "description": "List Radiance Med Spa's published treatment menu with pricing. Sections: injectables (Botox, Jeuveau, Dysport, dermal filler, Sculptra, Radiesse, Kybella), devices (RF microneedling, non-invasive RF, microneedling, IPL, laser hair removal, spider veins), wellness (IV therapy, GLP-1 weight loss, peptides), facials (facials and chemical peels), packages, boosters, and retail skincare. Omit the section to get everything.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "section": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "enum": [
+                    "injectables",
+                    "devices",
+                    "wellness",
+                    "facials",
+                    "packages",
+                    "boosters",
+                    "retail"
+                  ]
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "One of: injectables, devices, wellness, facials, packages, boosters, retail. Null or omitted returns all sections."
+            }
+          },
+          "required": [
+            "section"
+          ]
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "search_treatments",
+        "title": "Search treatments",
+        "description": "Search Radiance Med Spa's treatment, package, booster, and retail menu by keyword (for example \"botox\", \"microneedling\", \"laser hair removal\", \"peel\", \"weight loss\", \"retinol\") and get matching services with pricing.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "query": {
+              "type": "string",
+              "minLength": 2,
+              "description": "Keyword or treatment name to search for."
+            }
+          },
+          "required": [
+            "query"
+          ]
+        },
+        "outputSchema": null
+      }
+    ]
+  }
+}
