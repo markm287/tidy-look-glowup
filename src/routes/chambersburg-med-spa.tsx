@@ -40,7 +40,7 @@ export const Route = createFileRoute("/chambersburg-med-spa")({
           "@id": "https://radiancepa.com/#medicalbusiness",
           name: "Radiance Med Spa",
           url: "https://radiancepa.com/chambersburg-med-spa",
-          telephone: "+1-717-516-8272",
+          telephone: "+1-717-423-1799",
           email: "contact@radiancepa.com",
           hasMap: mapUrl,
           appointmentRequired: true,
@@ -92,7 +92,7 @@ function ChambersburgLocationPage() {
             alt="Radiance Med Spa"
           />
         </Link>
-        <a className="location-nav-link" href="tel:7175168272">Call (717) 516-8272</a>
+        <a className="location-nav-link" href="tel:7174231799">Call (717) 423-1799</a>
       </header>
 
       <section className="location-hero">
@@ -109,7 +109,7 @@ function ChambersburgLocationPage() {
         </p>
         <div className="location-actions">
           <a className="location-button location-button-primary" href={mapUrl} target="_blank" rel="noopener noreferrer">Get Directions</a>
-          <a className="location-button location-button-secondary" href="tel:7175168272">Call to Schedule</a>
+          <a className="location-button location-button-secondary" href="tel:7174231799">Call to Schedule</a>
         </div>
       </section>
 
@@ -122,7 +122,7 @@ function ChambersburgLocationPage() {
               154 Franklin Farm Lane<br />Chambersburg, PA 17202
             </a>
           </address>
-          <p><a href="tel:7175168272">(717) 516-8272</a></p>
+          <p><a href="tel:7174231799">(717) 423-1799</a></p>
           <p><a href="mailto:contact@radiancepa.com">contact@radiancepa.com</a></p>
         </article>
         <article>
