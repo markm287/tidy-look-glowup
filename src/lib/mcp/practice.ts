@@ -7,7 +7,7 @@ export const practice = {
     state: "PA",
     postalCode: "17202",
   },
-  phone: "(717) 516-8272",
+  phone: "(717) 423-1799",
   email: "contact@radiancepa.com",
   website: "https://radiancepa.com",
   locationPage: "https://radiancepa.com/chambersburg-med-spa",
