@@ -98,7 +98,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "@id": "https://radiancepa.com/#medicalbusiness",
           name: "Radiance Med Spa",
           url: "https://radiancepa.com",
-          telephone: "+1-717-516-8272",
+          telephone: "+1-717-423-1799",
           email: "contact@radiancepa.com",
           hasMap: "https://www.google.com/maps/search/?api=1&query=Radiance+Med+Spa+Chambersburg%2C+PA",
           appointmentRequired: true,
