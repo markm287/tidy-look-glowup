@@ -10,7 +10,7 @@ export const practice = {
   phone: "(717) 423-1799",
   email: "contact@radiancepa.com",
   website: "https://radiancepa.com",
-  locationPage: "https://radiancepa.com/chambersburg-med-spa",
+  
   googleMaps: "https://www.google.com/maps/search/?api=1&query=Radiance+Med+Spa+Chambersburg+PA",
   currentStatus:
     "By appointment only. Treatments other than neurotoxin and dermal filler are unavailable until renovation is complete in November/December 2026.",
