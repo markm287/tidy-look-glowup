@@ -10,7 +10,6 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
-import { Route as ChambersburgMedSpaRouteImport } from './routes/chambersburg-med-spa'
 import { Route as McpRouteImport } from './routes/mcp'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as Char91DotwellKnownChar93OauthProtectedResourceRouteImport } from './routes/[.well-known]/oauth-protected-resource'
@@ -18,11 +17,6 @@ import { Route as Char91DotwellKnownChar93OauthProtectedResourceRouteImport } fr
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ChambersburgMedSpaRoute = ChambersburgMedSpaRouteImport.update({
-  id: '/chambersburg-med-spa',
-  path: '/chambersburg-med-spa',
   getParentRoute: () => rootRouteImport,
 } as any)
 const McpRoute = McpRouteImport.update({
@@ -44,14 +38,12 @@ const Char91DotwellKnownChar93OauthProtectedResourceRoute =
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
-  '/chambersburg-med-spa': typeof ChambersburgMedSpaRoute
   '/mcp': typeof McpRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
-  '/chambersburg-med-spa': typeof ChambersburgMedSpaRoute
   '/mcp': typeof McpRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
@@ -59,7 +51,6 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
-  '/chambersburg-med-spa': typeof ChambersburgMedSpaRoute
   '/mcp': typeof McpRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
@@ -68,21 +59,14 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
-    | '/chambersburg-med-spa'
     | '/mcp'
     | '/sitemap.xml'
     | '/.well-known/oauth-protected-resource'
   fileRoutesByTo: FileRoutesByTo
-  to:
-    | '/'
-    | '/chambersburg-med-spa'
-    | '/mcp'
-    | '/sitemap.xml'
-    | '/.well-known/oauth-protected-resource'
+  to: '/' | '/mcp' | '/sitemap.xml' | '/.well-known/oauth-protected-resource'
   id:
     | '__root__'
     | '/'
-    | '/chambersburg-med-spa'
     | '/mcp'
     | '/sitemap.xml'
     | '/.well-known/oauth-protected-resource'
@@ -90,7 +74,6 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
-  ChambersburgMedSpaRoute: typeof ChambersburgMedSpaRoute
   McpRoute: typeof McpRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   Char91DotwellKnownChar93OauthProtectedResourceRoute: typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
@@ -103,13 +86,6 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/chambersburg-med-spa': {
-      id: '/chambersburg-med-spa'
-      path: '/chambersburg-med-spa'
-      fullPath: '/chambersburg-med-spa'
-      preLoaderRoute: typeof ChambersburgMedSpaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/mcp': {
@@ -138,7 +114,6 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
-  ChambersburgMedSpaRoute: ChambersburgMedSpaRoute,
   McpRoute: McpRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   Char91DotwellKnownChar93OauthProtectedResourceRoute:
