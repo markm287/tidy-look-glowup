@@ -49,7 +49,65 @@ function Index() {
           height: 100vh;
           height: 100dvh;
         }
+        .radiance-summary {
+          position: absolute;
+          width: 1px;
+          height: 1px;
+          margin: -1px;
+          padding: 0;
+          overflow: hidden;
+          clip: rect(0 0 0 0);
+          clip-path: inset(50%);
+          white-space: nowrap;
+          border: 0;
+        }
       `}</style>
+      <main className="radiance-summary">
+        <h1>Radiance Med Spa — Med Spa in Chambersburg, PA</h1>
+        <p>
+          Physician-overseen aesthetic and wellness treatments in Chambersburg, Pennsylvania.
+          Botox, Jeuveau, Dysport, dermal filler, Sculptra, Radiesse, RF microneedling,
+          microneedling, IPL photofacials, laser hair removal, non-invasive radiofrequency,
+          chemical peels, facials, IV therapy, GLP-1 weight loss, peptide therapy, and
+          medical-grade PCA Skin retail.
+        </p>
+        <h2>Contact</h2>
+        <ul>
+          <li>Address: 154 Franklin Farm Lane, Chambersburg, PA 17202</li>
+          <li>
+            Phone: <a href="tel:+17174231799">(717) 423-1799</a>
+          </li>
+          <li>
+            Email: <a href="mailto:contact@radiancepa.com">contact@radiancepa.com</a>
+          </li>
+        </ul>
+        <h2>Booking</h2>
+        <p>
+          By appointment only. Treatments other than neurotoxin and dermal filler are unavailable
+          until renovation is complete in November/December 2026. A $50 provider consultation,
+          fully credited toward any service booked at or after the visit, is required prior to any
+          treatment.
+        </p>
+        <h2>Scheduled hours (beginning November 2026)</h2>
+        <ul>
+          <li>Monday: 9:00 AM – 4:00 PM</li>
+          <li>Tuesday: 1:00 PM – 7:00 PM</li>
+          <li>Wednesday: 1:00 PM – 7:00 PM</li>
+          <li>Thursday: 9:00 AM – 4:00 PM</li>
+          <li>Friday: 9:00 AM – 4:00 PM</li>
+          <li>Saturday: First Saturday of the month, 8:00 AM – 12:00 PM</li>
+          <li>Sunday: Closed</li>
+        </ul>
+        <h2>VIP membership</h2>
+        <ul>
+          <li>Glow: 5% off treatments and retail</li>
+          <li>Luminary: 10% off, plus one complimentary booster per quarter</li>
+          <li>Radiant: 15% off, plus two complimentary boosters per quarter</li>
+        </ul>
+        <p>
+          Full treatment menu and pricing: <a href="/llms.txt">text version</a>.
+        </p>
+      </main>
       <iframe src="/radiance.html" title="Radiance Med Spa" className="radiance-frame" />
     </>
   );
