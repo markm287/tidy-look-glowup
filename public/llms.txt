@@ -1,8 +1,40 @@
 # Radiance Med Spa
 
-> Physician-led medical spa in Chambersburg, PA offering injectables, laser, RF microneedling, facials, IV therapy, and skincare.
+> Physician-overseen medical spa in Chambersburg, PA offering injectables, laser and RF treatments, facials, IV therapy, weight loss, and medical-grade skincare.
 
 Radiance Med Spa provides medically supervised aesthetic care with an emphasis on natural, refined results. Treatments are delivered by licensed providers under physician oversight.
+
+## Contact & Location
+
+- Address: 154 Franklin Farm Lane, Chambersburg, PA 17202
+- Phone: (717) 423-1799
+- Email: contact@radiancepa.com
+- Website: https://radiancepa.com
+- Google Maps: https://www.google.com/maps/search/?api=1&query=Radiance+Med+Spa+Chambersburg+PA
+- Instagram: https://www.instagram.com/radiancepa
+- Facebook: https://m.facebook.com/profile.php?id=61584037294695
+
+## Booking & Availability
+
+- By appointment only.
+- Treatments other than neurotoxin and dermal filler are unavailable until renovation is complete in November/December 2026.
+- A provider consultation ($50, fully credited toward any service booked at or after the visit) is required prior to any treatment.
+
+## Scheduled Hours (beginning November 2026)
+
+- Monday: 9:00 AM - 4:00 PM
+- Tuesday: 1:00 PM - 7:00 PM
+- Wednesday: 1:00 PM - 7:00 PM
+- Thursday: 9:00 AM - 4:00 PM
+- Friday: 9:00 AM - 4:00 PM
+- Saturday: First Saturday of the month, 8:00 AM - 12:00 PM
+- Sunday: Closed
+
+## VIP Membership
+
+- Glow: 5% off treatments and retail
+- Luminary: 10% off, plus one complimentary booster per quarter
+- Radiant: 15% off, plus two complimentary boosters per quarter
 
 ## Pages
 
@@ -10,5 +42,176 @@ Radiance Med Spa provides medically supervised aesthetic care with an emphasis o
 - [About](/#about): Practice philosophy, values, and location.
 - [Providers](/#providers): Meet the clinical team.
 - [VIP](/#memberships): VIP membership tiers and benefits.
-- [Treatments](/#pricing): Full treatment menu with pricing — injectables, devices, wellness, facials, packages, and boosters.
+- [Treatments](/#pricing): Full treatment menu with pricing.
 - [Book a Consultation](/#contact): Booking info, hours, and contact details.
+
+# Treatments & Pricing
+
+## Injectables
+
+### Consultation
+- Provider Consultation: $50 — $50 fully credited toward any service booked at or after your visit
+
+### Neurotoxin
+- Botox — Per Unit: $14 / unit — Priced per unit; units vary by area and individual
+- Jeuveau — Per Unit: $12 / unit — Priced per unit; units vary by area and individual
+- Dysport — Per Unit: $5 / unit — Requires more units than Botox; comparable results
+
+### Dermal Filler
+- Dermal Filler: Starting at $550 / syringe — Pricing varies by product and volume
+- Lips — Typical: 1–2 syringes
+- Cheeks / Midface — Typical: 2–4 syringes
+- Jawline / Chin — Typical: 2–4 syringes
+- Nasolabial Folds / Marionette Lines — Typical: 1–2 syringes
+- Tear Trough / Under Eye — Typical: 1–2 syringes; highly technical area
+
+### Biostimulators
+- Sculptra: $900 / vial — Per vial; most protocols use 2–4 vials over 2–3 sessions
+- Radiesse: $900 / syringe — Per syringe; face or hands
+- Hyperdilute Radiesse: $800 / syringe — Diluted for skin tightening & collagen stimulation; neck, décolleté, arms, knees
+
+### Other Injectables
+- Kybella — Double Chin: $650 / vial — Per vial; most clients need 2–4 sessions of 1–3 vials
+- Hyaluronidase: $300 / vial — Enzyme that dissolves unwanted or misplaced hyaluronic acid filler — per vial; most clients need 2+ vials
+
+Notes: A provider consultation is required prior to any treatment. All injectable pricing is per unit or per syringe/vial as noted. Unit totals vary based on individual anatomy, treatment area, and desired outcome and will be determined during your consultation.
+
+## Devices & Laser
+
+### Consultation
+- Provider Consultation: $50 — $50 fully credited toward any service booked at or after your visit
+
+### RF Microneedling
+- Face: $800 — Single session; series of 3–6 recommended
+- Neck: $500 — Add-on or standalone
+- Face + Neck: $1,000 — Combined treatment
+- Body Area: $500–$1,000 — Abdomen, arms, etc.; size and complexity may vary
+
+### Non-Invasive RF
+- Eye Area: $200 — Periorbital tightening
+- Lower Face: $300
+- Full Face: $400
+- Neck: $300
+- Face + Neck: $600
+- Face + Neck + Chest: $700
+- Abdomen: $600
+- Arms: $600
+
+### Microneedling
+- Face: $300 — Traditional collagen-induction microneedling
+
+### IPL Photofacial
+- Face: $400 — Pigment, redness, sun damage; series of 3 recommended
+- Neck or Chest: $350 — Add-on or standalone
+
+### Laser Hair Removal
+- Small Area: $125 / session — Upper lip, chin, underarms, bikini line
+- Medium Area: $250 / session — Full face, Brazilian, lower legs
+- Large Area: $400 / session — Full legs, back, chest, abdomen
+
+### Spider Vein Treatments
+- Laser — Legs: $400 / session — Per session; multiple sessions common
+- Laser — Face / Rosacea: $300 / session
+- Sclerotherapy — Legs: $450 / session — Per session; most clients need 2–4 sessions
+
+Notes: A provider consultation is required prior to any treatment. Most device and laser treatments require multiple sessions for optimal results; your provider will build a personalized plan during your consultation.
+
+## Wellness
+
+### Consultation
+- Provider Consultation: $50 — $50 fully credited toward any service booked at or after your visit
+
+### IV Therapy
+- Basic Hydration: $125 — Saline + electrolytes
+- Myers' Cocktail: $130 — B-complex, Vitamin C, magnesium, calcium
+- Immunity Boost: $130 — Vitamin C, zinc, B-complex
+- Hydration / Recovery: $100 — Rapid rehydration + electrolyte replenishment
+- Energy / Performance: $140 — B-complex, amino acids, taurine
+- Beauty / Glow: $150 — Glutathione, biotin, Vitamin C
+- Recovery / Anti-Inflammation: $150 — Targeted anti-inflammatory blend
+- NAD+: Starting at $350 — Premium 2–4 hr infusion
+
+### Add-On Shots
+- Vitamin B12: $25
+- Vitamin D: $25
+- Glutathione: $30
+- Vitamin C: $25
+
+### Weight Management
+- GLP-1 — Semaglutide: $250 / month — Monthly prescription management + monitoring
+- GLP-1 — Tirzepatide: $350 / month — Monthly prescription management + monitoring
+
+### Peptide Therapy
+- Peptide Protocol: $200–$500 / month — Individualized
+
+Notes: A provider consultation is required prior to any treatment to establish medical appropriateness and build your individualized protocol. Ongoing monitoring is included in monthly program fees.
+
+## Facials & Peels
+
+### Consultation
+- Provider Consultation: $50 — $50 fully credited toward any service booked at or after your visit
+
+### Facials
+- Glacé Facial: $200 — Luxury cryo-infusion facial — our signature service.
+
+### Chemical Peels — PCA Skin Professional Protocols
+- Brightening Peel: $150 — PCA Skin Sensi Peel or Pigment Gel Peel. Targets hyperpigmentation, sun damage, and uneven tone. Minimal downtime; suitable for all Fitzpatrick skin types including sensitive and darker complexions.
+- Anti-Aging Retinol Peel: $175 — PCA Skin Ultra Peel I or Retinol Treatment for Wrinkles. Smooths texture, reduces fine lines, and stimulates collagen synthesis. Expect 3–5 days of mild peeling.
+- Acne Clarifying Peel: $150 — PCA Skin Acne/Oily Skin Treatment. Salicylic and kojic acid blend to reduce active breakouts, minimize pore appearance, and regulate oil production.
+- Advanced Resurfacing Peel: $275 — PCA Skin Ultra Peel Forte or Modified Jessner. Deeper resurfacing for stubborn texture, acne scarring, or advanced photoaging. Allow 5–7 days downtime. Provider-assessed; requires prior peel history on file.
+
+Notes: A provider consultation is required prior to any treatment, including your first peel service. VIP discounts apply to all facial and peel services. Results may vary based on individual skin type and condition.
+
+## Packages
+
+### Packages
+- RF Microneedling Series: $2,550 — 3-session face & neck series — the clinical standard for results · Includes: 3 RF Microneedling sessions (face & neck); Sessions spaced 4–6 weeks apart; Save 15% vs. single-session rate (20% for VIP) · Save $450 · Single-session total $3,000 · VIP price $2,400 · Save 20%
+- IPL Photofacial Series: $1,020 — 3-session brightening series — pigment, redness & sun damage · Includes: 3 IPL Photofacial sessions (face); Sessions spaced 3–4 weeks apart; Save 15% vs. single-session rate (20% for VIP) · Save $180 · Single-session total $1,200 · VIP price $960 · Save 20%
+- Microneedling Series: $765 — 3-session skin rejuvenation series · Includes: 3 Microneedling sessions (face); Sessions spaced 4 weeks apart; Save 15% vs. single-session rate (20% for VIP) · Save $135 · Single-session total $900 · VIP price $720 · Save 20%
+- Laser Hair Removal Series: From $637 — 6-session prepay — any single area · Includes: 6 laser hair removal sessions (single area of choice); Sessions spaced 4–6 weeks apart; Save 15% vs. single-session rate (20% for VIP) · Save 15% · Single-session total From $750 · VIP price From $600 · Save 20%
+- Non-Invasive RF Series — Face: $2,040 — 6-session tightening & contouring series — full face · Includes: 6 Non-Invasive RF sessions (full face); Comfortable, no downtime; Save $360 vs. single-session rate · Save 15% · Single-session total $2,400 · VIP price $1,920 · Save 20%
+- Non-Invasive RF Series — Face + Neck: $3,060 — 6-session tightening series — face and neck · Includes: 6 Non-Invasive RF sessions (face + neck); Comfortable, no downtime; Save $810 vs. single-session rate · Save 15% · Single-session total $3,600 · VIP price $2,880 · Save 20%
+- Non-Invasive RF Series — Abdomen: $3,060 — 6-session body contouring & tightening series · Includes: 6 Non-Invasive RF sessions (abdomen); Comfortable, no downtime; Save $540 vs. single-session rate · Save 15% · Single-session total $3,600 · VIP price $2,880 · Save 20%
+
+Notes: Pre-paid series save 15% vs. single-session pricing for non-VIP clients, and 20% for VIP. All packages are valid for 18 months from purchase.
+
+## Boosters
+
+### Boosters
+- Non-Invasive RF: From $100 as add-on — Skin tightening & contouring on any area (eye, face, neck, chest, abdomen, arms) — 50% off standalone pricing when added to another treatment
+- Topical Exosomes: $400 standalone — Amplifies regenerative signaling and speeds healing
+- PDGF Growth Factor Serum: $400 standalone — Platelet-derived growth factor topical; pairs with any needling treatment
+- PDRN / Polynucleotide Booster: $400 standalone — DNA repair and skin renewal signaling
+- LED Light Therapy: $100 standalone — 20-min red/NIR or blue light; standalone or post-treatment add-on
+- Neck Décolletage Peel: $115 standalone — Superficial peel extended to neck/chest; pairs with any facial peel
+- PCA Skin / Alastin Sample Kit: $75 standalone — Procedure-paired retail starter set; extends your results at home
+
+Notes: Enhance your treatment outcomes with targeted add-ons. Luminary VIP receive one complimentary booster per quarter; Radiant VIP receive two.
+
+## Retail
+
+### Alastin Skincare
+- Regenerating Skin Nectar: $195 — Pre- & post-procedure serum; pairs with every needling or laser treatment
+- Restorative Skin Complex: $215 — Daily anti-aging serum; TriHex Technology for collagen & elastin support
+- Restorative Eye Treatment: $105 — Targets puffiness, dark circles, and fine lines
+- Soothe + Protect Recovery Balm: $55 — Post-procedure recovery; calms and protects compromised skin
+- HydraTint Pro Mineral SPF 36: $65 — Tinted mineral SPF; everyday protection with a natural finish
+- TransFORM Body Treatment: $195 — Skin-tightening body serum; pairs with GLP-1 programs and RF body treatments
+
+### PCA Skin
+- Hyaluronic Acid Boosting Serum: $125 — Plumping hydration serum; hyaluronic acid with niacinamide
+- Vitamin B3 Brightening Serum: $118 — Niacinamide serum for tone, clarity & discoloration
+- C&E Advanced Serum: $135 — Vitamin C + E antioxidant serum; environmental defense and radiance
+- Intensive Brightening Treatment: 0.5% Pure Retinol Night: $130 — Retinol night treatment for pigment, texture & fine lines
+- Retinol Renewal with RestorAtive Complex: $110 — Gentle nightly retinol; smoother texture with less irritation
+- Ideal Complex Revitalizing Eye Gel: $95 — Peptide eye gel; puffiness, dark circles and crepiness
+- Facial Wash — Gentle or Blemish Control: $38 — Daily cleanser; choose formula based on your skin type
+- Nutrient Toner: $42 — Alcohol-free toner; balances and preps skin after cleansing
+- Clearskin Moisturizer: $52 — Lightweight calming moisturizer for acne-prone or sensitive skin
+- ReBalance Moisturizer: $56 — Barrier-supporting moisturizer for redness-prone skin
+- Weightless Protection Broad Spectrum SPF 45: $48 — Oil-free daily sunscreen; matte, non-greasy finish
+- Sheer Tint Broad Spectrum SPF 45: $52 — Universal tinted mineral SPF; natural everyday coverage
+- Acne Gel: $45 — Targeted spot treatment for active breakouts
+- Body Therapy: $46 — Rich body moisturizer; smooths rough, dry skin
+
+Notes: VIP clients enjoy exclusive retail benefits — ask our team.
