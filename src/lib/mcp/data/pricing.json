@@ -407,22 +407,22 @@
           "items": [
             {
               "name": "Sensi Peel",
-              "price": "$135–$150",
+              "price": "$135",
               "detail": "Our gentlest peel; a good introduction for sensitive skin."
             },
             {
               "name": "Ultra Peel",
-              "price": "$145–$165",
+              "price": "$145",
               "detail": "A slightly stronger peel for mature or photodamaged skin."
             },
             {
-              "name": "Pigment Correct Peel",
-              "price": "$160–$185",
+              "name": "Pigment Correct",
+              "price": "$160",
               "detail": "Targeted correction for visible discoloration and uneven tone."
             },
             {
               "name": "Bright & Even Peel",
-              "price": "$160–$185",
+              "price": "$160",
               "detail": "A brightening treatment for more even-looking skin."
             },
             {
@@ -437,7 +437,7 @@
             },
             {
               "name": "Advanced Treatment Booster",
-              "price": "+$30–$45",
+              "price": "+$30 add-on",
               "detail": "Available as an add-on to customize your treatment."
             }
           ]
