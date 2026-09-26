@@ -31,19 +31,19 @@ export const practice = {
       tier: "Glow",
       price: "$99/month",
       benefit:
-        "5% off all services & injectables; 1 facial or chemical peel per quarter (accumulates, never expires during active VIP); birthday month complimentary LED upgrade",
+        "5% off eligible services & injectables; 1 facial or chemical peel per quarter (accumulates, never expires during active VIP); birthday month complimentary LED upgrade",
     },
     {
       tier: "Luminary",
       price: "$199/month",
       benefit:
-        "Everything in Glow, plus 10% off all services & injectables, 1 complimentary booster add-on per quarter, birthday month LED upgrade + complimentary Glacé facial ($200 value)",
+        "Everything in Glow, plus 10% off eligible services & injectables, 1 complimentary booster add-on per quarter, birthday month LED upgrade + complimentary Glacé facial ($200 value)",
     },
     {
       tier: "Radiant",
       price: "$349/month",
       benefit:
-        "Everything in Luminary, plus 15% off all services & injectables, 2 complimentary booster add-ons per quarter, complimentary quarterly skin consultation, birthday month LED upgrade + Glacé facial + $100 service credit + complimentary IV drip, first access to new services & promotions, complimentary annual PCA Skin starter kit",
+        "Everything in Luminary, plus 15% off eligible services & injectables, 2 complimentary booster add-ons per quarter, complimentary quarterly skin consultation, birthday month LED upgrade + Glacé facial + $100 service credit + complimentary IV drip, first access to new services & promotions, complimentary annual PCA Skin starter kit",
     },
   ],
   vipTerms:
