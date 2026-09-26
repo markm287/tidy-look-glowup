@@ -104,7 +104,7 @@ function Index() {
           <li>Luminary: $199/month, 10% off eligible services and injectables, plus one complimentary booster per quarter</li>
           <li>Radiant: $349/month, 15% off eligible services and injectables, plus two complimentary boosters per quarter</li>
         </ul>
-        <p>Each monthly payment is banked as a service credit. Credits roll over while active and remain usable for 12 months after cancellation; included perks end immediately upon cancellation. Plans begin with a 6-month commitment, then renew month to month. Cancellation is permitted at any time without penalty with 30 days' written notice. Discounts exclude packages, weight management, and peptide programs. See the VIP section and text version for full terms.</p>
+        <p>Each monthly payment is banked as a service credit. Credits roll over while active and remain usable for 12 months after cancellation. Complimentary quarterly perks expire at the end of their calendar quarter and do not roll over; all unused perks end immediately upon cancellation. Plans begin with a 6-month commitment, then renew month to month. Cancellation is permitted at any time without penalty with 30 days' written notice. Discounts exclude packages, weight management, and peptide programs. See the VIP section and text version for full terms.</p>
         <p>
           Full treatment menu and pricing: <a href="/llms.txt">text version</a>.
         </p>
