@@ -100,10 +100,11 @@ function Index() {
         </ul>
         <h2>VIP membership</h2>
         <ul>
-          <li>Glow: 5% off treatments and retail</li>
-          <li>Luminary: 10% off, plus one complimentary booster per quarter</li>
-          <li>Radiant: 15% off, plus two complimentary boosters per quarter</li>
+          <li>Glow: $99/month, 5% off eligible services and injectables</li>
+          <li>Luminary: $199/month, 10% off eligible services and injectables, plus one complimentary booster per quarter</li>
+          <li>Radiant: $349/month, 15% off eligible services and injectables, plus two complimentary boosters per quarter</li>
         </ul>
+        <p>Each monthly payment is banked as a service credit. Credits roll over while active and remain usable for 12 months after cancellation; included perks end immediately upon cancellation. Plans begin with a 6-month commitment, then renew month to month. Cancellation is permitted at any time without penalty with 30 days' written notice. Discounts exclude packages, weight management, and peptide programs. See the VIP section and text version for full terms.</p>
         <p>
           Full treatment menu and pricing: <a href="/llms.txt">text version</a>.
         </p>

@@ -31,21 +31,21 @@ export const practice = {
       tier: "Glow",
       price: "$99/month",
       benefit:
-        "5% off all services & injectables; 1 facial or chemical peel per quarter (accumulates, never expires during active VIP); birthday month complimentary LED upgrade",
+        "5% off eligible services & injectables; 1 facial or chemical peel per quarter (accumulates, never expires during active VIP); birthday month complimentary LED upgrade",
     },
     {
       tier: "Luminary",
       price: "$199/month",
       benefit:
-        "Everything in Glow, plus 10% off all services & injectables, 1 complimentary booster add-on per quarter, birthday month LED upgrade + complimentary Glacé facial ($200 value)",
+        "Everything in Glow, plus 10% off eligible services & injectables, 1 complimentary booster add-on per quarter, birthday month LED upgrade + complimentary Glacé facial ($200 value)",
     },
     {
       tier: "Radiant",
       price: "$349/month",
       benefit:
-        "Everything in Luminary, plus 15% off all services & injectables, 2 complimentary booster add-ons per quarter, complimentary quarterly skin consultation, birthday month LED upgrade + Glacé facial + $100 service credit + complimentary IV drip, first access to new services & promotions, complimentary annual PCA Skin starter kit",
+        "Everything in Luminary, plus 15% off eligible services & injectables, 2 complimentary booster add-ons per quarter, complimentary quarterly skin consultation, birthday month LED upgrade + Glacé facial + $100 service credit + complimentary IV drip, first access to new services & promotions, complimentary annual PCA Skin starter kit",
     },
   ],
   vipTerms:
-    "All VIP plans auto-renew monthly and require a 6-month initial commitment; cancellation requires 30 days written notice. Discounts apply automatically at checkout, cannot be combined with other promotions, and do not apply to packages. VIP clients enjoy exclusive retail benefits — ask the team for details.",
+    "VIP is for adults 18+. Each monthly payment is banked as a service credit for eligible treatments; unused credits roll over indefinitely while active and are usable for 12 months after cancellation, then expire. Credits may pay for weight management and peptide programs at full price. Included perks never expire while active but are forfeited immediately on cancellation; unlike credits they have no post-cancellation use. All plans have an initial 6-month commitment, then renew month to month. Cancellation is allowed at any time without penalty with 30 days' written notice to contact@radiancepa.com or in person; notice less than 30 days before billing causes one more billing cycle. Cancellation during the first 6 months may qualify for a refund of unused service value (dues paid less retail value of services received and included perks used); after 6 months dues are non-refundable, but credits remain usable for 12 months. VIP discounts apply automatically to eligible services and injectables, not to packages, weight management, or peptide programs; they cannot be combined with offers or applied retroactively. Retail benefits vary by tier; ask the team. A qualifying pause of up to 60 days once per 12 months requires written request at least 5 business days before billing; benefits stop during the pause. Appointments need 24 hours' cancellation notice or may incur a fee up to $50. Luminary and Radiant have priority access to select high-demand slots 48 hours before general availability. Treatment requires consultation and provider approval.",
 };

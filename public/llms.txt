@@ -32,10 +32,10 @@ Radiance Med Spa provides medically supervised aesthetic care with an emphasis o
 
 ## VIP Membership
 
-All VIP plans auto-renew monthly and require a 6-month initial commitment. Discounts on services and injectables apply automatically at checkout, cannot be combined with other promotions, and do not apply to packages. VIP clients also enjoy exclusive retail benefits — ask our team.
+Your monthly VIP payment is banked as a service credit for future eligible treatments. All plans have an initial 6-month commitment, then renew month to month. VIP discounts on eligible services and injectables apply automatically at checkout. Retail benefits vary by tier — ask our team for details.
 
 ### Glow — $99/month (Essential)
-- 5% off all services & injectables — applied automatically at every visit
+- 5% off eligible services & injectables — applied automatically at every visit
 - 1 facial or chemical peel per quarter
 - Birthday month: complimentary LED upgrade
 - Unused quarterly facial accumulates and never expires during active VIP
@@ -43,14 +43,14 @@ All VIP plans auto-renew monthly and require a 6-month initial commitment. Disco
 
 ### Luminary — $199/month (Most Popular)
 - Everything in Glow, plus:
-- 10% off all services & injectables — supersedes Glow discount
+- 10% off eligible services & injectables — supersedes Glow discount
 - 1 complimentary booster add-on per quarter
 - Birthday month: complimentary LED upgrade + complimentary Glacé facial ($200 value)
 - Best for: clients combining injectables with skin treatments
 
 ### Radiant — $349/month (Prestige)
 - Everything in Luminary, plus:
-- 15% off all services & injectables — supersedes Luminary discount
+- 15% off eligible services & injectables — supersedes Luminary discount
 - 2 complimentary booster add-ons per quarter
 - Complimentary quarterly skin consultation with provider
 - Birthday month: complimentary LED upgrade + Glacé facial + $100 service credit + complimentary IV drip
@@ -58,7 +58,16 @@ All VIP plans auto-renew monthly and require a 6-month initial commitment. Disco
 - Complimentary annual PCA Skin starter kit
 - Best for: full-service aesthetic clients who visit 2–3x per month
 
-VIP Terms: All VIP plans auto-renew monthly after the initial 6-month commitment. Cancellation requires 30 days written notice. VIP discounts on services and injectables are applied automatically at checkout, cannot be combined with other promotions or sale pricing, and do not apply to packages. Retail benefits are exclusive to VIP clients and vary by tier — ask our team for details. The Glow tier's included quarterly facial/peel never expires during active VIP. Clients who cancel within their first 6 months are eligible for a refund of unused service value; after 6 months, unused services are forfeited upon cancellation. Credits and included services have no cash value. Your monthly payment is banked as a service credit on your account — credits roll over indefinitely while your plan is active and remain available to use on any future service for 12 months after cancellation. Credits are non-transferable and cannot be redeemed for cash.
+### VIP program terms (effective September 26, 2026)
+
+- Eligibility and billing: Adults 18+ only. Enrollment starts with a signed agreement and first payment. Monthly dues are billed on the enrollment date or the next business day when that date falls on a weekend or holiday. Initial 6-month commitment; thereafter month-to-month auto-renewal.
+- Banked service credits: Each monthly payment becomes a credit for eligible treatments. Unused credits roll over indefinitely while active and remain usable for 12 months after cancellation, then expire. They may be used for weight management and peptide programs at full price. Credits are non-transferable and have no cash value except as provided by the early-cancellation refund below.
+- Included perks: Quarterly facial/peel, boosters, birthday benefits, and other included perks do not expire while active, but are forfeited immediately upon cancellation. Perks are not part of banked credits and cannot be exchanged, transferred, or redeemed for cash or credit.
+- Discounts: Automatically applied at checkout on eligible services and injectables only. Not combinable with promotions or sale prices; not retroactive; not applicable to packages, weight management, or peptide programs. Retail benefits vary by tier — ask the team.
+- Cancellation: May be requested at any time without penalty with 30 days' written notice to contact@radiancepa.com or in person. If notice is less than 30 days before the next billing date, one additional billing cycle applies. Credits remain usable for 12 months after cancellation; included perks end immediately.
+- Refunds: Within the first 6 months, eligible for a refund of unused service value, calculated as dues paid less the retail value of treatments received and included perks used. After 6 months, monthly dues are non-refundable, but banked credits remain usable for 12 months after cancellation.
+- Changes and pauses: Upgrades or downgrades take effect next billing cycle. One pause of up to 60 days per 12 months is available for qualifying medical, relocation, or extended travel reasons with written request at least 5 business days before billing; no charges or credits accrue and benefits are suspended during the pause.
+- Appointments: Cancel or reschedule at least 24 hours in advance; late cancellations or no-shows may incur up to a $50 fee, not taken from credits. Luminary and Radiant VIPs get priority access to select high-demand slots 48 hours before general availability. Treatment requires consultation and provider approval.
 
 ## Pages
 
