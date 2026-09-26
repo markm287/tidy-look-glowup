@@ -449,6 +449,14 @@ body {
   line-height: 1.75;
 }
 .mem-note strong { color: var(--ink); }
+.vip-policy { margin-top: 32px; color: var(--pearl); }
+.vip-policy h2 { font-family: 'Hunter', serif; font-size: 26px; color: var(--pearl); margin: 0 0 18px; }
+.vip-policy-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 36px; }
+.vip-policy-item { border-top: 1px solid var(--yarmouth); padding: 18px 0; }
+.vip-policy-item h3 { color: var(--gold-lt); font-size: 16px; margin: 0 0 8px; }
+.vip-policy-item p { margin: 0; font-size: 14px; line-height: 1.75; }
+.vip-policy a { color: var(--gold-lt); text-decoration: underline; }
+@media (max-width: 700px) { .vip-policy-grid { grid-template-columns: 1fr; } }
 
 /* ── PRICING PAGE ── */
 .pricing-page { padding: 64px 40px; max-width: 1100px; margin: 0 auto; }
@@ -2399,7 +2407,7 @@ body { font-weight: 400; }
     <div class="section-header">
       <p class="section-eyebrow">Choose Your Tier</p>
       <h2 class="section-title">Glow. Luminary. <em>Radiant.</em></h2>
-      <p class="section-desc" style="max-width:780px;">All VIP plans auto-renew monthly and require a 6-month initial commitment. Discounts on services and injectables apply automatically at checkout, cannot be combined with other promotions, and do not apply to packages. VIP clients also enjoy exclusive retail benefits — ask our team.</p>
+      <p class="section-desc" style="max-width:780px;">Your monthly payment becomes a service credit for future treatments. Enjoy automatic savings on eligible services and injectables, plus tier-specific perks. VIP retail benefits vary by tier — ask our team for details.</p>
     </div>
 
     <div class="tiers-grid">
@@ -2454,9 +2462,35 @@ body { font-weight: 400; }
 
     </div>
 
-    <div class="mem-note">
-      <strong>VIP Terms:</strong> All VIP plans auto-renew monthly after the initial 6-month commitment. Cancellation requires 30 days written notice. VIP discounts on services and injectables are applied automatically at checkout, cannot be combined with other promotions or sale pricing, and do not apply to packages. Retail benefits are exclusive to VIP clients and vary by tier — ask our team for details. The Glow tier's included quarterly facial/peel never expires during active VIP. Clients who cancel within their first 6 months are eligible for a refund of unused service value; after 6 months, unused services are forfeited upon cancellation. Credits and included services have no cash value. Your monthly payment is banked as a service credit on your account — credits roll over indefinitely while your plan is active and remain available to use on any future service for 12 months after cancellation. Credits are non-transferable and cannot be redeemed for cash.
-    </div>
+    <section class="vip-policy" aria-labelledby="vip-policy-title">
+      <h2 id="vip-policy-title">VIP program terms</h2>
+      <div class="vip-policy-grid">
+        <div class="vip-policy-item">
+          <h3>Your monthly payment is yours to use</h3>
+          <p>Each monthly payment is banked as a service credit for eligible treatments. Unused credits roll over indefinitely while your plan is active and remain usable for 12 months after cancellation, then expire. They can be used toward weight management and peptide programs at full price. Credits are non-transferable and cannot be redeemed for cash, except for the early-cancellation refund described below.</p>
+        </div>
+        <div class="vip-policy-item">
+          <h3>Included perks are separate</h3>
+          <p>Quarterly facials or peels, boosters, birthday benefits, and other included perks do not expire while your plan is active. Unlike banked credits, unused perks are forfeited immediately upon cancellation; they have no cash value and cannot be transferred or exchanged for credit.</p>
+        </div>
+        <div class="vip-policy-item">
+          <h3>Where discounts apply</h3>
+          <p>Your tier's discount applies automatically to eligible services and injectables at checkout. It cannot be combined with promotions or sale pricing, applied after a completed appointment, or used on packages, weight management, or peptide programs. Retail benefits vary by tier — ask our team for current details.</p>
+        </div>
+        <div class="vip-policy-item">
+          <h3>Billing and cancellation</h3>
+          <p>VIP is for adults 18+ and begins with a signed agreement and first payment. Plans have an initial 6-month commitment, then renew month to month; billing recurs on your enrollment date (or the next business day if it falls on a weekend or holiday). You may cancel at any time without a cancellation penalty by giving 30 days' written notice to <a href="mailto:contact@radiancepa.com">contact@radiancepa.com</a> or in person. Notice given fewer than 30 days before your next billing date results in one more billing cycle.</p>
+        </div>
+        <div class="vip-policy-item">
+          <h3>Refunds and plan changes</h3>
+          <p>If you cancel within your first 6 months, you may receive a refund of unused service value: total dues paid minus the retail value of treatments received and included perks used. After 6 months, dues are non-refundable, but banked credits remain usable for 12 months after cancellation. You may upgrade or downgrade at any time; the new rate and benefits start with your next billing cycle. For qualifying reasons, you may request one pause of up to 60 days per 12 months in writing at least 5 business days before billing; no dues or new credits accrue, and benefits are suspended during the pause.</p>
+        </div>
+        <div class="vip-policy-item">
+          <h3>Appointments and care</h3>
+          <p>Please cancel or reschedule at least 24 hours in advance. Late cancellations and no-shows may incur a fee of up to $50, not deducted from your credits. Luminary and Radiant VIPs receive priority access to select high-demand slots 48 hours before general availability. All treatments require consultation and provider approval; VIP status does not guarantee treatment eligibility.</p>
+        </div>
+      </div>
+    </section>
 
   </div>
 </div>
