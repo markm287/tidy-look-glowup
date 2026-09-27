@@ -153,11 +153,6 @@
           "category": "Non-Invasive RF",
           "items": [
             {
-              "name": "Eye Area",
-              "price": "$200",
-              "detail": "Periorbital tightening"
-            },
-            {
               "name": "Lower Face",
               "price": "$300",
               "detail": null
