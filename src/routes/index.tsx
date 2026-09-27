@@ -99,6 +99,7 @@ function Index() {
           <li>Sunday: Closed</li>
         </ul>
         <h2>VIP membership</h2>
+        <p>Founder VIP offer: The first 50 VIPs receive an additional discount. Ask the Radiance team for details.</p>
         <ul>
           <li>Glow: $99/month, 5% off eligible services and injectables</li>
           <li>Luminary: $199/month, 10% off eligible services and injectables, plus one complimentary booster per quarter</li>
