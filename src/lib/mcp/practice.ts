@@ -47,7 +47,7 @@ export const practice = {
       tier: "Radiant",
       price: "$349/month",
       benefit:
-        "Everything in Luminary, plus 15% off eligible services & injectables, 2 complimentary booster add-ons per quarter, birthday month LED upgrade + Glacé facial + $100 service credit + complimentary IV drip, first access to new services & promotions, complimentary annual PCA Skin starter kit",
+        "Everything in Luminary, plus 15% off eligible services & injectables, 2 complimentary booster add-ons per quarter, birthday month LED upgrade + Glacé facial + $100 service credit + complimentary IV drip, first access to new services & promotions",
     },
   ],
   vipTerms:
