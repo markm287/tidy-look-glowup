@@ -497,6 +497,7 @@ body {
 .vip-terms-close:focus-visible { outline: 2px solid var(--gold-lt); outline-offset: 3px; }
 .vip-policy { clear: both; color: var(--pearl); }
 .vip-policy h2 { font-family: 'Hunter', serif; font-size: 26px; color: var(--pearl); margin: 0 0 18px; }
+.vip-policy-date { font-family: 'Nunito', sans-serif; font-size: 14px; font-weight: 400; }
 .vip-policy-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 36px; }
 .vip-policy-item { border-top: 1px solid var(--yarmouth); padding: 18px 0; }
 .vip-policy-item h3 { color: var(--gold-lt); font-size: 16px; margin: 0 0 8px; }
@@ -507,6 +508,7 @@ body {
   .vip-terms-dialog { width: calc(100% - 20px); max-height: 88vh; }
   .vip-terms-dialog-inner { max-height: 88vh; padding: 42px 22px 28px; }
   .vip-terms-close { margin: -28px -8px 8px 12px; }
+  .vip-policy-date { display: block; margin-top: 8px; }
 }
 .package-policy { margin-top: 36px; color: var(--pearl); }
 .package-policy h2 { font-family: 'Hunter', serif; font-size: 26px; margin: 0 0 18px; }
@@ -2529,7 +2531,7 @@ body { font-weight: 400; }
       <div class="vip-terms-dialog-inner">
         <button class="vip-terms-close" type="button" onclick="closeVipTerms()" aria-label="Close VIP terms">×</button>
         <section class="vip-policy" aria-labelledby="vip-policy-title">
-          <h2 id="vip-policy-title">VIP program terms <small style="font-family:Nunito,sans-serif;font-size:14px;font-weight:400;">Effective September 27, 2026</small></h2>
+          <h2 id="vip-policy-title">VIP program terms <small class="vip-policy-date">Effective September 27, 2026</small></h2>
           <div class="vip-policy-grid">
         <div class="vip-policy-item">
           <h3>Your monthly payment is yours to use</h3>
