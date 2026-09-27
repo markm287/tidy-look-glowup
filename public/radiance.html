@@ -449,14 +449,67 @@ body {
   line-height: 1.75;
 }
 .mem-note strong { color: var(--ink); }
-.vip-policy { margin-top: 32px; color: var(--pearl); }
+.vip-terms-link-wrap { margin-top: 30px; text-align: center; }
+.vip-terms-link {
+  appearance: none;
+  border: 0;
+  border-bottom: 1px solid currentColor;
+  border-radius: 0;
+  padding: 4px 0;
+  background: transparent;
+  color: var(--gold-lt);
+  font: 600 14px/1.4 'Nunito', sans-serif;
+  cursor: pointer;
+}
+.vip-terms-link:hover { color: var(--pearl); }
+.vip-terms-link:focus-visible { outline: 2px solid var(--gold-lt); outline-offset: 5px; }
+.vip-terms-dialog {
+  width: min(920px, calc(100% - 32px));
+  max-height: min(84vh, 900px);
+  margin: auto;
+  padding: 0;
+  border: 1px solid var(--yarmouth);
+  border-radius: 8px;
+  background: var(--ink);
+  color: var(--pearl);
+  box-shadow: 0 24px 80px rgba(0,0,0,0.45);
+}
+.vip-terms-dialog::backdrop { background: rgba(10,18,18,0.78); }
+.vip-terms-dialog-inner { position: relative; max-height: min(84vh, 900px); overflow-y: auto; padding: 48px; }
+.vip-terms-close {
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  float: right;
+  display: grid;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  margin: -28px -28px 8px 16px;
+  border: 1px solid var(--yarmouth);
+  border-radius: 50%;
+  background: var(--ink);
+  color: var(--pearl);
+  font: 400 26px/1 'Nunito', sans-serif;
+  cursor: pointer;
+}
+.vip-terms-close:hover { color: var(--gold-lt); border-color: var(--gold-lt); }
+.vip-terms-close:focus-visible { outline: 2px solid var(--gold-lt); outline-offset: 3px; }
+.vip-policy { clear: both; color: var(--pearl); }
 .vip-policy h2 { font-family: 'Hunter', serif; font-size: 26px; color: var(--pearl); margin: 0 0 18px; }
+.vip-policy-date { font-family: 'Nunito', sans-serif; font-size: 14px; font-weight: 400; }
 .vip-policy-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 36px; }
 .vip-policy-item { border-top: 1px solid var(--yarmouth); padding: 18px 0; }
 .vip-policy-item h3 { color: var(--gold-lt); font-size: 16px; margin: 0 0 8px; }
 .vip-policy-item p { margin: 0; font-size: 14px; line-height: 1.75; }
 .vip-policy a { color: var(--gold-lt); text-decoration: underline; }
-@media (max-width: 700px) { .vip-policy-grid { grid-template-columns: 1fr; } }
+@media (max-width: 700px) {
+  .vip-policy-grid { grid-template-columns: 1fr; }
+  .vip-terms-dialog { width: calc(100% - 20px); max-height: 88vh; }
+  .vip-terms-dialog-inner { max-height: 88vh; padding: 42px 22px 28px; }
+  .vip-terms-close { margin: -28px -8px 8px 12px; }
+  .vip-policy-date { display: block; margin-top: 8px; }
+}
 .package-policy { margin-top: 36px; color: var(--pearl); }
 .package-policy h2 { font-family: 'Hunter', serif; font-size: 26px; margin: 0 0 18px; }
 .package-policy-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 36px; }
@@ -2470,9 +2523,16 @@ body { font-weight: 400; }
 
     </div>
 
-    <section class="vip-policy" aria-labelledby="vip-policy-title">
-      <h2 id="vip-policy-title">VIP program terms <small style="font-family:Nunito,sans-serif;font-size:14px;font-weight:400;">Effective September 27, 2026</small></h2>
-      <div class="vip-policy-grid">
+    <div class="vip-terms-link-wrap">
+      <button class="vip-terms-link" type="button" onclick="openVipTerms()">View VIP terms</button>
+    </div>
+
+    <dialog class="vip-terms-dialog" id="vip-terms-dialog" aria-labelledby="vip-policy-title">
+      <div class="vip-terms-dialog-inner">
+        <button class="vip-terms-close" type="button" onclick="closeVipTerms()" aria-label="Close VIP terms">×</button>
+        <section class="vip-policy" aria-labelledby="vip-policy-title">
+          <h2 id="vip-policy-title">VIP program terms <small class="vip-policy-date">Effective September 27, 2026</small></h2>
+          <div class="vip-policy-grid">
         <div class="vip-policy-item">
           <h3>Your monthly payment is yours to use</h3>
           <p>Each monthly payment is banked as a service credit for eligible treatments. Unused credits roll over indefinitely while your plan is active and remain usable for 12 months after cancellation, then expire. They can be used toward weight management and peptide programs at full price. Credits are non-transferable and cannot be redeemed for cash, except for the early-cancellation refund described below.</p>
@@ -2501,8 +2561,10 @@ body { font-weight: 400; }
           <h3>Conduct, privacy and policy updates</h3>
           <p>Radiance Med Spa may cancel a VIP plan for abuse of policy, chargebacks, or conduct inconsistent with our code of conduct, with written notice. Your information is handled in accordance with our privacy policy and applicable Pennsylvania and federal regulations, including HIPAA, and is never sold or shared for third-party marketing without your written consent. We may amend these terms with at least 30 days' email notice; continued participation after the effective date constitutes acceptance.</p>
         </div>
+          </div>
+        </section>
       </div>
-    </section>
+    </dialog>
 
   </div>
 </div>
@@ -3287,6 +3349,20 @@ body { font-weight: 400; }
     document.getElementById('mobile-drawer').classList.remove('open');
     document.getElementById('hamburger').classList.remove('open');
   }
+
+  function openVipTerms() {
+    const dialog = document.getElementById('vip-terms-dialog');
+    if (dialog && !dialog.open) dialog.showModal();
+  }
+
+  function closeVipTerms() {
+    const dialog = document.getElementById('vip-terms-dialog');
+    if (dialog && dialog.open) dialog.close();
+  }
+
+  document.getElementById('vip-terms-dialog')?.addEventListener('click', function(event) {
+    if (event.target === this) closeVipTerms();
+  });
 
   function showPTab(id, btn) {
     document.querySelectorAll('.ptab-content').forEach(t => t.classList.remove('active'));
