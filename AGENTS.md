@@ -8,3 +8,5 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Keep `public/ai/*.html` synchronized by running `python3 scripts/generate-readable-pages.py` after editing `public/radiance.html`; these static pages expose iframe and hidden-tab copy to crawlers without changing the visual site.

@@ -108,6 +108,14 @@ function Index() {
         <p>
           Full treatment menu and pricing: <a href="/llms.txt">text version</a>.
         </p>
+        <nav aria-label="Readable site pages">
+          <a href="/ai/home.html">Home</a>{" · "}
+          <a href="/ai/about.html">About</a>{" · "}
+          <a href="/ai/providers.html">Providers</a>{" · "}
+          <a href="/ai/memberships.html">VIP</a>{" · "}
+          <a href="/ai/pricing.html">Treatments and pricing</a>{" · "}
+          <a href="/ai/contact.html">Booking and contact</a>
+        </nav>
       </main>
       <iframe src="/radiance.html" title="Radiance Med Spa" className="radiance-frame" />
     </>
