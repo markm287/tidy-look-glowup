@@ -153,6 +153,11 @@
           "category": "Non-Invasive RF",
           "items": [
             {
+              "name": "Eye Area",
+              "price": "$200",
+              "detail": null
+            },
+            {
               "name": "Lower Face",
               "price": "$300",
               "detail": null
