@@ -26,6 +26,8 @@ export const practice = {
   },
   consultationPolicy:
     "A provider consultation ($50, fully credited toward any service booked at or after the visit) is required prior to any treatment.",
+  cancellationPolicy:
+    "All appointments: cancel or reschedule at least 48 hours in advance. Cancellations made less than 48 hours before an appointment incur a $50 fee.",
   vip: [
     {
       tier: "Glow",
