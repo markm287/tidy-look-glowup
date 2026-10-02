@@ -3080,9 +3080,15 @@ body { font-weight: 400; }
           </div>
         </div>
       </div>
-      <section class="package-policy" aria-labelledby="package-policy-title">
-        <h2 id="package-policy-title">Package terms</h2>
-        <div class="package-policy-grid">
+      <div class="vip-terms-link-wrap">
+        <button class="vip-terms-link" type="button" onclick="openPackageTerms()">View package terms</button>
+      </div>
+      <dialog class="vip-terms-dialog" id="package-terms-dialog" aria-labelledby="package-policy-title">
+        <div class="vip-terms-dialog-inner">
+          <button class="vip-terms-close" type="button" onclick="closePackageTerms()" aria-label="Close package terms">×</button>
+          <section class="package-policy" aria-labelledby="package-policy-title">
+            <h2 id="package-policy-title">Package terms</h2>
+            <div class="package-policy-grid">
           <div class="package-policy-item">
             <h3>Consultation &amp; payment</h3>
             <p>All packages require an initial provider consultation and, where needed, clinical assessment. Your provider may decline or modify a series based on medical history, contraindications, or clinical judgment. Treatment-specific consent is required before the first session. Pay in full at purchase or through a payment plan offered at our discretion; payment must be complete before the final session. Your purchased package price is locked in.</p>
@@ -3103,8 +3109,10 @@ body { font-weight: 400; }
             <h3>Changes to your package</h3>
             <p>If Radiance closes, we may offer a refund of unused value or a comparable provider referral or credit arrangement. If a provider leaves, another qualified Radiance provider will honor remaining sessions. The terms in effect when you purchase govern your package; later policy updates do not change it unless required by law or more favorable to you. Questions? <a href="mailto:contact@radiancepa.com">contact@radiancepa.com</a>.</p>
           </div>
+            </div>
+          </section>
         </div>
-      </section>
+      </dialog>
     </div>
 
     <!-- BOOSTERS -->
@@ -3354,6 +3362,20 @@ body { font-weight: 400; }
 
   document.getElementById('vip-terms-dialog')?.addEventListener('click', function(event) {
     if (event.target === this) closeVipTerms();
+  });
+
+  function openPackageTerms() {
+    const dialog = document.getElementById('package-terms-dialog');
+    if (dialog && !dialog.open) dialog.showModal();
+  }
+
+  function closePackageTerms() {
+    const dialog = document.getElementById('package-terms-dialog');
+    if (dialog && dialog.open) dialog.close();
+  }
+
+  document.getElementById('package-terms-dialog')?.addEventListener('click', function(event) {
+    if (event.target === this) closePackageTerms();
   });
 
   function showPTab(id, btn) {
