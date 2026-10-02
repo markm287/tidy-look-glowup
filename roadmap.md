@@ -5,3 +5,4 @@
 - [x] Add the first-50 Founder VIP additional-discount message across the website and AI-readable copies.
 - [x] Replace the long VIP terms block with a VIP-page-only terms dialog.
 - [x] Remove the PCA Skin starter kit from Radiant VIP and all assistant-readable pricing.
+- [ ] Replace the long package terms block with a package-tab terms dialog matching VIP terms.
