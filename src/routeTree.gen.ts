@@ -58,10 +58,7 @@ export interface FileRoutesById {
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
-    | '/'
-    | '/mcp'
-    | '/sitemap.xml'
-    | '/.well-known/oauth-protected-resource'
+    '/' | '/mcp' | '/sitemap.xml' | '/.well-known/oauth-protected-resource'
   fileRoutesByTo: FileRoutesByTo
   to: '/' | '/mcp' | '/sitemap.xml' | '/.well-known/oauth-protected-resource'
   id:
