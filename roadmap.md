@@ -7,3 +7,4 @@
 - [x] Remove the PCA Skin starter kit from Radiant VIP and all assistant-readable pricing.
 - [x] Replace the long package terms block with a package-tab terms dialog matching VIP terms.
 - [x] Add CliniCalm 1% and Acne Gel to PCA Skin retail pricing and assistant-readable copies.
+- [x] Add invoice-confirmed sizes to every PCA Skin retail product.
