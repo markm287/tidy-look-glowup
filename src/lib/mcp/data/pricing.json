@@ -550,32 +550,32 @@
             {
               "name": "C&E Advanced",
               "price": "$135",
-              "detail": null
+              "detail": "1 oz"
             },
             {
               "name": "HA Boosting Serum",
               "price": "$128",
-              "detail": null
+              "detail": "1 oz"
             },
             {
               "name": "Pigment Gel Pro",
               "price": "$130",
-              "detail": null
+              "detail": "1 oz"
             },
             {
               "name": "Pro-Max Age Renewal",
               "price": "$221",
-              "detail": null
+              "detail": "1 oz"
             },
             {
               "name": "B3 Brightening Serum",
               "price": "$130",
-              "detail": null
+              "detail": "1 oz"
             },
             {
               "name": "ExLinea Pro",
               "price": "$154",
-              "detail": null
+              "detail": "1 oz"
             },
             {
               "name": "CliniCalm 1%",
@@ -590,17 +590,17 @@
             {
               "name": "Hydrator Plus SPF 30",
               "price": "$52",
-              "detail": null
+              "detail": "1.7 oz"
             },
             {
               "name": "Sheer Tint SPF 45",
               "price": "$56",
-              "detail": null
+              "detail": "1.7 oz"
             },
             {
               "name": "Weightless SPF 45",
               "price": "$52",
-              "detail": null
+              "detail": "1.7 oz"
             }
           ]
         }
