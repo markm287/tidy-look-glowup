@@ -9,3 +9,4 @@
 - [x] Replace the long package terms block with a package-tab terms dialog matching VIP terms.
 - [x] Add CliniCalm 1% and Acne Gel to PCA Skin retail pricing and assistant-readable copies.
 - [x] Add invoice-confirmed sizes to every PCA Skin retail product.
+- [x] Fix the booster introduction line wrapping so the VIP details read as one continuous sentence.
