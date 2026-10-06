@@ -96,7 +96,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         type: "application/ld+json",
         children: JSON.stringify({
           "@context": "https://schema.org",
-          "@type": "MedicalBusiness",
+          "@type": ["MedicalBusiness", "HealthAndBeautyBusiness"],
           "@id": "https://radiancepa.com/#medicalbusiness",
           name: "Radiance Med Spa",
           url: "https://radiancepa.com",
@@ -114,7 +114,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
             postalCode: "17202",
             addressCountry: "US",
           },
-          medicalSpecialty: "CosmeticProcedure",
+          logo: "https://radiancepa.com/favicon.png",
+          priceRange: "$$",
           areaServed: {
             "@type": "City",
             name: "Chambersburg",

@@ -2,6 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import "@tanstack/start-client-core";
 
 const BASE_URL = "https://radiancepa.com";
+// Update when site content changes.
+const LASTMOD = "2026-10-06";
 
 interface SitemapEntry {
   path: string;
@@ -21,13 +23,13 @@ export const Route = createFileRoute("/sitemap.xml")({
           { path: "/ai/memberships.html", changefreq: "weekly", priority: "0.8" },
           { path: "/ai/pricing.html", changefreq: "weekly", priority: "0.9" },
           { path: "/ai/contact.html", changefreq: "weekly", priority: "0.7" },
-          { path: "/llms.txt", changefreq: "weekly", priority: "0.7" },
         ];
 
         const urls = entries.map((e) =>
           [
             `  <url>`,
             `    <loc>${BASE_URL}${e.path}</loc>`,
+            `    <lastmod>${LASTMOD}</lastmod>`,
             e.changefreq ? `    <changefreq>${e.changefreq}</changefreq>` : null,
             e.priority ? `    <priority>${e.priority}</priority>` : null,
             `  </url>`,
