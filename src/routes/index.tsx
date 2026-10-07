@@ -4,6 +4,7 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Radiance Med Spa - Chambersburg, PA" },
+      { name: "google-site-verification", content: "8LdvcDo-W55iJ2Xt-CD-yf-153uJ0SR3gWLeZ9NCV8A" },
       {
         name: "description",
         content:
