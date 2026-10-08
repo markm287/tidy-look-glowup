@@ -1,4 +1,6 @@
 # Current tasks
+- [x] Refresh vulnerable dependencies, verify exact lockfile versions, and validate the website and MCP integration.
+- [ ] Clear the remaining @lovable.dev/mcp-js vulnerability; blocked because latest 3.0.5 pins @modelcontextprotocol/sdk 1.28.0 instead of a fixed version >=1.31.0.
 - [x] Clarify quarterly VIP perks pause across the website and assistant-readable copies; retain the single-page design and record owner SEO confirmations.
 - [x] Change VIP appointment cancellation notice to 48 hours across website and AI-readable copies.
 - [x] Compare website terms with Radiance_VIP_Policy-5 and Radiance-Med-Spa-Packages-Policy-3; report contradictions.
