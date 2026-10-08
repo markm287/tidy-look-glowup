@@ -10,3 +10,4 @@
 <!-- LOVABLE:END -->
 
 - Keep `public/ai/*.html` synchronized by running `python3 scripts/generate-readable-pages.py` after editing `public/radiance.html`; these static pages expose iframe and hidden-tab copy to crawlers without changing the visual site.
+- Resolve transitive security updates through the text `bun.lock` without package.json overrides; this preserves upstream compatibility constraints and makes unresolved pins visible to the dependency scanner.
