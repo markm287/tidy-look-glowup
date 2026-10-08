@@ -1,4 +1,5 @@
 # Current tasks
+- [ ] Fix all known dependency vulnerabilities, verify exact lockfile versions, and validate the website and MCP integration.
 - [x] Clarify quarterly VIP perks pause across the website and assistant-readable copies; retain the single-page design and record owner SEO confirmations.
 - [x] Change VIP appointment cancellation notice to 48 hours across website and AI-readable copies.
 - [x] Compare website terms with Radiance_VIP_Policy-5 and Radiance-Med-Spa-Packages-Policy-3; report contradictions.
