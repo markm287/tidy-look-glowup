@@ -31,7 +31,10 @@ for key, (title, description) in sections.items():
     for item in section.select('[onclick]'):
         del item['onclick']
     for tab in section.select('[id^="ptab-"]'):
-        tab['data-category'] = tab['id'].replace('ptab-', '').replace('-', ' ').title()
+        category = tab['id'].replace('ptab-', '').replace('-', ' ').title()
+        heading = section.new_tag('h2')
+        heading.string = category
+        tab.insert(0, heading)
     for link in section.select('a'):
         if not link.get('href'):
             link.unwrap()
