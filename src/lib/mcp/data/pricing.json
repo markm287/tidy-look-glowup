@@ -279,7 +279,7 @@
           ]
         },
         {
-          "category": "IV Therapy — Signature Infusions",
+          "category": "IV Therapy",
           "items": [
             {
               "name": "Myers&#x27; Cocktail",
@@ -300,12 +300,7 @@
               "name": "NAD+ — 1,000 mg",
               "price": "$615",
               "detail": "Includes NAD+ in saline, run on its own. Infused slowly; about 4 hours."
-            }
-          ]
-        },
-        {
-          "category": "IV Therapy — Targeted Infusions",
-          "items": [
+            },
             {
               "name": "Immunity",
               "price": "$135",
