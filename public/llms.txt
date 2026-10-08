@@ -169,13 +169,11 @@ Notes: A provider consultation is required prior to any treatment. Most device a
 ### IV Therapy
 Every infusion is mixed in a 500 mL bag of saline or lactated Ringer's.
 
-#### Signature Infusions
 - Myers' Cocktail: $230 — The classic all-around infusion for energy, immune support and general wellness. Includes vitamin C, magnesium, calcium, and B-complex (B1, B2, B3, B5, B6). About 45–60 minutes.
 - NAD+ — 250 mg: $220 — Cellular support for energy, mental clarity and healthy aging. Includes NAD+ in saline, run on its own. Infused slowly; about 2 hours.
 - NAD+ — 500 mg: $400 — Includes NAD+ in saline, run on its own. Infused slowly; about 3 hours.
 - NAD+ — 1,000 mg: $615 — Includes NAD+ in saline, run on its own. Infused slowly; about 4 hours.
 
-#### Targeted Infusions
 - Immunity: $135 — Support for your defenses through cold season and travel. Includes vitamin C, B-complex, zinc.
 - Quench: $165 — Deep hydration after sweat, sun or a long day. Includes vitamin C, B-complex, magnesium, zinc, manganese, copper.
 - Get Up & Go: $125 — A lift for energy and stamina when you're running on empty. Includes B-complex, amino acids (arginine, lysine, proline, carnitine).
