@@ -324,31 +324,6 @@
           ]
         },
         {
-          "category": "Add-On Shots",
-          "items": [
-            {
-              "name": "Vitamin B12",
-              "price": "$25",
-              "detail": null
-            },
-            {
-              "name": "Vitamin D",
-              "price": "$25",
-              "detail": null
-            },
-            {
-              "name": "Glutathione",
-              "price": "$30",
-              "detail": null
-            },
-            {
-              "name": "Vitamin C",
-              "price": "$25",
-              "detail": null
-            }
-          ]
-        },
-        {
           "category": "Weight Management",
           "items": [
             {
