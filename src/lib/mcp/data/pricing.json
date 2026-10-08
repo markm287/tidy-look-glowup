@@ -279,47 +279,62 @@
           ]
         },
         {
-          "category": "IV Therapy",
+          "category": "IV Therapy — Signature Infusions",
           "items": [
             {
-              "name": "Basic Hydration",
+              "name": "Myers&#x27; Cocktail",
+              "price": "$230",
+              "detail": "The classic all-around infusion for energy, immune support and general wellness. Includes vitamin C, magnesium, calcium, and B-complex (B1, B2, B3, B5, B6). About 45–60 minutes."
+            },
+            {
+              "name": "NAD+ — 250 mg",
+              "price": "$220",
+              "detail": "Cellular support for energy, mental clarity and healthy aging. Includes NAD+ in saline, run on its own. Infused slowly; about 2 hours."
+            },
+            {
+              "name": "NAD+ — 500 mg",
+              "price": "$400",
+              "detail": "Includes NAD+ in saline, run on its own. Infused slowly; about 3 hours."
+            },
+            {
+              "name": "NAD+ — 1,000 mg",
+              "price": "$615",
+              "detail": "Includes NAD+ in saline, run on its own. Infused slowly; about 4 hours."
+            }
+          ]
+        },
+        {
+          "category": "IV Therapy — Targeted Infusions",
+          "items": [
+            {
+              "name": "Immunity",
+              "price": "$135",
+              "detail": "Support for your defenses through cold season and travel. Includes vitamin C, B-complex, zinc."
+            },
+            {
+              "name": "Quench",
+              "price": "$165",
+              "detail": "Deep hydration after sweat, sun or a long day. Includes vitamin C, B-complex, magnesium, zinc, manganese, copper."
+            },
+            {
+              "name": "Get Up & Go",
               "price": "$125",
-              "detail": "Saline + electrolytes"
+              "detail": "A lift for energy and stamina when you&#x27;re running on empty. Includes B-complex, amino acids (arginine, lysine, proline, carnitine)."
             },
             {
-              "name": "Myers' Cocktail",
-              "price": "$130",
-              "detail": "B-complex, Vitamin C, magnesium, calcium"
+              "name": "Recovery & Performance",
+              "price": "$205",
+              "detail": "For training, competition and muscle recovery. Includes vitamin C, B-complex, amino acids, magnesium, zinc, manganese, copper."
             },
             {
-              "name": "Immunity Boost",
-              "price": "$130",
-              "detail": "Vitamin C, zinc, B-complex"
-            },
-            {
-              "name": "Hydration / Recovery",
-              "price": "$100",
-              "detail": "Rapid rehydration + electrolyte replenishment"
-            },
-            {
-              "name": "Energy / Performance",
-              "price": "$140",
-              "detail": "B-complex, amino acids, taurine"
-            },
-            {
-              "name": "Beauty / Glow",
+              "name": "Reboot (Hangover Relief)",
               "price": "$150",
-              "detail": "Glutathione, biotin, Vitamin C"
+              "detail": "Rehydrate and settle your stomach after a night out. Includes ondansetron (prescription anti-nausea), B-complex, magnesium, zinc, manganese, copper."
             },
             {
-              "name": "Recovery / Anti-Inflammation",
-              "price": "$150",
-              "detail": "Targeted anti-inflammatory blend"
-            },
-            {
-              "name": "NAD+",
-              "price": "Starting at $350",
-              "detail": "Premium 2–4 hr infusion"
+              "name": "Timeless",
+              "price": "$130",
+              "detail": "Beauty-from-within support for skin, hair and nails. Includes acetylcysteine (NAC), vitamin B12, B-complex, magnesium."
             }
           ]
         },
@@ -350,7 +365,9 @@
         }
       ],
       "notes": [
-        "A provider consultation is required prior to any treatment to establish medical appropriateness and build your individualized protocol. Ongoing monitoring is included in monthly program fees."
+        "Prices are per infusion. Typical time is 45–60 minutes unless noted. Every infusion is administered by a licensed clinician under physician supervision after a brief health screening, and ingredients may be adjusted for your safety. Individual results vary. These statements have not been evaluated by the FDA; infusions are not intended to diagnose, treat, cure or prevent any disease.",
+        "A provider consultation is required prior to any treatment to establish medical appropriateness and build your individualized protocol. Ongoing monitoring is included in monthly program fees.",
+        "Every infusion is mixed in a 500 mL bag of saline or lactated Ringer&#x27;s."
       ]
     },
     {

@@ -10,3 +10,4 @@
 - [x] Add CliniCalm 1% and Acne Gel to PCA Skin retail pricing and assistant-readable copies.
 - [x] Add invoice-confirmed sizes to every PCA Skin retail product.
 - [x] Fix the booster introduction line wrapping so the VIP details read as one continuous sentence.
+- [x] Replace IV therapy with the attached patient menu, including vitamins/medications, and synchronize assistant-readable copies.
