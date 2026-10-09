@@ -13,7 +13,7 @@ export const practice = {
   
   googleMaps: "https://www.google.com/maps/search/?api=1&query=Radiance+Med+Spa+Chambersburg+PA",
   currentStatus:
-    "By appointment only. Treatments other than neurotoxin and dermal filler are unavailable until renovation is complete in November/December 2026.",
+    "By appointment only. Treatments other than wrinkle relaxer and dermal filler are unavailable until renovation is complete in November/December 2026.",
   scheduledHours: {
     startingNote: "Scheduled hours begin November 2026",
     monday: "9:00 AM – 4:00 PM",
