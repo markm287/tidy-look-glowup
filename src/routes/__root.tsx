@@ -129,7 +129,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
             "@type": "OfferCatalog",
             name: "Aesthetic and Wellness Services",
             itemListElement: [
-              { "@type": "Offer", itemOffered: { "@type": "Service", name: "Botox / Neurotoxin" } },
+              { "@type": "Offer", itemOffered: { "@type": "Service", name: "Botox / Wrinkle Relaxer" } },
               { "@type": "Offer", itemOffered: { "@type": "Service", name: "Dermal Fillers" } },
               { "@type": "Offer", itemOffered: { "@type": "Service", name: "Sculptra" } },
               { "@type": "Offer", itemOffered: { "@type": "Service", name: "Radiesse" } },

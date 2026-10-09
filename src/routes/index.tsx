@@ -84,7 +84,7 @@ function Index() {
         </ul>
         <h2>Booking</h2>
         <p>
-          By appointment only. Treatments other than neurotoxin and dermal filler are unavailable
+          By appointment only. Treatments other than wrinkle relaxer and dermal filler are unavailable
           until renovation is complete in November/December 2026. A $50 provider consultation,
           fully credited toward any service booked at or after the visit, is required prior to any
           treatment.
