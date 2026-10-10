@@ -102,6 +102,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           url: "https://radiancepa.com",
           telephone: "+1-717-423-1799",
           email: "contact@radiancepa.com",
+          openingHoursSpecification: [
+            { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday", "Thursday", "Friday"], opens: "09:00", closes: "16:00" },
+            { "@type": "OpeningHoursSpecification", dayOfWeek: ["Tuesday", "Wednesday"], opens: "13:00", closes: "19:00" },
+          ],
           hasMap: "https://www.google.com/maps/search/?api=1&query=Radiance+Med+Spa+Chambersburg%2C+PA",
           appointmentRequired: true,
           description: "Physician-supervised medical aesthetics practice in Chambersburg, Pennsylvania, currently open by appointment only.",
