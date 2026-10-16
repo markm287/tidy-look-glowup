@@ -655,66 +655,97 @@ body {
 
 
 /* ── PROVIDERS PAGE ── */
-.providers-page { padding: 64px 40px; max-width: 1100px; margin: 0 auto; }
+.providers-page { padding: 64px 40px; max-width: 1240px; margin: 0 auto; }
 .providers-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 2px;
-  background: var(--yarmouth);
-  border: 1px solid var(--dust);
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
+  gap: 28px;
   margin-top: 40px;
 }
-.provider-card { background: var(--white); padding: 36px 28px; }
+.provider-card {
+  background: var(--ink);
+  border: 1px solid rgba(201,162,75,0.3);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+.provider-card:hover { transform: translateY(-4px); border-color: rgba(201,162,75,0.65); }
 .provider-photo {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  background: var(--mist);
-  border: 2px solid var(--dust);
-  margin-bottom: 20px;
+  position: relative;
+  margin: 0;
+  aspect-ratio: 4 / 5;
+  background: #262d2e;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.provider-photo img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 22%;
+}
+.provider-photo img[hidden] { display: none; }
+.provider-monogram {
   font-family: 'Hunter', 'Cormorant Garamond', serif;
-  font-size: 25px;
+  font-size: 54px;
   font-weight: 300;
-  color: var(--gold);
+  letter-spacing: 0.1em;
+  color: var(--gold-lt);
+  opacity: 0.9;
+}
+.provider-id {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  padding: 60px 24px 20px;
+  background: linear-gradient(to top, rgba(24,29,30,0.94) 18%, rgba(24,29,30,0.55) 60%, rgba(24,29,30,0));
+  pointer-events: none;
 }
 .provider-name {
   font-family: 'Hunter', 'Cormorant Garamond', serif;
-  font-size: 22px;
-  font-weight: 300;
-  margin-bottom: 2px;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  color: var(--white);
+  line-height: 1.15;
 }
 .provider-cred {
-  font-size: 12px;
-  font-weight: 500;
-  letter-spacing: 0.2em;
+  font-family: 'Nunito', system-ui, sans-serif;
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 16px;
+  color: var(--brass);
+  margin-top: 6px;
 }
-.provider-divider { height: 1px; background: var(--mist); margin-bottom: 16px; }
+.provider-body { padding: 22px 24px 26px; display: flex; flex-direction: column; flex: 1; }
 .provider-bio {
-  font-size: 14px;
-  color: var(--mid);
-  line-height: 1.75;
+  font-size: 14.5px;
+  color: var(--pearl);
+  line-height: 1.8;
   font-weight: 300;
 }
 .provider-specialties {
-  margin-top: 16px;
+  margin-top: auto;
+  padding-top: 18px;
+  border-top: 1px solid rgba(242,239,226,0.12);
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
 }
+.provider-bio + .provider-specialties { margin-top: 18px; }
 .specialty-tag {
-  font-size: 12px;
+  font-size: 11.5px;
   font-weight: 400;
   letter-spacing: 0.08em;
-  color: var(--gold);
-  border: 1px solid var(--dust);
+  color: var(--pearl);
+  border: 1px solid rgba(201,162,75,0.5);
   padding: 3px 10px;
-  background: var(--mist);
+  background: rgba(230,235,233,0.08);
 }
 
 /* ── ABOUT PAGE ── */
@@ -1396,32 +1427,7 @@ site-footer {
 .page:not(#page-home) .map-placeholder { border-color: rgba(242,239,226,0.1); background: var(--ink); }
 
 /* Providers */
-.page:not(#page-home) .providers-grid {
-  background: rgba(242,239,226,0.1);
-  border-color: rgba(242,239,226,0.1);
-}
-.page:not(#page-home) .provider-card { background: var(--ink); }
-.page:not(#page-home) .provider-photo {
-  background: rgba(242,239,226,0.06);
-  border-color: rgba(242,239,226,0.15);
-  color: var(--gold-lt);
-  font-family: 'Nunito', sans-serif;
-  font-weight: 700;
-}
-.page:not(#page-home) .provider-name {
-  font-family: 'Nunito', 'Avenir Next', sans-serif;
-  font-weight: 700;
-  color: var(--pearl);
-  letter-spacing: -0.01em;
-}
-.page:not(#page-home) .provider-cred { color: var(--gold-lt); }
-.page:not(#page-home) .provider-divider { background: rgba(242,239,226,0.12); }
-.page:not(#page-home) .provider-bio { color: var(--dust); }
-.page:not(#page-home) .specialty-tag {
-  color: var(--gold-lt);
-  background: transparent;
-  border-color: rgba(152,170,157,0.35);
-}
+.page:not(#page-home) .provider-photo { background: #262d2e; }
 
 /* Memberships */
 .page:not(#page-home) .tiers-grid {
@@ -2379,81 +2385,105 @@ body { font-weight: 400; }
     <div class="providers-grid">
 
       <div class="provider-card">
-        <div class="provider-photo">DO</div>
-        <div class="provider-name">Dr. Mark Massak</div>
-        <div class="provider-cred">Medical Director, DO</div>
-        <div class="provider-divider"></div>
-        <div class="provider-bio">Dr. Mark Massak is a board-certified diagnostic and interventional radiologist who brings extensive knowledge of anatomy and a detail-oriented approach to every treatment. With years of experience studying the body at the highest level, he blends medical expertise with an artistic eye to help clients achieve safe, natural-looking results. As Medical Director, Dr. Massak is dedicated to creating a welcoming, personalized experience where every client feels confident and cared for.</div>
+        <figure class="provider-photo">
+          <span class="provider-monogram">DO</span>
+          <img class="provider-img" alt="Dr. Mark Massak, Medical Director, DO" hidden>
+          <figcaption class="provider-id">
+            <div class="provider-name">Dr. Mark Massak</div>
+            <div class="provider-cred">Medical Director, DO</div>
+          </figcaption>
+        </figure>
+        <div class="provider-body"><div class="provider-bio">Dr. Mark Massak is a board-certified diagnostic and interventional radiologist who brings extensive knowledge of anatomy and a detail-oriented approach to every treatment. With years of experience studying the body at the highest level, he blends medical expertise with an artistic eye to help clients achieve safe, natural-looking results. As Medical Director, Dr. Massak is dedicated to creating a welcoming, personalized experience where every client feels confident and cared for.</div>
         <div class="provider-specialties">
           <span class="specialty-tag">Medical Director</span>
           <span class="specialty-tag">Clinical Protocols</span>
           <span class="specialty-tag">Anatomy & Safety</span>
-        </div>
+        </div></div>
       </div>
 
       <div class="provider-card">
-        <div class="provider-photo">MD</div>
-        <div class="provider-name">Dr. Kushal Dhesi</div>
-        <div class="provider-cred">Medical Director, MD</div>
-        <div class="provider-divider"></div>
-        <div class="provider-bio">Dr. Kushal Dhesi is a double board-certified anesthesiologist and interventional pain specialist with over 15 years of clinical experience. In medical aesthetics, he brings a steady hand, deep anatomical knowledge, and a passion for helping clients feel confident in their skin. His approach blends precision with artistry, offering personalized, non-surgical treatments that enhance natural beauty. Dr. Dhesi's practice is built on trust, transparency, and a commitment to subtle, empowering results.</div>
+        <figure class="provider-photo">
+          <span class="provider-monogram">MD</span>
+          <img class="provider-img" alt="Dr. Kushal Dhesi, Medical Director, MD" hidden>
+          <figcaption class="provider-id">
+            <div class="provider-name">Dr. Kushal Dhesi</div>
+            <div class="provider-cred">Medical Director, MD</div>
+          </figcaption>
+        </figure>
+        <div class="provider-body"><div class="provider-bio">Dr. Kushal Dhesi is a double board-certified anesthesiologist and interventional pain specialist with over 15 years of clinical experience. In medical aesthetics, he brings a steady hand, deep anatomical knowledge, and a passion for helping clients feel confident in their skin. His approach blends precision with artistry, offering personalized, non-surgical treatments that enhance natural beauty. Dr. Dhesi's practice is built on trust, transparency, and a commitment to subtle, empowering results.</div>
         <div class="provider-specialties">
           <span class="specialty-tag">Medical Director</span>
           <span class="specialty-tag">Injectables</span>
           <span class="specialty-tag">Precision & Artistry</span>
-        </div>
+        </div></div>
       </div>
 
       <div class="provider-card">
-        <div class="provider-photo">PA-C</div>
-        <div class="provider-name">Cherish Eby</div>
-        <div class="provider-cred">Physician Assistant, PA-C</div>
-        <div class="provider-divider"></div>
-        <div class="provider-bio">Cherish Eby is a Physician Assistant with more than 25 years of experience in aesthetic medicine, women's health, and weight management. She believes looking and feeling your best should be about enhancing who you already are — not changing who you are. Her approach combines medical knowledge, years of aesthetic experience, and a genuine passion for helping clients feel confident, healthy, and empowered. Her special interests include treatments that restore, refresh, and gracefully slow the visible effects of aging while maintaining natural-looking results.</div>
+        <figure class="provider-photo">
+          <span class="provider-monogram">PA-C</span>
+          <img class="provider-img" alt="Cherish Eby, Physician Assistant, PA-C" hidden>
+          <figcaption class="provider-id">
+            <div class="provider-name">Cherish Eby</div>
+            <div class="provider-cred">Physician Assistant, PA-C</div>
+          </figcaption>
+        </figure>
+        <div class="provider-body"><div class="provider-bio">Cherish Eby is a Physician Assistant with more than 25 years of experience in aesthetic medicine, women's health, and weight management. She believes looking and feeling your best should be about enhancing who you already are — not changing who you are. Her approach combines medical knowledge, years of aesthetic experience, and a genuine passion for helping clients feel confident, healthy, and empowered. Her special interests include treatments that restore, refresh, and gracefully slow the visible effects of aging while maintaining natural-looking results.</div>
         <div class="provider-specialties">
           <span class="specialty-tag">25+ Years Experience</span>
           <span class="specialty-tag">Aesthetic Medicine</span>
           <span class="specialty-tag">Weight Management</span>
-        </div>
+        </div></div>
       </div>
 
       <div class="provider-card">
-        <div class="provider-photo">CRNP</div>
-        <div class="provider-name">Christina Hershey</div>
-        <div class="provider-cred">Family Nurse Practitioner, MSN, APRN, FNP-C</div>
-        <div class="provider-divider"></div>
-        <div class="provider-bio">Christina Hershey is a Family Nurse Practitioner who brings 30 years of nursing experience and a warm, personalized approach to every client. With a background in cardiology and preventive medicine, she believes feeling your best starts with supporting your health from the inside out. Her services include wrinkle relaxers, medical-grade chemical peels, microneedling, GLP-1 therapies, and therapeutic peptides — always thoughtful and individualized, with an emphasis on natural-looking results, healthy skin, and treatments that align with each client's goals.</div>
+        <figure class="provider-photo">
+          <span class="provider-monogram">CRNP</span>
+          <img class="provider-img" alt="Christina Hershey, Family Nurse Practitioner, MSN, APRN, FNP-C" hidden>
+          <figcaption class="provider-id">
+            <div class="provider-name">Christina Hershey</div>
+            <div class="provider-cred">Family Nurse Practitioner, MSN, APRN, FNP-C</div>
+          </figcaption>
+        </figure>
+        <div class="provider-body"><div class="provider-bio">Christina Hershey is a Family Nurse Practitioner who brings 30 years of nursing experience and a warm, personalized approach to every client. With a background in cardiology and preventive medicine, she believes feeling your best starts with supporting your health from the inside out. Her services include wrinkle relaxers, medical-grade chemical peels, microneedling, GLP-1 therapies, and therapeutic peptides — always thoughtful and individualized, with an emphasis on natural-looking results, healthy skin, and treatments that align with each client's goals.</div>
         <div class="provider-specialties">
           <span class="specialty-tag">30 Years Experience</span>
           <span class="specialty-tag">Wrinkle Relaxers & Peels</span>
           <span class="specialty-tag">GLP-1 & Peptides</span>
-        </div>
+        </div></div>
       </div>
 
       <div class="provider-card">
-        <div class="provider-photo">CRNP</div>
-        <div class="provider-name">Katie Trego</div>
-        <div class="provider-cred">Nurse Practitioner, MSN, CRNP</div>
-        <div class="provider-divider"></div>
-        <div class="provider-bio">Katie Trego is a Nurse Practitioner with nearly four years of experience providing compassionate, patient-centered care in urgent care. Before becoming a Nurse Practitioner, she spent nearly six years in a busy trauma emergency room, where she built a strong foundation in emergency medicine, clinical assessment, and patient care. Passionate about aesthetics, Katie takes a natural, individualized approach — enhancing each client's unique features while maintaining beautiful, balanced results. She brings her clinical experience, attention to detail, and genuine passion for helping others into every patient interaction.</div>
+        <figure class="provider-photo">
+          <span class="provider-monogram">CRNP</span>
+          <img class="provider-img" alt="Katie Trego, Nurse Practitioner, MSN, CRNP" hidden>
+          <figcaption class="provider-id">
+            <div class="provider-name">Katie Trego</div>
+            <div class="provider-cred">Nurse Practitioner, MSN, CRNP</div>
+          </figcaption>
+        </figure>
+        <div class="provider-body"><div class="provider-bio">Katie Trego is a Nurse Practitioner with nearly four years of experience providing compassionate, patient-centered care in urgent care. Before becoming a Nurse Practitioner, she spent nearly six years in a busy trauma emergency room, where she built a strong foundation in emergency medicine, clinical assessment, and patient care. Passionate about aesthetics, Katie takes a natural, individualized approach — enhancing each client's unique features while maintaining beautiful, balanced results. She brings her clinical experience, attention to detail, and genuine passion for helping others into every patient interaction.</div>
         <div class="provider-specialties">
           <span class="specialty-tag">Emergency Medicine Background</span>
           <span class="specialty-tag">Natural Results</span>
           <span class="specialty-tag">Patient-Centered Care</span>
-        </div>
+        </div></div>
       </div>
 
       <div class="provider-card">
-        <div class="provider-photo">RN</div>
-        <div class="provider-name">Brittany Snider</div>
-        <div class="provider-cred">Registered Nurse</div>
-        <div class="provider-divider"></div>
-        <div class="provider-bio">Brittany Snider is a Registered Nurse with a passion for helping clients feel like their best selves. Her background in critical care nursing gave her extensive experience in patient care, safety, and attention to detail. Drawn to the artistry of aesthetics, Brittany's goal is to create beautiful, natural results tailored to each client's individual aesthetic journey.</div>
+        <figure class="provider-photo">
+          <span class="provider-monogram">RN</span>
+          <img class="provider-img" alt="Brittany Snider, Registered Nurse" hidden>
+          <figcaption class="provider-id">
+            <div class="provider-name">Brittany Snider</div>
+            <div class="provider-cred">Registered Nurse</div>
+          </figcaption>
+        </figure>
+        <div class="provider-body"><div class="provider-bio">Brittany Snider is a Registered Nurse with a passion for helping clients feel like their best selves. Her background in critical care nursing gave her extensive experience in patient care, safety, and attention to detail. Drawn to the artistry of aesthetics, Brittany's goal is to create beautiful, natural results tailored to each client's individual aesthetic journey.</div>
         <div class="provider-specialties">
           <span class="specialty-tag">Wrinkle Relaxer</span>
           <span class="specialty-tag">Dermal Filler</span>
           <span class="specialty-tag">Critical Care Background</span>
-        </div>
+        </div></div>
       </div>
 
     </div>
