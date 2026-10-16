@@ -12,7 +12,7 @@ The main website displays pages inside an interactive frame. For complete, direc
 - [All treatments and pricing](https://radiancepa.com/ai/pricing.html)
 - [Booking, hours and contact](https://radiancepa.com/ai/contact.html)
 
-Radiance Med Spa provides medically supervised aesthetic care with an emphasis on natural, refined results. Treatments are delivered by licensed providers under physician oversight.
+Radiance Med Spa provides physician supervised aesthetic care with an emphasis on natural, refined results. Treatments are delivered by licensed providers under physician oversight.
 
 ## Contact & Location
 
