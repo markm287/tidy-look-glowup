@@ -772,12 +772,13 @@ body {
 }
 .about-hero h1 em { font-style: italic; color: var(--gold); }
 .about-hero p {
-  font-size: 16px;
+  font-size: 17px;
   color: var(--mid);
-  max-width: 560px;
+  max-width: none;
   margin: 0 auto;
-  line-height: 1.8;
+  line-height: 1.75;
 }
+.about-hero .hero-eyebrow { font-size: 15px; }
 
 .about-body { padding: 64px 40px; max-width: 1000px; margin: 0 auto; }
 .about-section { margin-bottom: 56px; }
@@ -1380,9 +1381,7 @@ site-footer {
   line-height: 1;
 }
 .page:not(#page-home) .about-hero h1 em { font-style: normal; font-weight: 800; color: var(--pearl); }
-.page:not(#page-home) .about-hero p { color: var(--mist); font-size: 15px; }
-/* Treatments: widen the intro so it reads like the other pages and lines up with the note below */
-#page-pricing .about-hero > p { max-width: 720px; }
+.page:not(#page-home) .about-hero > p:not(.hero-eyebrow) { color: var(--mist); font-size: 17px; line-height: 1.75; }
 
 /* About body */
 .page:not(#page-home) .about-body { color: var(--dust); }
