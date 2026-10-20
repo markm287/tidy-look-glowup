@@ -29,7 +29,7 @@ export const practice = {
   cancellationPolicy:
     "All appointments: cancel or reschedule at least 48 hours in advance. Cancellations made less than 48 hours before an appointment incur a $50 fee.",
   founderVipOffer:
-    "The first 50 VIPs receive an additional discount. Ask the Radiance Med Spa team for details.",
+    "The first 20 VIPs receive an additional discount. Ask the Radiance Med Spa team for details.",
   vip: [
     {
       tier: "Glow",
