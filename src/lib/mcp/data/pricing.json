@@ -201,6 +201,16 @@
               "name": "Face",
               "price": "$300",
               "detail": "Traditional collagen-induction microneedling"
+            },
+            {
+              "name": "Neck & Chest",
+              "price": "$350",
+              "detail": "45 minutes"
+            },
+            {
+              "name": "Body Area",
+              "price": "$400",
+              "detail": "60 minutes"
             }
           ]
         },
