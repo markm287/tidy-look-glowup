@@ -204,13 +204,11 @@
             },
             {
               "name": "Neck & Chest",
-              "price": "$350",
-              "detail": "45 minutes"
+              "price": "$350"
             },
             {
               "name": "Body Area",
-              "price": "$400",
-              "detail": "60 minutes"
+              "price": "$400"
             }
           ]
         },
