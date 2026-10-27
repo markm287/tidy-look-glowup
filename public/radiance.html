@@ -118,6 +118,8 @@ body {
 .nav-btn:hover { color: var(--yarmouth); }
 .nav-btn.active { color: var(--yarmouth); border-bottom-color: var(--yarmouth); }
 .nav-cta {
+  text-decoration: none;
+  display: inline-block;
   background: var(--gold);
   color: var(--white);
   border: none;
@@ -2063,7 +2065,7 @@ body { font-weight: 400; }
     <button class="nav-btn" onclick="showPage('providers')">Providers</button>
     <button class="nav-btn" onclick="showPage('memberships')">VIP</button>
     <button class="nav-btn" onclick="showPage('pricing')">Treatments</button>
-    <button class="nav-cta" onclick="showPage('contact')">Book Now</button>
+    <a class="nav-cta" href="https://booking.podium.com/medspa/01a0a6d8-ca6f-78e8-ba2b-a7b960b2a657" target="_blank" rel="noopener">Book Now</a>
   </div>
   <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
     <span></span><span></span><span></span>
@@ -2079,7 +2081,7 @@ body { font-weight: 400; }
   <button class="nav-btn" onclick="showPage('providers'); closeMenu()">Providers</button>
   <button class="nav-btn" onclick="showPage('memberships'); closeMenu()">VIP</button>
   <button class="nav-btn" onclick="showPage('pricing'); closeMenu()">Treatments</button>
-  <button class="nav-cta" onclick="showPage('contact'); closeMenu()">Book Now</button>
+  <a class="nav-cta" href="https://booking.podium.com/medspa/01a0a6d8-ca6f-78e8-ba2b-a7b960b2a657" target="_blank" rel="noopener" onclick="closeMenu()">Book Now</a>
 </div>
 
 
@@ -3314,7 +3316,7 @@ body { font-weight: 400; }
         <p style="font-size: 12.5px; color: var(--mist); line-height:1.8; font-weight:300;">Your initial consultation at Radiance is <strong style="color:var(--pearl);">$50</strong>, which is <strong style="color:var(--pearl);">fully credited toward any service</strong> booked at or after your visit. This fee ensures your provider's time is reserved exclusively for you.</p>
         <p style="font-size: 12.5px; color: var(--mist); line-height:1.8; font-weight:300; margin-top:10px;"><strong style="color:var(--pearl);">Cancellation policy:</strong> Please cancel or reschedule any appointment at least 48 hours in advance. Cancellations made less than 48 hours before your appointment incur a $50 fee.</p>
         <p style="font-size: 12.5px; color: var(--mist); line-height:1.8; font-weight:300; margin-top:12px;">During your consultation — typically 30–45 minutes — one of our providers will review your concerns, discuss your goals, and build a personalized treatment plan. You are never obligated to book a treatment on the same day.</p>
-        <p style="font-size: 12.5px; color: var(--mist); line-height:1.8; font-weight:300; margin-top:12px;">To schedule, call or email us directly. Online booking coming soon.</p>
+        <p style="font-size: 12.5px; color: var(--mist); line-height:1.8; font-weight:300; margin-top:12px;">To schedule, use <a href="https://booking.podium.com/medspa/01a0a6d8-ca6f-78e8-ba2b-a7b960b2a657" target="_blank" rel="noopener" style="color:var(--gold-lt); text-decoration:underline;">online booking</a>, or call or email us directly.</p>
       </div>
     </div>
   </div>
