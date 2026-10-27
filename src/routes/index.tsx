@@ -84,10 +84,14 @@ function Index() {
         </ul>
         <h2>Booking</h2>
         <p>
-          By appointment only. Treatments other than wrinkle relaxer and dermal filler are unavailable
-          until renovation is complete in November/December 2026. A $50 provider consultation,
-          fully credited toward any service booked at or after the visit, is required prior to any
-          treatment.
+          Book online at{" "}
+          <a href="https://booking.podium.com/medspa/01a0a6d8-ca6f-78e8-ba2b-a7b960b2a657">
+            booking.podium.com/medspa
+          </a>
+          , or call or email us directly. By appointment only. Treatments other than wrinkle
+          relaxer and dermal filler are unavailable until renovation is complete in
+          November/December 2026. A $50 provider consultation, fully credited toward any service
+          booked at or after the visit, is required prior to any treatment.
         </p>
         <h2>Scheduled hours (beginning November 2026)</h2>
         <ul>
