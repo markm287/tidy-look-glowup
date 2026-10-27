@@ -10,6 +10,7 @@ export const practice = {
   phone: "(717) 423-1799",
   email: "contact@radiancepa.com",
   website: "https://radiancepa.com",
+  bookingUrl: "https://booking.podium.com/medspa/01a0a6d8-ca6f-78e8-ba2b-a7b960b2a657",
   
   googleMaps: "https://www.google.com/maps/search/?api=1&query=Radiance+Med+Spa+Chambersburg+PA",
   currentStatus:
