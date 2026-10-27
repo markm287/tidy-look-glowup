@@ -188,6 +188,9 @@ body {
 }
 .hero-actions { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
 .btn-primary {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
   background: var(--gold);
   color: var(--white);
   border: none;
@@ -1136,6 +1139,8 @@ site-footer {
   grid-column: span 4;
   grid-row: span 2;
   cursor: pointer;
+  text-decoration: none;
+  color: inherit;
   justify-content: space-between;
   transition: filter 0.25s ease;
 }
@@ -2112,13 +2117,13 @@ body { font-weight: 400; }
       </div>
 
       <!-- CTA Primary -->
-      <div class="tile tile-cta primary" onclick="showPage('contact')">
+      <a class="tile tile-cta primary" href="https://booking.podium.com/medspa/01a0a6d8-ca6f-78e8-ba2b-a7b960b2a657" target="_blank" rel="noopener">
         <span class="cta-eyebrow">Appointments</span>
         <div>
           <h2 class="cta-title">Book a Consultation</h2>
           <div class="cta-rule"></div>
         </div>
-      </div>
+      </a>
 
       <!-- CTA Secondary -->
       <div class="tile tile-cta secondary" onclick="showPage('pricing')">
@@ -2230,7 +2235,7 @@ body { font-weight: 400; }
       <h2>Ready to <em>Get Started?</em></h2>
       <p>Book a consultation for $50 — fully credited toward any service you book. Reach out to our team to get started.</p>
       <div class="cta-action">
-        <button class="btn-primary" onclick="showPage('contact')">Book a Consultation</button>
+        <a class="btn-primary" href="https://booking.podium.com/medspa/01a0a6d8-ca6f-78e8-ba2b-a7b960b2a657" target="_blank" rel="noopener">Book a Consultation</a>
       </div>
       <div class="contact-details">
         <div class="contact-item">
