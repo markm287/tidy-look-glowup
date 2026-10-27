@@ -32,8 +32,8 @@ export default defineTool({
               section: section.title,
               category: block.category,
               name: item.name,
-              price: item.price,
-              detail: item.detail,
+              price: item.price ?? null,
+              detail: item.detail ?? null,
             });
           }
         }

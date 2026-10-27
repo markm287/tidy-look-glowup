@@ -204,11 +204,13 @@
             },
             {
               "name": "Neck & Chest",
-              "price": "$350"
+              "price": "$350",
+              "detail": null
             },
             {
               "name": "Body Area",
-              "price": "$400"
+              "price": "$400",
+              "detail": null
             }
           ]
         },
