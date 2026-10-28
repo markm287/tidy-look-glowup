@@ -29,7 +29,10 @@ export const Route = createFileRoute("/softopening")({
         }
         return new Response(null, {
           status: 302,
-          headers: { Location: asset.url },
+          headers: {
+            Location: asset.url,
+            "X-Robots-Tag": "noindex, nofollow, noarchive",
+          },
         });
       },
     },
