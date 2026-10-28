@@ -19,6 +19,8 @@ export const Route = createFileRoute("/softopening")({
                 "Content-Type": "application/pdf",
                 "Content-Disposition": `inline; filename="${FILENAME}"`,
                 "Cache-Control": "public, max-age=3600",
+                // Direct-address only: keep it out of search results and AI crawlers.
+                "X-Robots-Tag": "noindex, nofollow, noarchive",
               },
             });
           }
