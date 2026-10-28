@@ -35,6 +35,8 @@ for key, (title, description) in sections.items():
         heading = section.new_tag('h2')
         heading.string = category
         tab.insert(0, heading)
+    for pt in section.select('.page-title')[:1]:
+        pt.name = 'h1'
     for link in section.select('a'):
         if not link.get('href'):
             link.unwrap()

@@ -770,14 +770,14 @@ body {
   background: none;
   pointer-events: none;
 }
-.about-hero h1 {
+.about-hero .page-title {
   font-family: 'Hunter', 'Cormorant Garamond', serif;
   font-size: clamp(30px, 4.5vw, 50px);
   font-weight: 300;
   color: var(--ink);
   margin-bottom: 16px;
 }
-.about-hero h1 em { font-style: italic; color: var(--gold); }
+.about-hero .page-title em { font-style: italic; color: var(--gold); }
 .about-hero p {
   font-size: 17px;
   color: var(--mid);
@@ -1381,7 +1381,7 @@ site-footer {
   padding: 88px 40px 72px;
 }
 .page:not(#page-home) .about-hero .hero-eyebrow { color: var(--gold-lt); letter-spacing: 0.4em; }
-.page:not(#page-home) .about-hero h1 {
+.page:not(#page-home) .about-hero .page-title {
   font-family: 'Nunito', 'Avenir Next', sans-serif;
   font-weight: 300;
   color: var(--pearl);
@@ -1389,7 +1389,7 @@ site-footer {
   font-size: clamp(36px, 5vw, 62px);
   line-height: 1;
 }
-.page:not(#page-home) .about-hero h1 em { font-style: normal; font-weight: 800; color: var(--pearl); }
+.page:not(#page-home) .about-hero .page-title em { font-style: normal; font-weight: 800; color: var(--pearl); }
 .page:not(#page-home) .about-hero > p:not(.hero-eyebrow) { color: var(--mist); font-size: 17px; line-height: 1.75; }
 
 /* About body */
@@ -1896,7 +1896,7 @@ body::after {
 .pricing-tabs { border-bottom-color: var(--gold-lt); }
 .ptab-btn.active { border-bottom-color: var(--yarmouth); }
 /* ── HUNTER DISPLAY TYPE ACROSS INNER PAGES ── */
-.page:not(#page-home) .about-hero h1,
+.page:not(#page-home) .about-hero .page-title,
 .page:not(#page-home) .about-section h2,
 .page:not(#page-home) .location-info h2,
 .page:not(#page-home) .location-info h3,
@@ -1912,7 +1912,7 @@ body::after {
   font-weight: 400 !important;
   letter-spacing: 0.01em;
 }
-.page:not(#page-home) .about-hero h1 em,
+.page:not(#page-home) .about-hero .page-title em,
 .page:not(#page-home) .about-section h2 em,
 .page:not(#page-home) .location-info h2 em,
 .page:not(#page-home) .location-info h3 em {
@@ -1920,7 +1920,7 @@ body::after {
   font-style: italic;
   color: var(--gold-lt);
 }
-.page:not(#page-home) .about-hero h1 { letter-spacing: 0.02em; }
+.page:not(#page-home) .about-hero .page-title { letter-spacing: 0.02em; }
 .page:not(#page-home) .provider-cred,
 .page:not(#page-home) .specialty-tag,
 .page:not(#page-home) .location-detail-label,
@@ -2271,7 +2271,7 @@ body { font-weight: 400; }
   <div class="about-hero">
     <img class="page-mark" src="/__l5e/assets-v1/2acddc9f-3dde-4483-b365-5dcd91f01251/radiance-starburst-black.png" alt="Radiance Med Spa starburst logo" width="1864" height="1920">
     <p class="hero-eyebrow">Our Story & Mission</p>
-    <h1>About <em>Radiance</em></h1>
+    <h2 class="page-title">About <em>Radiance</em></h2>
     <p>A physician supervised aesthetic practice built on the belief that clinical excellence and genuine care are inseparable.</p>
   </div>
 
@@ -2374,7 +2374,7 @@ body { font-weight: 400; }
   <div class="about-hero">
     <img class="page-mark" src="/__l5e/assets-v1/2acddc9f-3dde-4483-b365-5dcd91f01251/radiance-starburst-black.png" alt="Radiance Med Spa starburst logo" width="1864" height="1920">
     <p class="hero-eyebrow">Meet the Team</p>
-    <h1>Our <em>Providers</em></h1>
+    <h2 class="page-title">Our <em>Providers</em></h2>
     <p>Experienced, credentialed aesthetic providers practicing under physician oversight — dedicated to your safety and your results.</p>
   </div>
 
@@ -2508,7 +2508,7 @@ body { font-weight: 400; }
   <div class="about-hero">
     <img class="page-mark" src="/__l5e/assets-v1/2acddc9f-3dde-4483-b365-5dcd91f01251/radiance-starburst-black.png" alt="Radiance Med Spa starburst logo" width="1864" height="1920">
     <p class="hero-eyebrow">VIP Plans</p>
-    <h1>The Radiance <em>VIP</em></h1>
+    <h2 class="page-title">The Radiance <em>VIP</em></h2>
     <p>Consistent treatments produce the best results. Our VIP tiers reward loyalty with automatic savings on every service, every visit.</p>
   </div>
 
@@ -2630,7 +2630,7 @@ body { font-weight: 400; }
   <div class="about-hero">
     <img class="page-mark" src="/__l5e/assets-v1/2acddc9f-3dde-4483-b365-5dcd91f01251/radiance-starburst-black.png" alt="Radiance Med Spa starburst logo" width="1864" height="1920">
     <p class="hero-eyebrow">Transparent Pricing</p>
-    <h1>Treatments</h1>
+    <h2 class="page-title">Med Spa <em>Treatments</em> &amp; Pricing in Chambersburg, PA</h2>
     <p>Clear, defined pricing across all services. VIP clients receive 5–15% off eligible services and injectables automatically at checkout; weight management and peptide programs are excluded. All VIP tiers receive package pricing at 20% off the regular single-session total; tier discounts don't stack on top.</p>
     <p class="renovation-note" style="max-width:none;margin:22px auto 0;padding:18px 22px;border:1px solid rgba(169,122,63,0.45);border-radius:12px;background:rgba(169,122,63,0.08);color:var(--pearl);font-size:17px;line-height:1.75;"><strong>Renovation update:</strong> Services other than wrinkle relaxer and dermal fillers are not currently available and will resume once our renovation is completed in November/December 2026.</p>
   </div>
@@ -3273,7 +3273,7 @@ body { font-weight: 400; }
   <div class="about-hero">
     <img class="page-mark" src="/__l5e/assets-v1/2acddc9f-3dde-4483-b365-5dcd91f01251/radiance-starburst-black.png" alt="Radiance Med Spa starburst logo" width="1864" height="1920">
     <p class="hero-eyebrow">Get In Touch</p>
-    <h1>Book a <em>Consultation</em></h1>
+    <h2 class="page-title">Book a <em>Consultation</em></h2>
     <p>We would love to meet you. Reach out by phone or email to schedule your consultation — $50, fully credited toward any service you book.</p>
     <p class="renovation-note" style="max-width:none;margin:22px auto 0;padding:18px 22px;border:1px solid rgba(169,122,63,0.45);border-radius:12px;background:rgba(169,122,63,0.08);color:var(--pearl);font-size:17px;line-height:1.75;"><strong>Renovation update:</strong> Services other than wrinkle relaxer and dermal fillers are not currently available and will resume once our renovation is completed in November/December 2026.</p>
   </div>
