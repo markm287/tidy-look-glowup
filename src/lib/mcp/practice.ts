@@ -34,19 +34,19 @@ export const practice = {
   vip: [
     {
       tier: "Glow",
-      price: "$99/month",
+      price: "$100/month",
       benefit:
         "5% off eligible services & injectables; 1 facial or chemical peel per quarter (redeem within its calendar quarter; does not roll over); birthday month complimentary LED upgrade",
     },
     {
       tier: "Luminary",
-      price: "$199/month",
+      price: "$200/month",
       benefit:
         "Everything in Glow, plus 10% off eligible services & injectables, 1 complimentary booster add-on per quarter, birthday month LED upgrade + complimentary Glacé facial",
     },
     {
       tier: "Radiant",
-      price: "$349/month",
+      price: "$350/month",
       benefit:
         "Everything in Luminary, plus 15% off eligible services & injectables, 2 complimentary booster add-ons per quarter, birthday month LED upgrade + Glacé facial + $100 service credit + complimentary IV drip, first access to new services & promotions",
     },
