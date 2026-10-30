@@ -14,7 +14,7 @@ sections = {
     'about': ('About', 'Our story, approach, values, and Chambersburg location'),
     'providers': ('Providers', 'Meet the clinical team at Radiance Med Spa'),
     'memberships': ('VIP', 'Glow, Luminary, and Radiant tiers, prices, benefits, and policy'),
-    'pricing': ('Treatments', 'Treatment menu, prices, packages, and PCA Skin retail'),
+    'pricing': ('Treatments', 'Treatment menu, prices, packages, and PCA Skin and Doctor Babor PRO retail'),
     'contact': ('Book a Consultation', 'Booking, location, contact information, and hours'),
 }
 nav = ' '.join(f'<a href="/ai/{key}.html">{escape(title)}</a>' for key, (title, _) in sections.items())

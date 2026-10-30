@@ -599,6 +599,61 @@
               "detail": "1.7 oz"
             }
           ]
+        },
+        {
+          "category": "Doctor Babor PRO",
+          "items": [
+            {
+              "name": "Balancing Ointment Cleanser",
+              "price": "$60",
+              "detail": "150 ml"
+            },
+            {
+              "name": "Hydration Recovery Ointment",
+              "price": "$95",
+              "detail": "50 ml"
+            },
+            {
+              "name": "Exo Youth Cream",
+              "price": "$215",
+              "detail": "50 ml"
+            },
+            {
+              "name": "Exo Youth Serum",
+              "price": "$225",
+              "detail": "30 ml"
+            },
+            {
+              "name": "Skin Tone Balancing Eye Cream",
+              "price": "$130",
+              "detail": "15 ml"
+            },
+            {
+              "name": "Skin Tone Balancing Cream",
+              "price": "$150",
+              "detail": "50 ml"
+            },
+            {
+              "name": "Longevity Serum",
+              "price": "$210",
+              "detail": "30 ml"
+            },
+            {
+              "name": "Vitamin B Calming Serum",
+              "price": "$120",
+              "detail": "30 ml"
+            },
+            {
+              "name": "Post-Treatment Hydration Recovery Routine",
+              "price": "$120",
+              "detail": "4-piece set"
+            },
+            {
+              "name": "Rejuvenation Routine Set",
+              "price": "$215",
+              "detail": "3-piece set"
+            }
+          ]
         }
       ],
       "notes": [

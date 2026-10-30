@@ -70,7 +70,7 @@ function Index() {
           Botox, Jeuveau, Dysport, dermal filler, Sculptra, Radiesse, RF microneedling,
           microneedling, IPL photofacials, laser hair removal, non-invasive radiofrequency,
           chemical peels, facials, IV therapy, GLP-1 weight loss, peptide therapy, and
-          medical-grade PCA Skin retail.
+          medical-grade PCA Skin and Doctor Babor PRO retail.
         </p>
         <h2>Contact</h2>
         <ul>
