@@ -94,10 +94,13 @@ for (const [id, title] of Object.entries(tabTitles)) {
     if (!name) continue;
     const desc = chunk.match(/<div class="booster-desc">([\s\S]*?)<\/div>/);
     const price = chunk.match(/<div class="booster-price">([\s\S]*?)<\/div>/);
+    const addon = chunk.match(/<div style="[^"]*">([\s\S]*?)<\/div>/);
     boosterItems.push({
       name: decode(name[1]),
       price: price ? decode(price[1]) : null,
-      detail: desc ? decode(desc[1]) : null,
+      detail: [desc ? decode(desc[1]) : null, addon ? `Add-on pricing: ${decode(addon[1])}` : null]
+        .filter(Boolean)
+        .join(" · ") || null,
     });
   }
   if (boosterItems.length) blocks.push({ category: "Boosters", items: boosterItems });
