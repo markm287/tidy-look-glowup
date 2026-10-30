@@ -42,7 +42,7 @@ export const practice = {
       tier: "Luminary",
       price: "$199/month",
       benefit:
-        "Everything in Glow, plus 10% off eligible services & injectables, 1 complimentary booster add-on per quarter, birthday month LED upgrade + complimentary Glacé facial ($200 value)",
+        "Everything in Glow, plus 10% off eligible services & injectables, 1 complimentary booster add-on per quarter, birthday month LED upgrade + complimentary Glacé facial",
     },
     {
       tier: "Radiant",
