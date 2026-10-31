@@ -10,6 +10,7 @@ The main website displays pages inside an interactive frame. For complete, direc
 - [Providers](https://radiancepa.com/ai/providers.html)
 - [VIP tiers and policy](https://radiancepa.com/ai/memberships.html)
 - [All treatments and pricing](https://radiancepa.com/ai/pricing.html)
+- [Retail skincare products](https://radiancepa.com/ai/retail.html)
 - [Booking, hours and contact](https://radiancepa.com/ai/contact.html)
 
 Radiance Med Spa provides physician supervised aesthetic care with an emphasis on natural, refined results. Treatments are delivered by licensed providers under physician oversight.
@@ -89,6 +90,7 @@ Founder VIP offer: The first 20 VIPs receive an additional discount. Ask the Rad
 - [Providers](/#providers): Meet the clinical team.
 - [VIP](/#memberships): VIP membership tiers and benefits.
 - [Treatments](/#pricing): Full treatment menu with pricing.
+- [Retail](/#retail): PCA Skin and Doctor Babor PRO products with prices.
 - [Book a Consultation](/#contact): Booking info, hours, and contact details.
 
 # Treatments & Pricing
