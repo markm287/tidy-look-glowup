@@ -2072,6 +2072,7 @@ body { font-weight: 400; }
     <button class="nav-btn" onclick="showPage('providers')">Providers</button>
     <button class="nav-btn" onclick="showPage('memberships')">VIP</button>
     <button class="nav-btn" onclick="showPage('pricing')">Treatments</button>
+    <button class="nav-btn" onclick="showPage('retail')">Retail</button>
     <a class="nav-cta" href="https://booking.podium.com/medspa/01a0a6d8-ca6f-78e8-ba2b-a7b960b2a657" target="_blank" rel="noopener">Book Now</a>
   </div>
   <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
@@ -2088,6 +2089,7 @@ body { font-weight: 400; }
   <button class="nav-btn" onclick="showPage('providers'); closeMenu()">Providers</button>
   <button class="nav-btn" onclick="showPage('memberships'); closeMenu()">VIP</button>
   <button class="nav-btn" onclick="showPage('pricing'); closeMenu()">Treatments</button>
+  <button class="nav-btn" onclick="showPage('retail'); closeMenu()">Retail</button>
   <a class="nav-cta" href="https://booking.podium.com/medspa/01a0a6d8-ca6f-78e8-ba2b-a7b960b2a657" target="_blank" rel="noopener" onclick="closeMenu()">Book Now</a>
 </div>
 
@@ -2650,7 +2652,6 @@ body { font-weight: 400; }
       <button class="ptab-btn" onclick="showPTab('facials', this)">Facials & Peels</button>
       <button class="ptab-btn" onclick="showPTab('packages', this)">Packages</button>
       <button class="ptab-btn" onclick="showPTab('boosters', this)">Boosters</button>
-      <button class="ptab-btn" onclick="showPTab('retail', this)">Retail</button>
     </div>
 
     <!-- INJECTABLES -->
@@ -3212,8 +3213,22 @@ body { font-weight: 400; }
       </div>
     </div>
 
+  </div>
+</div>
+
+
+<!-- ══════════════ RETAIL PAGE ══════════════ -->
+<div id="page-retail" class="page">
+  <div class="about-hero">
+    <img class="page-mark" src="/__l5e/assets-v1/2acddc9f-3dde-4483-b365-5dcd91f01251/radiance-starburst-black.png" alt="Radiance Med Spa starburst logo" width="1864" height="1920">
+    <p class="hero-eyebrow">Take-Home Skincare</p>
+    <h2 class="page-title">Medical-Grade <em>Skincare</em> in Chambersburg, PA</h2>
+    <p>Professional PCA Skin and Doctor Babor PRO products, chosen by our providers to support your results between visits. VIP clients enjoy exclusive retail benefits — ask our team.</p>
+  </div>
+
+  <div class="pricing-page">
     <!-- RETAIL -->
-    <div id="ptab-retail" class="ptab-content">
+    <div id="ptab-retail">
       <div class="category-block">
         <div class="category-label">PCA Skin</div>
         <div class="price-row">
@@ -3385,6 +3400,7 @@ body { font-weight: 400; }
     <a onclick="showPage('providers')">Providers</a>
     <a onclick="showPage('memberships')">VIP</a>
     <a onclick="showPage('pricing')">Treatments</a>
+    <a onclick="showPage('retail')">Retail</a>
     <a onclick="showPage('contact')">Contact</a>
   </div>
   <div class="social-links">
@@ -3416,7 +3432,8 @@ body { font-weight: 400; }
         (id === 'about' && t === 'about') ||
         (id === 'providers' && t === 'providers') ||
         (id === 'memberships' && t === 'vip') ||
-        (id === 'pricing' && t.includes('treatment'))
+        (id === 'pricing' && t.includes('treatment')) ||
+        (id === 'retail' && t === 'retail')
       ) b.classList.add('active');
     });
 
@@ -3429,7 +3446,8 @@ body { font-weight: 400; }
         (id === 'about' && t === 'about') ||
         (id === 'providers' && t === 'providers') ||
         (id === 'memberships' && t === 'vip') ||
-        (id === 'pricing' && t.includes('treatment'))
+        (id === 'pricing' && t.includes('treatment')) ||
+        (id === 'retail' && t === 'retail')
       ) b.classList.add('active');
     });
 
@@ -3438,7 +3456,7 @@ body { font-weight: 400; }
   }
 
   const requestedPage = window.location.hash.slice(1);
-  if (['home', 'about', 'providers', 'memberships', 'pricing', 'contact'].includes(requestedPage)) {
+  if (['home', 'about', 'providers', 'memberships', 'pricing', 'retail', 'contact'].includes(requestedPage)) {
     showPage(requestedPage);
   }
 
