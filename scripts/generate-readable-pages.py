@@ -15,7 +15,7 @@ sections = {
     'providers': ('Providers', 'Meet the clinical team at Radiance Med Spa'),
     'memberships': ('VIP', 'Glow, Luminary, and Radiant tiers, prices, benefits, and policy'),
     'pricing': ('Treatments', 'Treatment menu, prices, packages, and boosters'),
-    'retail': ('Retail', 'PCA Skin and Doctor Babor PRO skincare products and prices'),
+    'retail': ('Professional Home Skincare', 'PCA Skin and Doctor Babor PRO skincare products and prices'),
     'contact': ('Book a Consultation', 'Booking, location, contact information, and hours'),
 }
 nav = ' '.join(f'<a href="/ai/{key}.html">{escape(title)}</a>' for key, (title, _) in sections.items())
