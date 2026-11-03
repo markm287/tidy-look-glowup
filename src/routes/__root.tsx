@@ -106,9 +106,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
             { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday", "Thursday", "Friday"], opens: "09:00", closes: "16:00" },
             { "@type": "OpeningHoursSpecification", dayOfWeek: ["Tuesday", "Wednesday"], opens: "13:00", closes: "19:00" },
             // First Saturday of each month only
-            { "@type": "OpeningHoursSpecification", dayOfWeek: "Saturday", opens: "08:00", closes: "12:00", validFrom: "2026-11-07", validThrough: "2026-11-07" },
-            { "@type": "OpeningHoursSpecification", dayOfWeek: "Saturday", opens: "08:00", closes: "12:00", validFrom: "2026-12-05", validThrough: "2026-12-05" },
-            { "@type": "OpeningHoursSpecification", dayOfWeek: "Saturday", opens: "08:00", closes: "12:00", validFrom: "2027-01-02", validThrough: "2027-01-02" },
             { "@type": "OpeningHoursSpecification", dayOfWeek: "Saturday", opens: "08:00", closes: "12:00", validFrom: "2027-02-06", validThrough: "2027-02-06" },
             { "@type": "OpeningHoursSpecification", dayOfWeek: "Saturday", opens: "08:00", closes: "12:00", validFrom: "2027-03-06", validThrough: "2027-03-06" },
             { "@type": "OpeningHoursSpecification", dayOfWeek: "Saturday", opens: "08:00", closes: "12:00", validFrom: "2027-04-03", validThrough: "2027-04-03" },
