@@ -42,7 +42,7 @@ function Index() {
   return (
     <>
       <style>{`
-        html, body { margin: 0; height: 100%; overflow: hidden; overscroll-behavior: none; }
+        html, body { margin: 0; height: 100%; overflow: hidden; overscroll-behavior: none; background: rgb(45, 53, 54); }
         .radiance-frame {
           border: 0;
           display: block;
