@@ -100,7 +100,7 @@ function Index() {
           <li>Wednesday: 1:00 PM – 7:00 PM</li>
           <li>Thursday: 9:00 AM – 4:00 PM</li>
           <li>Friday: 9:00 AM – 4:00 PM</li>
-          <li>Saturday: First Saturday of the month, 8:00 AM – 12:00 PM</li>
+          <li>Saturday: First Saturday of the month, 8:00 AM – 12:00 PM, starting February 2027</li>
           <li>Sunday: Closed</li>
         </ul>
         <h2>VIP membership</h2>
