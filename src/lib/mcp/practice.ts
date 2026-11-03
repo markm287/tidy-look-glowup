@@ -22,7 +22,7 @@ export const practice = {
     wednesday: "1:00 PM – 7:00 PM",
     thursday: "9:00 AM – 4:00 PM",
     friday: "9:00 AM – 4:00 PM",
-    saturday: "First Saturday of the month, 8:00 AM – 12:00 PM",
+    saturday: "First Saturday of the month, 8:00 AM – 12:00 PM, starting February 2027",
     sunday: "Closed",
   },
   consultationPolicy:
