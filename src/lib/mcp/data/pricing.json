@@ -200,7 +200,7 @@
             {
               "name": "Face",
               "price": "$300",
-              "detail": "Traditional collagen-induction microneedling"
+              "detail": null
             },
             {
               "name": "Neck & Chest",
@@ -412,7 +412,7 @@
               "detail": "A slightly stronger peel for mature or photodamaged skin."
             },
             {
-              "name": "Pigment Correct",
+              "name": "Pigment Correct Peel",
               "price": "$160",
               "detail": "Targeted correction for visible discoloration and uneven tone."
             },
