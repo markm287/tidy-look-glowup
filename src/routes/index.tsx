@@ -1,4 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
+import pricing from "@/lib/mcp/data/pricing.json";
+
+const skincare = pricing.categories.find((category) => category.id === "retail");
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -72,6 +75,22 @@ function Index() {
           chemical peels, facials, IV therapy, GLP-1 weight loss, peptide therapy, and
           medical-grade PCA Skin and Doctor Babor PRO retail.
         </p>
+        <h2>Professional Home Skincare</h2>
+        <p>Available at Radiance Med Spa in Chambersburg, PA. Product sizes and retail prices:</p>
+        {skincare?.blocks.map((brand) => (
+          <section key={brand.category}>
+            <h3>{brand.category}</h3>
+            <ul>
+              {brand.items.map((product) => (
+                <li key={product.name}>
+                  {product.name} — {product.detail} — {product.price}
+                </li>
+              ))}
+            </ul>
+          </section>
+        ))}
+        <p>VIP clients enjoy exclusive retail benefits — ask our team.</p>
+        <p><a href="/ai/retail.html">Professional Home Skincare product list</a></p>
         <h2>Contact</h2>
         <ul>
           <li>Address: 154 Franklin Farm Lane, Chambersburg, PA 17202</li>
@@ -124,6 +143,7 @@ function Index() {
           <a href="/ai/providers.html">Providers</a>{" · "}
           <a href="/ai/memberships.html">VIP</a>{" · "}
           <a href="/ai/pricing.html">Treatments and pricing</a>{" · "}
+          <a href="/ai/retail.html">Professional Home Skincare</a>{" · "}
           <a href="/ai/contact.html">Booking and contact</a>
         </nav>
       </main>
