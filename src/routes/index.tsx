@@ -146,6 +146,7 @@ function Index() {
           <a href="/ai/retail.html">Professional Home Skincare</a>{" · "}
           <a href="/ai/contact.html">Booking and contact</a>
         </nav>
+        <p>Radiance Med Spa, PLLC is not associated with any other health care system or any other business entity.</p>
       </main>
       <iframe src="/radiance.html" title="Radiance Med Spa" className="radiance-frame" />
     </>
