@@ -13,3 +13,4 @@
 - Resolve transitive security updates through the text `bun.lock` without package.json overrides; this preserves upstream compatibility constraints and makes unresolved pins visible to the dependency scanner.
 - Render the homepage's readable skincare list from the generated pricing catalog so assistants fetching only the main address receive the same products, sizes, and prices as the site.
 - Generate readable-page footer disclaimers from the shared static-site footer so every section stays synchronized.
+- Keep readable pricing-page search metadata and its local introduction in the readable-page generator; regenerate rather than hand-edit the output so future menu updates preserve them.

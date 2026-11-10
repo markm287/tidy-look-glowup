@@ -18,7 +18,7 @@ sections = {
     'about': ('About', 'Our story, approach, values, and Chambersburg location'),
     'providers': ('Providers', 'Meet the clinical team at Radiance Med Spa'),
     'memberships': ('VIP', 'Glow, Luminary, and Radiant tiers, prices, benefits, and policy'),
-    'pricing': ('Treatments', 'Treatment menu, prices, packages, and boosters'),
+    'pricing': ('Treatments', 'Explore Botox and filler pricing in Chambersburg, PA, plus our microneedling, laser, facial and wellness menu. See renovation availability and packages.'),
     'retail': ('Professional Home Skincare', 'PCA Skin and Doctor Babor PRO skincare products and prices'),
     'contact': ('Book a Consultation', 'Booking, location, contact information, and hours'),
 }
@@ -42,12 +42,31 @@ for key, (title, description) in sections.items():
         tab.insert(0, heading)
     for pt in section.select('.page-title')[:1]:
         pt.name = 'h1'
+    if key == 'pricing':
+        hero = section.select_one('.about-hero')
+        heading = section.select_one('h1')
+        if hero is None or heading is None:
+            raise RuntimeError('Missing treatments introduction or heading')
+        heading.string = 'Treatments & Pricing in Chambersburg, PA'
+        introduction = section.new_tag('p')
+        introduction.string = (
+            'Review treatment pricing at Radiance Med Spa in Chambersburg, Pennsylvania, '
+            'including Botox, Jeuveau, Dysport and dermal fillers. Our full menu also lists '
+            'Sculptra, Radiesse, microneedling, RF treatments, IPL, laser hair removal, '
+            'PCA Skin chemical peels, Glacé facials, IV therapy, weight management and '
+            'peptide programs. Wrinkle relaxer and dermal filler treatments are currently '
+            'available; see the renovation update below for availability of other treatments. '
+            'Compare individual prices, packages and boosters in the menu below.'
+        )
+        heading.insert_after(introduction)
     for link in section.select('a'):
         if not link.get('href'):
             link.unwrap()
     for item in section.select('[style]'):
         del item['style']
     page_title = f'{title} | Radiance Med Spa — Chambersburg, PA'
+    if key == 'pricing':
+        page_title = 'Treatments & Pricing in Chambersburg, PA | Radiance Med Spa'
     document = f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{escape(page_title)}</title><meta name="description" content="{escape(description)}">
