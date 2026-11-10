@@ -1,4 +1,5 @@
 # Current tasks
+- [x] Add and validate local business structured data on the readable pricing page, preserving appointment-only hours and renovation availability.
 - [x] Correct the treatments/pricing SEO finding with a clearer local search title, description, and readable-page introduction; verify menu parity.
 - [x] Fix the pricing category headings and verify heading hierarchy across every readable public page.
 - [x] Refresh vulnerable dependencies, verify exact lockfile versions, and validate the website and MCP integration.

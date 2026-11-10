@@ -14,3 +14,4 @@
 - Render the homepage's readable skincare list from the generated pricing catalog so assistants fetching only the main address receive the same products, sizes, and prices as the site.
 - Generate readable-page footer disclaimers from the shared static-site footer so every section stays synchronized.
 - Keep readable pricing-page search metadata and its local introduction in the readable-page generator; regenerate rather than hand-edit the output so future menu updates preserve them.
+- Build pricing-page local business JSON-LD through the Python generator helper using menu/contact content; keep date-limited first-Saturday hours and renovation availability explicit to avoid advertising unavailable services.
