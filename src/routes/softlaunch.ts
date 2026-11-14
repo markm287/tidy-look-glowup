@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import asset from "@/assets/radiance-soft-launch-menu-v17.pdf.asset.json";
+import asset from "@/assets/radiance-soft-launch-menu-v18.pdf.asset.json";
 
 const FILENAME = "radiance-soft-launch-menu.pdf";
 
