@@ -153,7 +153,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
               { "@type": "Offer", itemOffered: { "@type": "Service", name: "RF Microneedling" } },
               { "@type": "Offer", itemOffered: { "@type": "Service", name: "Laser Hair Removal" } },
               { "@type": "Offer", itemOffered: { "@type": "Service", name: "IPL Photofacial" } },
-              { "@type": "Offer", itemOffered: { "@type": "Service", name: "Non-Invasive Radiofrequency" } },
               { "@type": "Offer", itemOffered: { "@type": "Service", name: "Chemical Peels" } },
               { "@type": "Offer", itemOffered: { "@type": "Service", name: "Medical-Grade Skincare" } },
               { "@type": "Offer", itemOffered: { "@type": "Service", name: "GLP-1 Weight Loss Programs" } },

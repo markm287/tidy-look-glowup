@@ -135,16 +135,6 @@ Notes: A provider consultation is required prior to any treatment. All injectabl
 - Face + Neck: $1,000 — Combined treatment
 - Body Area: $500–$1,200 — Abdomen, arms, etc.; size and complexity may vary
 
-### Non-Invasive RF
-- Eye Area: $200
-- Lower Face: $300
-- Full Face: $400
-- Neck: $300
-- Face + Neck: $600
-- Face + Neck + Chest: $700
-- Abdomen: $600
-- Arms: $600
-
 ### Microneedling
 - Face: $300 — Traditional collagen-induction microneedling
 - Neck & Chest: $350
@@ -222,9 +212,6 @@ Notes: A provider consultation is required prior to any treatment, including you
 - IPL Photofacial Series: $1,020 — 3-session brightening series — pigment, redness & sun damage · Includes: 3 IPL Photofacial sessions (face); Sessions spaced 3–4 weeks apart; Save 15% vs. single-session rate (20% for VIP) · Save $180 · Single-session total $1,200 · VIP price $960 · Save 20%
 - Microneedling Series: $765 — 3-session skin rejuvenation series · Includes: 3 Microneedling sessions (face); Sessions spaced 4 weeks apart; Save 15% vs. single-session rate (20% for VIP) · Save $135 · Single-session total $900 · VIP price $720 · Save 20%
 - Laser Hair Removal Series: From $637 — 6-session prepay — any single area · Includes: 6 laser hair removal sessions (single area of choice); Sessions spaced 4–6 weeks apart; Save 15% vs. single-session rate (20% for VIP) · Save 15% · Single-session total From $750 · VIP price From $600 · Save 20%
-- Non-Invasive RF Series — Face: $2,040 — 6-session tightening & contouring series — full face · Includes: 6 Non-Invasive RF sessions (full face); Comfortable, no downtime; Save $360 vs. single-session rate · Save 15% · Single-session total $2,400 · VIP price $1,920 · Save 20%
-- Non-Invasive RF Series — Face + Neck: $3,060 — 6-session tightening series — face and neck · Includes: 6 Non-Invasive RF sessions (face + neck); Comfortable, no downtime; Save $540 vs. single-session rate · Save 15% · Single-session total $3,600 · VIP price $2,880 · Save 20%
-- Non-Invasive RF Series — Abdomen: $3,060 — 6-session body contouring & tightening series · Includes: 6 Non-Invasive RF sessions (abdomen); Comfortable, no downtime; Save $540 vs. single-session rate · Save 15% · Single-session total $3,600 · VIP price $2,880 · Save 20%
 
 Notes: Pre-paid series save 15% vs. regular single-session pricing for non-VIP clients, and 20% for all VIP tiers. VIP tier discounts do not stack with package pricing. Packages are valid for 18 months from purchase unless another term is provided in writing at sale.
 
@@ -242,7 +229,6 @@ Notes: Pre-paid series save 15% vs. regular single-session pricing for non-VIP c
 ## Boosters
 
 ### Boosters
-- Non-Invasive RF: From $100 as add-on — Skin tightening & contouring on any area (eye, face, neck, chest, abdomen, arms) — 50% off standalone pricing when added to another non-invasive RF treatment
 - Topical Exosomes: $400 standalone — Amplifies regenerative signaling and speeds healing; $300 when added to any service from Devices & Laser (excludes sclerotherapy) or a chemical peel
 - PDGF Growth Factor Serum: $400 standalone — Platelet-derived growth factor topical; pairs with any needling treatment; $300 when added to any service from Devices & Laser (excludes sclerotherapy) or a chemical peel
 - PDRN / Polynucleotide Booster: $400 standalone — DNA repair and skin renewal signaling; $300 when added to any service from Devices & Laser (excludes sclerotherapy) or a chemical peel

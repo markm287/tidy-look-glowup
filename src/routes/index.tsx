@@ -71,7 +71,7 @@ function Index() {
         <p>
           Physician-overseen aesthetic and wellness treatments in Chambersburg, Pennsylvania.
           Botox, Jeuveau, Dysport, dermal filler, Sculptra, Radiesse, RF microneedling,
-          microneedling, IPL photofacials, laser hair removal, non-invasive radiofrequency,
+          microneedling, IPL photofacials, laser hair removal,
           chemical peels, facials, IV therapy, GLP-1 weight loss, peptide therapy, and
           medical-grade PCA Skin and Doctor Babor PRO retail.
         </p>

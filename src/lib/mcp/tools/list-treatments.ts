@@ -8,7 +8,7 @@ export default defineTool({
   name: "list_treatments",
   title: "List treatments and pricing",
   description:
-    "List Radiance Med Spa's published treatment menu with pricing. Sections: injectables (Botox, Jeuveau, Dysport, dermal filler, Sculptra, Radiesse, Kybella), devices (RF microneedling, non-invasive RF, microneedling, IPL, laser hair removal, spider veins), wellness (IV therapy, GLP-1 weight loss, peptides), facials (facials and chemical peels), packages, boosters, and retail skincare. Omit the section to get everything.",
+    "List Radiance Med Spa's published treatment menu with pricing. Sections: injectables (Botox, Jeuveau, Dysport, dermal filler, Sculptra, Radiesse, Kybella), devices (RF microneedling, microneedling, IPL, laser hair removal, spider veins), wellness (IV therapy, GLP-1 weight loss, peptides), facials (facials and chemical peels), packages, boosters, and retail skincare. Omit the section to get everything.",
   inputSchema: {
     section: z
       .enum(["injectables", "devices", "wellness", "facials", "packages", "boosters", "retail"])
