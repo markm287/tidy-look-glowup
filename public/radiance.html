@@ -2060,6 +2060,28 @@ body { font-weight: 400; }
 .page:not(#page-home) .tier-card.featured .tier-perks li { font-weight: 400; }
 .page:not(#page-home) .tier-card.featured .tier-price,
 .page:not(#page-home) .tier-card.featured .tier-badge { color: #8a6a1f; }
+/* ── HIGH-VISIBILITY BOOKING ── */
+.nav-cta { border-radius: 999px; border: 1.5px solid rgba(201,162,75,0.8); box-shadow: 0 0 18px rgba(201,162,75,0.25); padding: 10px 24px; align-self: center; }
+.nav-cta:hover { box-shadow: 0 0 26px rgba(201,162,75,0.45); }
+.nav-cta-mobile { display: none; margin-left: auto; margin-right: 12px; padding: 9px 16px; font-size: 13px; }
+.book-bar { display: none; }
+#page-home .tile-cta.primary { background: var(--gold); border: 1.5px solid var(--brass); }
+#page-home .tile-cta.primary .cta-title, #page-home .tile-cta.primary .cta-eyebrow { color: var(--white); }
+#page-home .tile-cta.primary .cta-rule { background: var(--brass); }
+#page-home .cta-chip { display: inline-block; margin-top: 14px; padding: 8px 16px; border-radius: 999px; background: var(--ink); color: var(--white); font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 700; border: 1px solid var(--brass); }
+#page-home .cta-credit { display: block; margin-top: 10px; color: var(--pearl); font-size: 13px; font-weight: 500; }
+.book-band { margin: 48px auto 8px; max-width: 1100px; padding: 32px; border: 1.5px solid var(--brass); border-radius: 6px; background: rgba(110,132,113,0.18); display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+.book-band h2 { font-family: 'Hunter', serif; font-weight: 400; font-size: 24px; color: var(--pearl); margin: 0 0 6px; }
+.book-band p { color: var(--mist); font-size: 14px; margin: 0; }
+.book-band .btn-primary { border-radius: 999px; border: 1.5px solid var(--brass); }
+@media (max-width: 700px) {
+  .nav-cta-mobile { display: flex; }
+  .book-bar { display: flex; position: fixed; left: 0; right: 0; bottom: 0; z-index: 99; background: var(--ink); border-top: 1.5px solid var(--brass); padding: 10px 16px calc(10px + env(safe-area-inset-bottom)); align-items: center; justify-content: space-between; gap: 12px; }
+  .book-bar span { color: var(--pearl); font-size: 12.5px; line-height: 1.3; }
+  .book-bar a { flex-shrink: 0; text-decoration: none; background: var(--gold); color: var(--white); border-radius: 999px; border: 1.5px solid var(--brass); padding: 10px 18px; font-family: 'Hunter', serif; letter-spacing: 0.14em; text-transform: uppercase; font-size: 13px; }
+  #page-scroll { padding-bottom: 72px; }
+  .book-band { padding: 24px 20px; }
+}
 </style>
 
 </head>
@@ -2077,6 +2099,7 @@ body { font-weight: 400; }
     <button class="nav-btn" onclick="showPage('retail')">Home Skincare</button>
     <a class="nav-cta" href="https://booking.podium.com/medspa/01a0a6d8-ca6f-78e8-ba2b-a7b960b2a657" target="_blank" rel="noopener">Book Now</a>
   </div>
+  <a class="nav-cta nav-cta-mobile" href="https://booking.podium.com/medspa/01a0a6d8-ca6f-78e8-ba2b-a7b960b2a657" target="_blank" rel="noopener">Book Now</a>
   <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
     <span></span><span></span><span></span>
   </button>
@@ -2126,6 +2149,8 @@ body { font-weight: 400; }
         <div>
           <h2 class="cta-title">Book a Consultation</h2>
           <div class="cta-rule"></div>
+          <span class="cta-credit">$50 — credited toward your service</span>
+          <span class="cta-chip">Reserve Your Time →</span>
         </div>
       </a>
 
@@ -2632,6 +2657,10 @@ body { font-weight: 400; }
       </div>
     </dialog>
 
+    <div class="book-band">
+      <div><h2>Ready to become a VIP?</h2><p>Consultations are $50 and fully credited toward any service you book.</p></div>
+      <a class="btn-primary" href="https://booking.podium.com/medspa/01a0a6d8-ca6f-78e8-ba2b-a7b960b2a657" target="_blank" rel="noopener">Book a Consultation</a>
+    </div>
   </div>
 </div>
 
@@ -3131,6 +3160,10 @@ body { font-weight: 400; }
       </div>
     </div>
 
+    <div class="book-band">
+      <div><h2>Ready to discuss your treatment plan?</h2><p>Consultations are $50 and fully credited toward any service you book.</p></div>
+      <a class="btn-primary" href="https://booking.podium.com/medspa/01a0a6d8-ca6f-78e8-ba2b-a7b960b2a657" target="_blank" rel="noopener">Book a Consultation</a>
+    </div>
   </div>
 </div>
 
@@ -3309,6 +3342,7 @@ body { font-weight: 400; }
 </main>
 
 <!-- ══════════════ FOOTER ══════════════ -->
+<div class="book-bar"><span>Book a consultation<br>$50 credited toward treatment</span><a href="https://booking.podium.com/medspa/01a0a6d8-ca6f-78e8-ba2b-a7b960b2a657" target="_blank" rel="noopener">Book Now</a></div>
 <site-footer>
   <div class="footer-logo"><img src="/__l5e/assets-v1/5b2f4f42-9e06-434c-91f6-dcf15650198f/radiance-logo.png" alt="Radiance Med Spa" width="1920" height="857" style="display:block;margin:0 auto;"></div>
   <div class="footer-address"><a href="https://www.google.com/maps/search/?api=1&query=Radiance+Med+Spa+Chambersburg%2C+PA" target="_blank" rel="noopener" aria-label="Open location in Google Maps" style="color:inherit;text-decoration:none;">154 Franklin Farm Lane · Chambersburg, PA 17202</a><br><a href="tel:7174231799" style="color:inherit;text-decoration:none;">(717) 423-1799</a> · <a href="mailto:contact@radiancepa.com" style="color:inherit;text-decoration:none;">contact@radiancepa.com</a></div>
