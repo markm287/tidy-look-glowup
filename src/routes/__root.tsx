@@ -120,7 +120,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           ],
           hasMap: "https://www.google.com/maps/search/?api=1&query=Radiance+Med+Spa+Chambersburg%2C+PA",
           appointmentRequired: true,
-          description: "Physician-supervised medical aesthetics practice in Chambersburg, Pennsylvania, currently open by appointment only.",
+          description: "Physician-supervised medical aesthetics practice in Chambersburg, Pennsylvania. Limited opening November 30, 2026; grand opening December 12, 2026. Open by appointment only.",
           image: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/115c1b1e-58ff-411d-99ce-8365134417f8",
           address: {
             "@type": "PostalAddress",

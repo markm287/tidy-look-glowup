@@ -14,9 +14,9 @@ export const practice = {
   
   googleMaps: "https://www.google.com/maps/search/?api=1&query=Radiance+Med+Spa+Chambersburg+PA",
   currentStatus:
-    "By appointment only. Treatments other than wrinkle relaxer and dermal filler are unavailable until renovation is complete in November/December 2026.",
+    "By appointment only. Limited opening November 30, 2026; grand opening December 12, 2026.",
   scheduledHours: {
-    startingNote: "Scheduled hours begin November 2026",
+    startingNote: "Scheduled hours begin November 30, 2026",
     monday: "9:00 AM – 4:00 PM",
     tuesday: "1:00 PM – 7:00 PM",
     wednesday: "1:00 PM – 7:00 PM",

@@ -1,4 +1,5 @@
 # Current tasks
+- [x] Replace the renovation disclaimer with the November 30 limited opening and December 12 grand opening across the website, readable pages, assistant-readable copies, MCP data and structured data; set business hours to begin November 30.
 - [x] Add and validate local business structured data on the readable pricing page, preserving appointment-only hours and renovation availability.
 - [x] Correct the treatments/pricing SEO finding with a clearer local search title, description, and readable-page introduction; verify menu parity.
 - [x] Fix the pricing category headings and verify heading hierarchy across every readable public page.

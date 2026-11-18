@@ -31,7 +31,8 @@ class ClinicSchemaRules(unittest.TestCase):
         self.assertGreater(len(services), 0)
         for service in services:
             self.assertEqual(service['@type'], 'Service')
-            self.assertIn('Services other than wrinkle relaxer and dermal fillers are not currently available', service['description'])
+            self.assertIn('Limited opening November 30, 2026', service['description'])
+            self.assertIn('Grand opening December 12, 2026', service['description'])
 
 
 if __name__ == '__main__':

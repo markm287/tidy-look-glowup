@@ -28,7 +28,7 @@ def build_pricing_schema(source):
         raise ValueError('Missing clinic contact section or treatment menu')
     phone = contact.select_one('a[href^="tel:"]')
     email = contact.select_one('a[href^="mailto:"]')
-    notice = menu.select_one('.renovation-note')
+    notice = menu.select_one('.opening-note')
     if phone is None or email is None or notice is None:
         raise ValueError('Missing clinic contact details or treatment availability')
     availability = notice.get_text(' ', strip=True)
@@ -51,7 +51,7 @@ def build_pricing_schema(source):
         'areaServed': {'@type': 'City', 'name': 'Chambersburg, Pennsylvania'},
         'hasMap': 'https://www.google.com/maps/search/?api=1&query=Radiance+Med+Spa+Chambersburg%2C+PA',
         'description': ('Physician-supervised aesthetic care by appointment only. Scheduled weekday '
-                        'hours begin November 2026; first-Saturday appointments begin February 2027. '
+                        'hours begin November 30, 2026; first-Saturday appointments begin February 2027. '
                         + availability),
         'openingHoursSpecification': opening_hours(),
         'hasOfferCatalog': {'@type': 'OfferCatalog', 'name': 'Treatment menu',
