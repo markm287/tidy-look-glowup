@@ -39,7 +39,7 @@ def build_pricing_schema(source):
             continue
         services.append({'@type': 'Service', 'name': name, 'provider': {'@id': BUSINESS_ID},
                          'description': availability})
-    booking = contact.select_one('a[href*="booking.podium.com"]')
+    booking = contact.select_one('a[href*="podium.com"]')
     business = {
         '@type': ['MedicalBusiness', 'HealthAndBeautyBusiness'], '@id': BUSINESS_ID,
         'name': 'Radiance Med Spa', 'url': BASE_URL + '/',
