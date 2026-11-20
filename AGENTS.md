@@ -9,7 +9,7 @@
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
 
-- Keep `public/ai/*.html` synchronized by running `python3 scripts/generate-readable-pages.py` after editing `public/radiance.html`; these static pages expose iframe and hidden-tab copy to crawlers without changing the visual site.
+- Keep `public/ai/*.html` synchronized by running `python3 scripts/generate-readable-pages.py` after editing `public/radiance.html`; each URL displays the matching full-site section in an iframe and retains crawlable section copy so search visitors see the real website without losing assistant-readable content.
 - Resolve transitive security updates through the text `bun.lock` without package.json overrides; this preserves upstream compatibility constraints and makes unresolved pins visible to the dependency scanner.
 - Render the homepage's readable skincare list from the generated pricing catalog so assistants fetching only the main address receive the same products, sizes, and prices as the site.
 - Generate readable-page footer disclaimers from the shared static-site footer so every section stays synchronized.

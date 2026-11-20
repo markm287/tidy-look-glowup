@@ -1,4 +1,4 @@
-"""Create crawlable, text-first copies of the six sections in public/radiance.html.
+"""Create crawlable section pages that display the full Radiance website.
 Run after editing the source site's copy: python3 scripts/generate-readable-pages.py
 """
 from pathlib import Path
@@ -26,6 +26,7 @@ sections = {
 }
 nav = ' '.join(f'<a href="/ai/{key}.html">{escape(title)}</a>' for key, (title, _) in sections.items())
 css = '''body{font:18px/1.65 system-ui,sans-serif;max-width:850px;margin:auto;padding:24px;color:#202b2c;background:#fff}a{color:#275d50}nav{display:flex;flex-wrap:wrap;gap:8px 18px;border-bottom:1px solid #9cacaa;padding-bottom:20px}main{padding:24px 0}h1,h2,h3,h4{line-height:1.25;margin:1.5em 0 .5em}h1{font-size:2em}h2{font-size:1.5em}p{margin:.8em 0}.tier-card,.pkg-card,.category-block,.vip-policy-item,.provider-card{border-top:1px solid #b9c4c1;padding:14px 0}.tier-name,.pkg-name,.category-label,.provider-name{font-size:1.3em;font-weight:700}.tier-price,.pkg-price,.price-amount{font-weight:700}.price-row{display:flex;justify-content:space-between;gap:20px;padding:10px 0;border-bottom:1px solid #dfe4e2}.price-detail,.pkg-tagline{font-size:.9em}.ptab-content{margin-top:32px}.ptab-content:before{content:attr(data-category);display:block;font-size:1.5em;font-weight:700}footer{border-top:1px solid #9cacaa;padding:20px 0;font-size:.85em}'''
+css += '''html,body{margin:0;padding:0;max-width:none;height:100%;overflow:hidden;overscroll-behavior:none} .readable-content{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap;border:0}.radiance-frame{border:0;display:block;width:100%;height:100vh;height:100dvh}'''
 for key, (title, description) in sections.items():
     original = source.select_one('#page-' + key)
     if original is None:
@@ -78,6 +79,6 @@ for key, (title, description) in sections.items():
 <title>{escape(page_title)}</title><meta name="description" content="{escape(description)}">
 <meta property="og:title" content="{escape(page_title)}"><meta property="og:description" content="{escape(description)}"><meta property="og:type" content="website"><meta name="twitter:card" content="summary">
 <link rel="canonical" href="https://radiancepa.com/ai/{key}.html">{structured_data}<style>{css}</style></head>
-<body><header><nav aria-label="Radiance pages">{nav}</nav></header><main>{section}</main><footer>Radiance Med Spa · 154 Franklin Farm Lane, Chambersburg, PA 17202 · <a href="tel:+17174231799">(717) 423-1799</a> · <a href="mailto:contact@radiancepa.com">contact@radiancepa.com</a><p><a href="/">Visit the full website</a></p><p>{footer_disclaimer}</p></footer></body></html>'''
+<body><div class="readable-content"><header><nav aria-label="Radiance pages">{nav}</nav></header><main>{section}</main><footer>Radiance Med Spa · 154 Franklin Farm Lane, Chambersburg, PA 17202 · <a href="tel:+17174231799">(717) 423-1799</a> · <a href="mailto:contact@radiancepa.com">contact@radiancepa.com</a><p><a href="/">Visit the full website</a></p><p>{footer_disclaimer}</p></footer></div><iframe src="/radiance.html#{key}" title="Radiance Med Spa — {escape(title)}" class="radiance-frame"></iframe></body></html>'''
     (out / f'{key}.html').write_text(document)
     print(f'Generated /ai/{key}.html')
