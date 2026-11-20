@@ -6,11 +6,13 @@ const FILENAME = "radiance-soft-launch-menu.pdf";
 export const Route = createFileRoute("/softlaunch")({
   server: {
     handlers: {
-      GET: async ({ request }) => {
-        const target = new URL(asset.url, request.url);
+      GET: async () => {
+        // Never resolve outbound requests against a caller-controlled host.
+        const target = new URL(asset.url, "https://radiancepa.com");
         try {
           const upstream = await fetch(target, {
             headers: { accept: "application/pdf" },
+            redirect: "error",
           });
           if (upstream.ok && upstream.body) {
             return new Response(upstream.body, {
