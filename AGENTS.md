@@ -17,3 +17,4 @@
 - Build pricing-page local business JSON-LD through the Python generator helper using menu/contact content; keep date-limited first-Saturday hours and opening dates explicit to avoid advertising unavailable services.
 - Resolve menu PDF server fetches against the fixed canonical site origin and reject upstream redirects; caller-controlled hosts must never select an outbound destination.
 - Keep native scrolling on the inner scroll surface; observe that surface for early, unnested opacity/transform entrances without text blur or timer staggering to avoid scroll-time repainting and delayed content.
+- Allow native vertical elasticity only on the inner scroll surface with `overscroll-behavior-y: contain`; keep the document and readable iframe wrappers ink-colored and non-scrolling so edge bounces cannot expose white or chain to the outer page.
