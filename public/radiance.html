@@ -1702,12 +1702,13 @@ body::after {
 .page:not(#page-home) .about-hero::before { content: none; }
 
 
-/* Scroll reveal */
-.reveal-init { opacity: 0; transform: translateY(28px); filter: blur(4px); }
-.reveal-in {
-  opacity: 1; transform: translateY(0); filter: blur(0);
-  transition: opacity 0.9s ease, transform 0.9s cubic-bezier(.2,.7,.2,1), filter 0.9s ease;
+/* Lightweight entrances: never blur text or animate nested blocks twice. */
+.reveal-init {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 420ms ease-out, transform 420ms cubic-bezier(.2,.7,.2,1);
 }
+.reveal-init.reveal-in { opacity: 1; transform: none; }
 
 /* "Ready to Get Started" moment: gold aurora */
 #page-home + *, .page .cta-final, .contact-hero { }
@@ -1741,7 +1742,8 @@ body::after {
 .underline-sweep:hover::after { transform-origin: left; transform: scaleX(1); }
 
 @media (prefers-reduced-motion: reduce) {
-  .reveal-init { opacity: 1; transform: none; filter: none; }
+  html, #page-scroll { scroll-behavior: auto; }
+  .reveal-init { opacity: 1; transform: none; transition: none; }
   #page-home .hero-title strong { animation: none; }
   #page-home .tile-hero .ring { animation: none; }
 }
@@ -1809,16 +1811,15 @@ body::after {
 #page-home .hero-title .word {
   display: inline-block;
   opacity: 0;
-  transform: translateY(28px);
-  filter: blur(8px);
-  animation: wordRise 1s cubic-bezier(.2,.7,.2,1) forwards;
+  transform: translateY(12px);
+  animation: wordRise 500ms cubic-bezier(.2,.7,.2,1) forwards;
 }
-#page-home .hero-title .word:nth-child(1) { animation-delay: 0.15s; }
-#page-home .hero-title .word:nth-child(2) { animation-delay: 0.30s; }
-#page-home .hero-title .word:nth-child(3) { animation-delay: 0.55s; }
-#page-home .hero-title .word:nth-child(4) { animation-delay: 0.70s; }
+#page-home .hero-title > .word:nth-child(1) { animation-delay: 0ms; }
+#page-home .hero-title > .word:nth-child(2) { animation-delay: 60ms; }
+#page-home .hero-title strong .word:nth-child(1) { animation-delay: 120ms; }
+#page-home .hero-title strong .word:nth-child(2) { animation-delay: 180ms; }
 @keyframes wordRise {
-  to { opacity: 1; transform: translateY(0); filter: blur(0); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 /* Ken Burns on photo band */
@@ -3405,7 +3406,8 @@ body { font-weight: 400; }
     });
 
 
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    // A new section starts at the top instead of scrolling through its content.
+    window.scrollTo({ top: 0, behavior: 'instant' });
   }
 
   const requestedPage = window.location.hash.slice(1);
@@ -3472,46 +3474,22 @@ body { font-weight: 400; }
   });
 
   /* Cinematic wow: cursor-follow tile glow */
+  let glowFrame = 0;
+  let glowPointer;
   document.addEventListener('pointermove', (e) => {
-    const tile = e.target.closest && e.target.closest('.tile');
-    if (!tile) return;
-    const r = tile.getBoundingClientRect();
-    tile.style.setProperty('--mx', ((e.clientX - r.left) / r.width * 100) + '%');
-    tile.style.setProperty('--my', ((e.clientY - r.top) / r.height * 100) + '%');
-  });
-
-  /* Scroll reveal */
-  const revealSel = '.tile, .about-section, .section-title, .about-hero > *, .contact-band > *, .hl-title, .hl-dark-title, .diff-card, .provider-card, .plan-card, .price-row, .approach-item, .service-card, .location-info, .photo-band';
-  const revealTargets = document.querySelectorAll(revealSel);
-  revealTargets.forEach(el => el.classList.add('reveal-init'));
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach((entry, i) => {
-      if (entry.isIntersecting) {
-        setTimeout(() => {
-          entry.target.classList.remove('reveal-init');
-          entry.target.classList.add('reveal-in');
-        }, (i % 6) * 60);
-        io.unobserve(entry.target);
-      }
+    if (e.pointerType !== 'mouse') return;
+    glowPointer = e;
+    if (glowFrame) return;
+    glowFrame = requestAnimationFrame(() => {
+      glowFrame = 0;
+      const pointer = glowPointer;
+      const tile = pointer?.target.closest?.('.tile');
+      if (!tile) return;
+      const r = tile.getBoundingClientRect();
+      tile.style.setProperty('--mx', ((pointer.clientX - r.left) / r.width * 100) + '%');
+      tile.style.setProperty('--my', ((pointer.clientY - r.top) / r.height * 100) + '%');
     });
-  }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
-  revealTargets.forEach(el => io.observe(el));
-
-  /* Re-run reveal when navigating between pages */
-  const _showPage = window.showPage;
-  if (typeof _showPage === 'function') {
-    window.showPage = function(name) {
-      _showPage(name);
-      requestAnimationFrame(() => {
-        document.querySelectorAll('.page.active ' + revealSel).forEach(el => {
-          if (!el.classList.contains('reveal-in')) {
-            el.classList.add('reveal-init');
-            io.observe(el);
-          }
-        });
-      });
-    };
-  }
+  }, { passive: true });
 
   /* Move page content into an inner scroll container so rubber-band
      overscroll happens inside it and never moves the fixed header */
@@ -3530,12 +3508,48 @@ body { font-weight: 400; }
       wrap.appendChild(n);
     });
     window.__scroller = wrap;
-    const nativeScrollTo = window.scrollTo.bind(window);
     window.scrollTo = function(opts){
       if (opts && typeof opts === 'object') wrap.scrollTo(opts);
       else wrap.scrollTo({ top: arguments[1] || 0 });
     };
   })();
+
+  /* Observe the actual scrolling surface; reveal before content enters view. */
+  const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const revealSel = '.tile, .about-section, .section-title, .about-hero > *, .contact-band > *, .diff-card, .provider-card, .plan-card, .approach-item, .service-card, .location-info, .photo-band';
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('reveal-in');
+      io.unobserve(entry.target);
+    });
+  }, { root: window.__scroller, threshold: 0, rootMargin: '0px 0px 100px 0px' });
+
+  function prepareReveals() {
+    io.disconnect();
+    const section = document.querySelector('.page.active');
+    if (!section) return;
+    const targets = Array.from(section.querySelectorAll(revealSel))
+      .filter(el => !el.parentElement?.closest(revealSel));
+    const viewportBottom = window.__scroller.getBoundingClientRect().bottom;
+    targets.forEach(el => {
+      if (el.classList.contains('reveal-in')) return;
+      if (motionPreference.matches || el.getBoundingClientRect().top <= viewportBottom + 100) {
+        el.classList.remove('reveal-init');
+        el.classList.add('reveal-in');
+      } else {
+        el.classList.add('reveal-init');
+        io.observe(el);
+      }
+    });
+  }
+  const originalShowPage = window.showPage;
+  window.showPage = function(name) {
+    originalShowPage(name);
+    prepareReveals();
+  };
+  motionPreference.addEventListener('change', prepareReveals);
+  prepareReveals();
 
 
   /* Keep nav spacer + drawer aligned with fixed nav height */
