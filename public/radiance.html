@@ -1807,17 +1807,13 @@ body::after {
 }
 #page-home .tile-hero > * { position: relative; z-index: 2; }
 
-/* Hero headline: staggered word entrance */
+/* Headline words share one gentle entrance without staggered delays. */
 #page-home .hero-title .word {
   display: inline-block;
   opacity: 0;
-  transform: translateY(12px);
-  animation: wordRise 500ms cubic-bezier(.2,.7,.2,1) forwards;
+  transform: translateY(8px);
+  animation: wordRise 600ms cubic-bezier(.22,1,.36,1) forwards;
 }
-#page-home .hero-title > .word:nth-child(1) { animation-delay: 0ms; }
-#page-home .hero-title > .word:nth-child(2) { animation-delay: 60ms; }
-#page-home .hero-title strong .word:nth-child(1) { animation-delay: 120ms; }
-#page-home .hero-title strong .word:nth-child(2) { animation-delay: 180ms; }
 @keyframes wordRise {
   to { opacity: 1; transform: translateY(0); }
 }
@@ -3532,6 +3528,7 @@ body { font-weight: 400; }
       .filter(el => !el.parentElement?.closest(revealSel));
     const viewportBottom = window.__scroller.getBoundingClientRect().bottom;
     targets.forEach(el => {
+      if (!el.getClientRects().length) return;
       if (el.classList.contains('reveal-in')) return;
       if (motionPreference.matches || el.getBoundingClientRect().top <= viewportBottom) {
         el.classList.remove('reveal-init');
@@ -3545,6 +3542,11 @@ body { font-weight: 400; }
   const originalShowPage = window.showPage;
   window.showPage = function(name) {
     originalShowPage(name);
+    prepareReveals();
+  };
+  const originalShowPTab = window.showPTab;
+  window.showPTab = function(id, button) {
+    originalShowPTab(id, button);
     prepareReveals();
   };
   motionPreference.addEventListener('change', prepareReveals);
