@@ -1341,7 +1341,6 @@ site-footer {
 #page-home .contact-item-label { color: var(--gold-lt); }
 #page-home .contact-item-value,
 #page-home .contact-item-value a { color: var(--pearl); }
-#page-home .contact-inner { opacity: 1 !important; transform: none !important; filter: none !important; transition: none !important; }
 
 @media (max-width: 960px) {
   #page-home .bento-wrap { padding: 20px; }
@@ -1706,8 +1705,8 @@ body::after {
 /* Lightweight entrances: never blur text or animate nested blocks twice. */
 .reveal-init {
   opacity: 0;
-  transform: translateY(12px);
-  transition: opacity 420ms ease-out, transform 420ms cubic-bezier(.2,.7,.2,1);
+  transform: translateY(8px);
+  transition: opacity 600ms cubic-bezier(.22,1,.36,1), transform 600ms cubic-bezier(.22,1,.36,1);
 }
 .reveal-init.reveal-in { opacity: 1; transform: none; }
 
@@ -3514,16 +3513,16 @@ body { font-weight: 400; }
     };
   })();
 
-  /* Observe the actual scrolling surface; reveal before content enters view. */
+  /* Reveal just inside the scroll viewport so entrances remain visible and gentle. */
   const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
-  const revealSel = '.tile, .about-section, .section-title, .about-hero > *, .contact-band > *, .diff-card, .provider-card, .plan-card, .approach-item, .service-card, .location-info, .photo-band';
+  const revealSel = '.tile, .bento-intro, .why-item, .about-section, .section-title, .about-hero > *, .contact-band > *, .diff-card, .provider-card, .tier-card, .plan-card, .approach-item, .service-card, .value-cell, .price-row, .pkg-card, .booster-cell, .location-info, .photo-band';
   const io = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (!entry.isIntersecting) return;
       entry.target.classList.add('reveal-in');
       io.unobserve(entry.target);
     });
-  }, { root: window.__scroller, threshold: 0, rootMargin: '0px 0px 100px 0px' });
+  }, { root: window.__scroller, threshold: 0, rootMargin: '0px 0px -24px 0px' });
 
   function prepareReveals() {
     io.disconnect();
@@ -3534,7 +3533,7 @@ body { font-weight: 400; }
     const viewportBottom = window.__scroller.getBoundingClientRect().bottom;
     targets.forEach(el => {
       if (el.classList.contains('reveal-in')) return;
-      if (motionPreference.matches || el.getBoundingClientRect().top <= viewportBottom + 100) {
+      if (motionPreference.matches || el.getBoundingClientRect().top <= viewportBottom) {
         el.classList.remove('reveal-init');
         el.classList.add('reveal-in');
       } else {
