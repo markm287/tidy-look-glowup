@@ -1,4 +1,6 @@
 # Current tasks
+- [x] Add a concise current-cost and consultation explanation to Treatments and synchronize readable content; checked on desktop and phone.
+- [x] Keep the December 12 grand opening notice in Treatments, removing the appointment-encouragement sentence immediately after it.
 - [x] Show regular hours and strongly encouraged appointments, remove November 30 notices, and retain December 12 grand opening across the website and readable information; checked on desktop and phone.
 - [x] Smooth native scrolling and text entrances by removing animated text blur, nested reveals, and stagger timers; verify section navigation and reduced-motion behavior on desktop and phone.
 - [x] Make indexed readable-section URLs display the matching actual website sections while preserving search metadata and assistant-readable copy; verified all seven destinations on desktop and phone.

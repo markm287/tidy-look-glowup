@@ -58,7 +58,6 @@ for key, (title, description) in sections.items():
             'Sculptra, Radiesse, microneedling, RF treatments, IPL, laser hair removal, '
             'PCA Skin chemical peels, Glacé facials, IV therapy, weight management and '
             'peptide programs. Grand opening December 12, 2026. '
-            'Appointments are strongly encouraged. '
             'Compare individual prices, packages and boosters in the menu below.'
         )
         heading.insert_after(introduction)
