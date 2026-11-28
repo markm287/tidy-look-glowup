@@ -1,4 +1,5 @@
 # Current tasks
+- [x] Remove the supervision note under Providers and the word physician-dispensed before PCA Skin and Doctor Babor PRO in About; checked on desktop.
 - [x] Remove the treatment costs & consultation section from Treatments, the assistant-readable text copy, and the generated readable pages.
 - [x] Add a concise current-cost and consultation explanation to Treatments and synchronize readable content; checked on desktop and phone.
 - [x] Keep the December 12 grand opening notice in Treatments, removing the appointment-encouragement sentence immediately after it.
