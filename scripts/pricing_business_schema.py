@@ -50,8 +50,8 @@ def build_pricing_schema(source):
                     'postalCode': '17202', 'addressCountry': 'US'},
         'areaServed': {'@type': 'City', 'name': 'Chambersburg, Pennsylvania'},
         'hasMap': 'https://www.google.com/maps/search/?api=1&query=Radiance+Med+Spa+Chambersburg%2C+PA',
-        'description': ('Physician-supervised aesthetic care by appointment only. Scheduled weekday '
-                        'hours begin November 30, 2026; first-Saturday appointments begin February 2027. '
+        'description': ('Physician-supervised aesthetic care. Appointments are strongly encouraged. '
+                        'First-Saturday hours begin February 2027. '
                         + availability),
         'openingHoursSpecification': opening_hours(),
         'hasOfferCatalog': {'@type': 'OfferCatalog', 'name': 'Treatment menu',

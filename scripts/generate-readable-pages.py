@@ -20,7 +20,7 @@ sections = {
     'about': ('About', 'Our story, approach, values, and Chambersburg location'),
     'providers': ('Providers', 'Meet the clinical team at Radiance Med Spa'),
     'memberships': ('VIP', 'Glow, Luminary, and Radiant tiers, prices, benefits, and policy'),
-    'pricing': ('Treatments', 'Explore Botox and filler pricing in Chambersburg, PA, plus our microneedling, laser, facial and wellness menu. See opening dates and packages.'),
+    'pricing': ('Treatments', 'Explore Botox and filler pricing in Chambersburg, PA, plus our microneedling, laser, facial and wellness menu. See business hours and packages.'),
     'retail': ('Professional Home Skincare', 'PCA Skin and Doctor Babor PRO skincare products and prices'),
     'contact': ('Book a Consultation', 'Booking, location, contact information, and hours'),
 }
@@ -57,8 +57,8 @@ for key, (title, description) in sections.items():
             'including Botox, Jeuveau, Dysport and dermal fillers. Our full menu also lists '
             'Sculptra, Radiesse, microneedling, RF treatments, IPL, laser hair removal, '
             'PCA Skin chemical peels, Glacé facials, IV therapy, weight management and '
-            'peptide programs. Our limited opening begins November 30, 2026, with a '
-            'grand opening on December 12, 2026. '
+            'peptide programs. Grand opening December 12, 2026. '
+            'Appointments are strongly encouraged. '
             'Compare individual prices, packages and boosters in the menu below.'
         )
         heading.insert_after(introduction)

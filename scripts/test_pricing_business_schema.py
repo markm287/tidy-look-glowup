@@ -24,15 +24,14 @@ class ClinicSchemaRules(unittest.TestCase):
             self.assertEqual(item['validThrough'], item['validFrom'])
             self.assertEqual((item['opens'], item['closes']), ('08:00', '12:00'))
 
-    def test_menu_does_not_offer_unavailable_treatments_as_bookable(self):
+    def test_menu_services_reference_the_clinic(self):
         source = BeautifulSoup((Path(__file__).resolve().parents[1] / 'public/radiance.html').read_text(), 'html.parser')
         business = build_pricing_schema(source)['@graph'][0]
         services = business['hasOfferCatalog']['itemListElement']
         self.assertGreater(len(services), 0)
         for service in services:
             self.assertEqual(service['@type'], 'Service')
-            self.assertIn('Limited opening November 30, 2026', service['description'])
-            self.assertIn('Grand opening December 12, 2026', service['description'])
+            self.assertEqual(service['provider'], {'@id': 'https://radiancepa.com/#medicalbusiness'})
 
 
 if __name__ == '__main__':

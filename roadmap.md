@@ -1,4 +1,5 @@
 # Current tasks
+- [x] Show regular hours and strongly encouraged appointments, remove November 30 notices, and retain December 12 grand opening across the website and readable information; checked on desktop and phone.
 - [x] Smooth native scrolling and text entrances by removing animated text blur, nested reveals, and stagger timers; verify section navigation and reduced-motion behavior on desktop and phone.
 - [x] Make indexed readable-section URLs display the matching actual website sections while preserving search metadata and assistant-readable copy; verified all seven destinations on desktop and phone.
 - [x] Replace the renovation disclaimer with the November 30 limited opening and December 12 grand opening across the website, readable pages, assistant-readable copies, MCP data and structured data; set business hours to begin November 30.

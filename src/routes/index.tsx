@@ -107,11 +107,11 @@ function Index() {
           <a href="https://radiance-med-spa.portal.podium.com">
             radiance-med-spa.portal.podium.com
           </a>
-          , or call or email us directly. By appointment only. Limited opening November 30, 2026;
-          grand opening December 12, 2026. A $50 provider consultation, fully credited toward any
+          , or call or email us directly. Appointments are strongly encouraged.
+          Grand opening December 12, 2026. A $50 provider consultation, fully credited toward any
           service booked at or after the visit, is required prior to any treatment.
         </p>
-        <h2>Scheduled hours (beginning November 30, 2026)</h2>
+        <h2>Business hours</h2>
         <ul>
           <li>Monday: 9:00 AM – 4:00 PM</li>
           <li>Tuesday: 1:00 PM – 7:00 PM</li>
